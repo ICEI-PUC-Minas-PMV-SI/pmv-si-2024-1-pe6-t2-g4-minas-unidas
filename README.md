@@ -12,12 +12,12 @@ Observando a inexistência de plataformas voltadas para estas mulheres no Estado
 
 ## Integrantes
 
-Andressa Cordeiro Kahn 
-Carolina Meneses de Carvalho Moura
-Gabriella Victória da Silveira Pecsén
-Luiz Carlos Ferreira
-Rafael Machado Bueno
-Davisson José de Souza Gomes
+*Andressa Cordeiro Kahn 
+*Carolina Meneses de Carvalho Moura
+*Gabriella Victória da Silveira Pecsén
+*Luiz Carlos Ferreira
+*Rafael Machado Bueno
+*Davisson José de Souza Gomes
 
 
 ## Orientador
