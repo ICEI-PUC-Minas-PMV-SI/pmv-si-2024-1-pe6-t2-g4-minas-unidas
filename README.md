@@ -6,20 +6,23 @@
 
 `SEMESTRE: 6º`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Observando a inexistência de plataformas voltadas para estas mulheres no Estado de Minas Gerais, este projeto teve como objetivo criar uma página web e um app mobile com conteúdo informativo para orientacao de vítimas e pessoas que presenciam este tipo de violência, catálogo com redes de apoio locais fornecendo acolhimento multidisciplinar e estímulo para que as vítimas realizem suas denúncias e possam assim quebrar o ciclo de violência ao qual vivenciam.
+
+//Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.//
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
+Andressa Cordeiro Kahn 
+Carolina Meneses de Carvalho Moura
+Gabriella Victória da Silveira Pecsén
+Luiz Carlos Ferreira
+Rafael Machado Bueno
+Davisson José de Souza Gomes
+
 
 ## Orientador
 
-* Nome completo do professor 1
+* Josiane da Costa Vieira Resende
 
 # Planejamento
 
