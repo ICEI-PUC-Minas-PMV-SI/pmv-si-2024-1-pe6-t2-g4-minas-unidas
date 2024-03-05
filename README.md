@@ -6,7 +6,7 @@
 
 `SEMESTRE: 6º`
 
-Observando a ausência de plataformas dedicadas a essas mulheres no Estado de Minas Gerais, este projeto teve como objetivo criar uma página web e um aplicativo móvel com conteúdo informativo para orientar vítimas e pessoas que testemunham esse tipo de violência. O projeto também inclui um catálogo com redes de apoio locais, fornecendo acolhimento multidisciplinar e estímulo para que as vítimas realizem suas denúncias, possibilitando assim quebrar o ciclo de violência ao qual estão submetidas.
+Este projeto visa preencher a lacuna existente nas plataformas dedicadas a mulheres vítimas de violência em Minas Gerais. A solução proposta consiste na criação de uma página web e um aplicativo móvel, ambos oferecendo conteúdo informativo para orientar tanto vítimas quanto testemunhas desse tipo de violência. O sistema incluirá um catálogo com informações sobre redes de apoio locais, permitindo às vítimas acessar recursos e suporte multidisciplinar disponibilizados por essas redes. A ideia é incentivar as vítimas a realizar denúncias e interromper o ciclo de violência ao qual estão submetidas. A arquitetura de sistemas distribuídos será empregada para garantir a eficiência, escalabilidade e acessibilidade da plataforma, promovendo uma resposta integrada e ágil diante das necessidades das usuárias.
 
 ## Integrantes
 
@@ -16,7 +16,6 @@ Observando a ausência de plataformas dedicadas a essas mulheres no Estado de Mi
 * Luiz Carlos Ferreira
 * Rafael Machado Bueno
 * Davisson José de Souza Gomes
-
 
 ## Orientador
 
