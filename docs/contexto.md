@@ -34,6 +34,8 @@ A vulnerabilidade das mulheres as torna também mais inseguras, levando ao centr
 > **Links Úteis**:
 > - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
 
+A seguir, são apresentados os objetivos geral e específicos que guiarão o desenvolvimento do projeto.
+
 ### Objetivo geral:
 
 Desenvolver uma plataforma integrada composta por um site e um aplicativo móvel, utilizando uma arquitetura de sistemas distribuídos, para preencher a lacuna existente nas plataformas dedicadas a mulheres vítimas de violência em Minas Gerais. O foco central é fornecer informações abrangentes, facilitar o acesso a recursos e promover a conscientização, visando incentivar a denúncia e contribuir para a interrupção do ciclo de violência ao qual estão submetidas.
@@ -81,6 +83,8 @@ Pessoas de todos os gêneros e idades que sejam residentes em Minas Gerais. Entr
 > Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
 > Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
 
+Nesta seção, são abordadas as especificações do projeto, que incluem a definição do problema e a ideia de solução a partir da perspectiva do usuário. Para isso, são utilizadas técnicas como a criação de personas, histórias de usuários, requisitos funcionais e não funcionais, além das restrições do projeto.
+
 ## Personas
 
 > Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
@@ -96,11 +100,13 @@ Pessoas de todos os gêneros e idades que sejam residentes em Minas Gerais. Entr
 > - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
 > Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
 
-1. Dona Nanda tem 53 anos, é aposentada e dona de casa, não terminou o ensino fundamental e deseja continuar os estudos de onde parou para realizar o sonho de se formar. Entretanto, seu marido, Walter, não permite que ela administre o dinheiro que recebe da aposentadoria, e, por vontade própria, decidiu que não a deixaria realizar seu sonho acadêmico. Nanda, por anos, acreditou que esse comportamento fosse normal, mas ouviu de suas irmãs que isso era um tipo de repressão e que seu marido poderia ser enquadrado na lei Maria da Penha. Nanda não entende como o confisco do seu dinheiro por seu marido pode se enquadrar como crime.
+A seguir, estão descritas três personas que representam diferentes perfis de usuários da plataforma:
 
-2. Roberta tem 24 anos, trabalha como telemarketing e mudou-se recentemente para um novo bairro. Em sua nova casa, conheceu uma vizinha, Anne, que detalhou situações de seu casamento que, para ela, são normais, mas, para sua nova vizinha, se encaixam como crimes. Apesar de querer tomar uma atitude, Roberta não se sente capaz de explicar para Anne o problema da situação da melhor forma. Sendo assim, Roberta gostaria de denunciar o caso e, além disso, ter informações suficientes para conseguir explicar para Anne o porquê daquelas situações descritas serem problemáticas e porque ela deveria se afastar em definitivo de seu marido.
+1. **Dona Nanda**: Mulher de 53 anos, aposentada e dona de casa. Não concluiu o ensino fundamental e deseja retomar os estudos para realizar o sonho de se formar. No entanto, seu marido Walter não permite que ela administre o dinheiro que recebe da aposentadoria e, por vontade própria, decidiu que não a permitiria realizar seu sonho acadêmico. Durante anos, Nanda acreditou que esse comportamento fosse normal, mas ouviu de suas irmãs que isso era um tipo de repressão e que seu marido poderia estar violando a Lei Maria da Penha. Nanda não entende como o confisco do seu dinheiro por seu marido pode ser considerado um crime.
 
-3. Joana, mulher de 43 anos, casada, tem dois filhos, é dona de casa e mora na cidade de Belo Horizonte, em Minas Gerais. Apanhou do marido durante vinte anos, mas sentia medo de denunciar por conta das ameaças do agressor sobre afastá-la dos filhos caso contasse a alguém o que acontecia dentro de casa. Há três anos, Joana decidiu realizar sua denúncia. O agressor foi julgado legalmente e afastado da convivência de Joana e sua família. A mulher está refazendo a vida e busca plataformas onde possa contar sua história e incentivar outras vítimas a denunciarem e romperem com o ciclo de violência.
+2. **Roberta**: Tem 24 anos, trabalha como atendente de telemarketing e recentemente se mudou para um novo bairro. Conheceu sua nova vizinha, Anne, que detalhou situações de seu casamento que, para ela, são normais, mas para sua nova vizinha se encaixam como crimes. Apesar de querer tomar uma atitude, Roberta não se sente capaz de explicar para Anne o problema da situação da melhor forma. Sendo assim, Roberta gostaria de denunciar o caso e, além disso, ter informações suficientes para conseguir explicar para Anne o motivo para as situações descritas serem problemáticas e por que ela deveria se afastar em definitivo de seu marido.
+
+3. **Joana**: Mulher de 43 anos, casada e mãe de dois filhos. É dona de casa e mora na cidade de Belo Horizonte, em Minas Gerais. Apanhou do marido durante vinte anos, mas sentia medo de denunciar por conta das ameaças do agressor sobre afastá-la dos filhos caso contasse a alguém o que acontecia dentro de casa. Há três anos, Joana decidiu realizar sua denúncia. O agressor foi julgado legalmente e afastado da convivência de Joana e sua família. A mulher está refazendo a vida e busca plataformas onde possa contar sua história e incentivar outras vítimas a denunciarem e romperem com o ciclo de violência.
 
 ## Histórias de Usuários
 
@@ -119,6 +125,14 @@ Apresente aqui as histórias de usuário que são relevantes para o projeto de s
 > - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
 > - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
 > - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
+
+Com base na análise das personas, foram identificadas as seguintes histórias de usuários:
+
+|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
+|--------------------|------------------------------------|----------------------------------------|
+|Usuário em busca de informações sobre violência doméstica | Acessar recursos educacionais e informativos sobre os diferentes tipos de violência contra a mulher | Aumentar minha compreensão sobre o assunto e reconhecer sinais de violência em meu próprio ambiente ou em situações ao meu redor |
+|Usuário em situação de emergência | Encontrar rapidamente números de telefone e endereços de redes de apoio para vítimas de violência doméstica | Buscar ajuda imediata e sair de uma situação de perigo |
+|Usuário em busca de apoio emocional | Acesso a depoimentos de outras vítimas de violência doméstica | Compartilhar minha experiência e receber apoio de pessoas que passaram por situações semelhantes |
 
 ## Requisitos
 
