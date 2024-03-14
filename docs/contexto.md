@@ -81,11 +81,23 @@ Nesta seção, são abordadas as especificações do projeto, que incluem a defi
 
 A seguir, estão descritas três personas que representam diferentes perfis de usuários da plataforma:
 
-1. **Dona Nanda**: Mulher de 53 anos, aposentada e dona de casa. Não concluiu o ensino fundamental e deseja retomar os estudos para realizar o sonho de se formar. No entanto, seu marido Walter não permite que ela administre o dinheiro que recebe da aposentadoria e, por vontade própria, decidiu que não a permitiria realizar seu sonho acadêmico. Durante anos, Nanda acreditou que esse comportamento fosse normal, mas ouviu de suas irmãs que isso era um tipo de repressão e que seu marido poderia estar violando a Lei Maria da Penha. Nanda não entende como o confisco do seu dinheiro por seu marido pode ser considerado um crime.
+### Persona 1: Joana
+Mulher de 41 anos, é casada e mãe de dois filhos, residindo em Belo Horizonte, Minas Gerais. Por vinte anos, ela enfrentou violência física por parte do marido, mas ainda não encontrou coragem para denunciar devido às ameaças de perda da guarda dos filhos. Atualmente, ela vive uma vida reclusa, limitada aos afazeres domésticos e às atividades de cuidar dos filhos. Joana anseia por se informar sobre o tema da violência doméstica e, eventualmente, encontrar coragem para realizar uma denúncia, porém, não sabe como ou onde denunciar.
 
-2. **Roberta**: Tem 24 anos, trabalha como atendente de telemarketing e recentemente se mudou para um novo bairro. Conheceu sua nova vizinha, Anne, que detalhou situações de seu casamento que, para ela, são normais, mas para sua nova vizinha se encaixam como crimes. Apesar de querer tomar uma atitude, Roberta não se sente capaz de explicar para Anne o problema da situação da melhor forma. Sendo assim, Roberta gostaria de denunciar o caso e, além disso, ter informações suficientes para conseguir explicar para Anne o motivo para as situações descritas serem problemáticas e por que ela deveria se afastar em definitivo de seu marido.
+![Persona 1: Joana](img/persona_joana.png)
+![Mapa de Empatia 1: Joana](img/mapa_joana.png)
 
-3. **Joana**: Mulher de 43 anos, casada e mãe de dois filhos. É dona de casa e mora na cidade de Belo Horizonte, em Minas Gerais. Apanhou do marido durante vinte anos, mas sentia medo de denunciar por conta das ameaças do agressor sobre afastá-la dos filhos caso contasse a alguém o que acontecia dentro de casa. Há três anos, Joana decidiu realizar sua denúncia. O agressor foi julgado legalmente e afastado da convivência de Joana e sua família. A mulher está refazendo a vida e busca plataformas onde possa contar sua história e incentivar outras vítimas a denunciarem e romperem com o ciclo de violência.
+### Persona 2: Fernanda
+Mulher de 53 anos, aposentada e dona de casa. Não concluiu o ensino fundamental e deseja retomar os estudos para realizar o sonho de se formar. No entanto, seu marido Walter não permite que ela administre o dinheiro que recebe da aposentadoria e, por vontade própria, decidiu que não a permitiria realizar seu sonho acadêmico. Durante anos, Fernanda acreditou que esse comportamento fosse normal, mas ouviu de suas irmãs que isso era um tipo de repressão e que seu marido poderia estar violando a Lei Maria da Penha. Fernanda não entende como o confisco do seu dinheiro por seu marido pode ser considerado um crime.
+
+![Persona 2: Fernanda](img/persona_fernanda.png)
+![Mapa de Empatia 2: Fernanda](img/mapa_fernanda.png)
+
+### Persona 3: Roberta
+Tem 24 anos, trabalha como atendente de telemarketing e recentemente se mudou para um novo bairro. Conheceu sua nova vizinha, Anne, que detalhou situações de seu casamento que, para ela, são normais, mas para sua nova vizinha se encaixam como crimes. Apesar de querer tomar uma atitude, Roberta não se sente capaz de explicar para Anne o problema da situação da melhor forma. Sendo assim, Roberta gostaria de denunciar o caso e, além disso, ter informações suficientes para conseguir explicar para Anne o motivo para as situações descritas serem problemáticas e por que ela deveria se afastar em definitivo de seu marido.
+
+![Persona 3: Roberta](img/persona_roberta.png)
+![Mapa de Empatia 3: Roberta](img/mapa_roberta.png)
 
 ## Histórias de Usuários
 
@@ -93,9 +105,9 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário em busca de informações sobre violência doméstica | Acessar recursos educacionais e informativos sobre os diferentes tipos de violência contra a mulher | Aumentar minha compreensão sobre o assunto e reconhecer sinais de violência em meu próprio ambiente ou em situações ao meu redor |
+|Usuário vítima de violência doméstica | Denunciar a violência que sofro às autoridades competentes | Romper o ciclo de violência ao qual estou submetida e buscar ajuda de forma segura |
 |Usuário em situação de emergência | Encontrar rapidamente números de telefone e endereços de redes de apoio para vítimas de violência doméstica | Buscar ajuda imediata e sair de uma situação de perigo |
-|Usuário em busca de apoio emocional | Acesso a depoimentos de outras vítimas de violência doméstica | Compartilhar minha experiência e receber apoio de pessoas que passaram por situações semelhantes |
+|Usuário em busca de informações sobre violência doméstica | Acessar recursos educacionais e informativos sobre os diferentes tipos de violência contra a mulher | Aumentar a compreensão sobre o assunto, identificar se eu ou alguém ao meu redor está sofrendo violência e tomar medidas para mudar a situação |
 
 ## Requisitos
 
