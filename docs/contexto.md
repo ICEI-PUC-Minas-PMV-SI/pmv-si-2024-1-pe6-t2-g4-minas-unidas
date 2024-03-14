@@ -41,8 +41,9 @@ Desenvolver uma plataforma integrada composta por uma aplicação web e uma vers
 - Oferecer acesso à legislação brasileira referente à violência contra a mulher, proporcionando conhecimento sobre seus direitos;
 - Identificar e listar os principais mecanismos de denúncia em Minas Gerais, organizados por município, para facilitar o processo de denúncia;
 - Construir uma plataforma que permita a inserção de depoimentos, incentivando o acolhimento e promovendo a conscientização sobre a violência contra a mulher;
+- Integrar a versão móvel como uma ferramenta adicional para facilitar o processo de denúncia, tornando-o mais acessível e prático para as usuárias;
 - Garantir a eficiência, escalabilidade e acessibilidade da plataforma por meio da implementação de uma arquitetura de sistemas distribuídos;
-- Integrar a versão móvel como uma ferramenta adicional para facilitar o processo de denúncia, tornando-o mais acessível e prático para as usuárias.
+- Integrar à aplicação uma API de consulta de antecedentes criminais, proporcionando a possibilidade de verificar informações relevantes sobre potenciais agressores.
 
 ## Justificativa
 
