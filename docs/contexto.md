@@ -29,18 +29,13 @@ A vulnerabilidade das mulheres as torna também mais inseguras, levando ao centr
 
 ## Objetivos
 
-> Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
-
 A seguir, são apresentados os objetivos geral e específicos que guiarão o desenvolvimento do projeto.
 
 ### Objetivo geral:
 
 Desenvolver uma plataforma integrada composta por uma aplicação web e uma versão móvel, utilizando uma arquitetura de sistemas distribuídos, para preencher a lacuna existente nas plataformas dedicadas a mulheres vítimas de violência em Minas Gerais. O foco central é fornecer informações abrangentes, facilitar o acesso a recursos e promover a conscientização, visando incentivar a denúncia e contribuir para a interrupção do ciclo de violência ao qual estão submetidas.
 
-### Objetivos Específicos:
+### Objetivos específicos:
 
 - Disponibilizar conteúdo informativo abrangente sobre os diferentes tipos de violência, auxiliando as vítimas na identificação de sua situação;
 - Oferecer acesso à legislação brasileira referente à violência contra a mulher, proporcionando conhecimento sobre seus direitos;
