@@ -165,6 +165,14 @@ Descreva aqui todos os serviços que serão disponibilizados pelo seu projeto, d
 |      `SERVIÇO`     |             `EXECUÇÃO`                                          |             `QUEM EXECUTA`             |
 |--------------------|-----------------------------------------------------------------|----------------------------------------|
 |Fazer Login | O Usuário realiza o acesso ao sistema utilizando credenciais de acesso. O usuário deve estar previamente cadastrado no sistema. | Usuário comum ou administrador. |
+|Fazer Logout | O usuário sai do sistema clicando no botão de logout. A sessão do usuário é encerrada. | Usuário comum ou administrador. |
+|Cadastrar Usuário | Realiza o cadastro de usuários no sistema. São informados os dados de identificação do usuário e gera-se uma senha de acesso dentro dos padrões de segurança estabelecidos. | Usuário administrador. |
+|Fazer Login | O Usuário realiza o acesso ao sistema utilizando credenciais de acesso. O usuário deve estar previamente cadastrado no sistema. | Usuário comum ou administrador. |
+|Fazer Login | O Usuário realiza o acesso ao sistema utilizando credenciais de acesso. O usuário deve estar previamente cadastrado no sistema. | Usuário comum ou administrador. |
+|Fazer Login | O Usuário realiza o acesso ao sistema utilizando credenciais de acesso. O usuário deve estar previamente cadastrado no sistema. | Usuário comum ou administrador. |
+|Fazer Login | O Usuário realiza o acesso ao sistema utilizando credenciais de acesso. O usuário deve estar previamente cadastrado no sistema. | Usuário comum ou administrador. |
+
+
 
 
 # Gerenciamento de Projeto
