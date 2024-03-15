@@ -1,6 +1,6 @@
 # Introdução
 
-> Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+
 
 Uma em cada três mulheres brasileiras já foi vítima de algum tipo de violência, aponta pesquisa realizada pelo Senado Federal em 2017. Somente no ano de 2020, mais de 105 mil denúncias de violência contra a mulher foram registradas nas plataformas do Ligue 180 e do Disque 100, de acordo com o Ministério da Mulher, da Família e dos Direitos Humanos.
 
@@ -10,12 +10,7 @@ Muitas vezes as ações de violência cometidas contra mulheres atingem sua expr
 
 ## Problema
 
-> Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação. Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos. Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
 
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
 A violência no ambiente familiar ou em comunidade representa um dos principais obstáculos para assegurar liberdades fundamentais para mulheres e meninas. Nos últimos anos é notória a intensificação dos debates a respeito, principalmente a violência doméstica. Este é um processo que seguirá em curso sobre a ampliação e aperfeiçoamento de estratégias e instituições para uma melhor abordagem deste problema social.
 
@@ -47,11 +42,7 @@ Desenvolver uma plataforma integrada composta por uma aplicação web e uma vers
 
 ## Justificativa
 
-> Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-> O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
 
 A solução proposta neste projeto para disseminar informações sobre a violência contra mulher, redes de apoio e canais de denúncia por meio de um site mostra-se eficaz, uma vez que o uso da internet tem aumentado no país. De acordo com a pesquisa realizada pelo Centro Regional de Estudos para o Desenvolvimento da Sociedade da Informação (CETIC) em 2020, 83% dos domicílios brasileiros possuem acesso à internet, com menores diferenças regionais em relação a 2019, com maior acesso das classes C, D e E, e 85% das mulheres utilizam a internet.
 
@@ -63,16 +54,6 @@ Portanto, a dualidade web e app proposta será uma fonte de informações e de r
 
 ## Público-Alvo
 
-> Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
-
-> Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
 
 Pessoas de todos os gêneros e idades que sejam residentes em Minas Gerais. Entretanto, nosso foco será naquelas que sejam ou conheçam mulheres que tenham sido vítimas de violência doméstica de qualquer tipo (física, sexual, psicológica, moral e/ou patrimonial).
 
