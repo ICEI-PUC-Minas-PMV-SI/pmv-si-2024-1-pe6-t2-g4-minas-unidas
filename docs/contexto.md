@@ -229,7 +229,7 @@ Definição de como o software é estruturado em termos dos componentes que faze
 - **SQLITE**:  biblioteca em linguagem C que implementa uma base de dados SQL embutida. Programas que usem a biblioteca SQLite podem ter acesso a banco de dados SQL sem executar um processo SGBD separado.
 
 ## Hospedagem
-- **SQLITE** Será realizar em um servidor em núvem AWS.
+- **AWS** Será realizar em um servidor em núvem AWS.
 
 > **Links Úteis**:
 >
