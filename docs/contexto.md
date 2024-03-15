@@ -171,21 +171,15 @@ Descreva aqui todos os serviços que serão disponibilizados pelo seu projeto, d
 |Realizar Depoimento |O usuário cadastra depoimentos contando sua experiência relacionada à violência contra a mulher. | Usuário comum ou administrador. |
 |Gerenciar Depoimento | O usuário pode gerenciar depoimentos que já foram cadastrados.O sistema apresenta as operações de Alteração, Exclusão e Consulta de depoimentos.| Usuário comum ou administrador. |
 |Consultar Locais de Denúncia |O usuário pesquisa um local de denúncia. Após selecionar a cidade onde se encontra, o sistema lista locais de denúncia próximos a localidade informada.| Usuário comum ou administrador. |
-|Realizar Denúncia |Usuários realizam as denúncias, com informações de localidade e sobre à violência sofrida para que as autoridades consigam realizar as ações necessárias.| Usuário comum ou administrador. |
-|Gerenciar Denúncia |O usuário pode gerenciar as denúncias publicadas no sistema. O sistema apresenta as operações de Alteração, Exclusão e Consulta de denúncia.
-| Usuário comum ou administrador. |
+|Realizar Denúncia |Usuários realizam as denúncias, com informações de localidade e sobre à violência sofrida para que as autoridades consigam realizar as ações necessárias.| Usuário comum ou administrador.|
+|Gerenciar Denúncia |O usuário pode gerenciar as denúncias publicadas no sistema. O sistema apresenta as operações de Alteração, Exclusão e Consulta de denúncia.| Usuário comum ou administrador. |
 |Consultar Redes de Apoio |O usuário pesquisa um local de apoio à vítima. Após selecionar a cidade onde se encontra, o sistema lista locais de apoio próximos a localidade informada.| Usuário comum ou administrador. |
-|Gerenciar Redes de Apoio |O usuário pode gerenciar os locais de apoio cadastrados no sistema. O sistema apresenta as operações de Alteração, Exclusão e Consulta dos locais de apoio.
-| Usuário administrador. |
-|Teste de Perfil de Violência |O usuário responde um questionário que o apoia na identificação de possíveis situações vividas de violência. Ao fim do questionário, o sistema informa se o usuário está sendo ou foi vítima de violência.
-| Usuário comum ou administrador. |
-|Consulta dos Tipos de Violência |O usuário pode consultar informações sobre os tipos de violência, onde, são classificados em cinco tipos: Física, Moral, Patrimonial, Psicológica e Sexual.
-| Usuário comum ou administrador. |
-|Consulta de Legislação |O usuário pode consultar o resumo da Lei Maria da Penha e o sistema fornece link de acesso externo para a Lei Maria da Penha na íntegra.
-| Usuário comum ou administrador. |
+|Gerenciar Redes de Apoio |O usuário pode gerenciar os locais de apoio cadastrados no sistema. O sistema apresenta as operações de Alteração, Exclusão e Consulta dos locais de apoio.| Usuário administrador. |
+|Teste de Perfil de Violência |O usuário responde um questionário que o apoia na identificação de possíveis situações vividas de violência. Ao fim do questionário, o sistema informa se o usuário está sendo ou foi vítima de violência.| Usuário comum ou administrador. |
+|Consulta dos Tipos de Violência |O usuário pode consultar informações sobre os tipos de violência, onde, são classificados em cinco tipos: Física, Moral, Patrimonial, Psicológica e Sexual.| Usuário comum ou administrador. |
+|Consulta de Legislação |O usuário pode consultar o resumo da Lei Maria da Penha e o sistema fornece link de acesso externo para a Lei Maria da Penha na íntegra.| Usuário comum ou administrador. |
 |Visualizar notícias |O usuário pode ler notícias relacionadas ao tema violência doméstica.| Usuário comum ou administrador. |
-|Gerenciar notícias |O usuário pode gerenciar as notícias previamente cadastradas no sistema. O sistema apresenta as operações de Alteração, Exclusão e Consulta das notícias.
-| Usuário administrador. |
+|Gerenciar notícias |O usuário pode gerenciar as notícias previamente cadastradas no sistema. O sistema apresenta as operações de Alteração, Exclusão e Consulta das notícias.| Usuário administrador. |
 |Consultar antecedentes criminais |O usuário pode consultar informações sobre antecedentes criminais de parceiros. O sistema utiliza API da Polícia Civil como fonte de dados.| Usuário comum ou administrador. |
 
 
