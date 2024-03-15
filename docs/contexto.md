@@ -224,9 +224,16 @@ Definição de como o software é estruturado em termos dos componentes que faze
 - **Bootstrap**:  Framework front-end que será empregado para facilitar o desenvolvimento responsivo, garantindo uma experiência do usuário consistente em diferentes dispositivos.
 - **JavaScript**: Linguagem de programação para implementar funcionalidades dinâmicas e interativas na página web.
 
-## Hospedagem
+### Back-end:
+- **NODE,JS**: Framework de execução JavaScript assíncrono orientado a eventos, o Node.js foi projetado para construir aplicativos de rede escalonáveis, onde, muitas conexões podem ser tratadas simultaneamente.
+- **EXPRESS**: Framework WEB utilizado para criar aplicações NEDE.JS onde utiliza seu módulo HTTP para criar as comunicações.
+- **POSTMAN**: Software utilizado para testar APIs.
 
-Explique como a hospedagem e o lançamento da plataforma foi feita.
+### Back-end:
+- **SQLITE**:  biblioteca em linguagem C que implementa uma base de dados SQL embutida. Programas que usem a biblioteca SQLite podem ter acesso a banco de dados SQL sem executar um processo SGBD separado.
+
+## Hospedagem
+- **SQLITE** Será realizar em um servidor em núvem AWS.
 
 > **Links Úteis**:
 >
