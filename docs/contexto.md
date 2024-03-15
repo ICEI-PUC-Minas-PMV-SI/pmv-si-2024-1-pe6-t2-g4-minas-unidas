@@ -101,15 +101,29 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| Realizar denúncia | ALTA | 
+|RF-002| Consultar locais de denúncia   | MÉDIA |
+|RF-003| Gerenciar locais de denúncia   | MÉDIA |
+|RF-004| Consultar redes de apoio   |ALTA |
+|RF-005| Gerenciar redes de apoio   | MÉDIA |
+|RF-006| Gerenciar depoimentos    | ALTA |
+|RF-007| Gerenciar usuários   | ALTA |
+|RF-008| Fazer login | ALTA |
+|RF-009| Fazer logout   | ALTA |
+|RF-010| Cadastrar usuário  | ALTA |
+|RF-011| API Localização  | ALTA |
+|RF-012| API Antecedentes   | MÉDIA |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| O sistema deverá ser compatível com os principais navegadores | ALTA | 
+|RNF-002| O sistema deverá ter um uma interface gráfica responsiva |  ALTA  | 
+|RNF-003| O sistema deverá ter disponibilidade em 90% do tempo |  ALTA | 
+|RNF-004| O sistema deverá ter tempo de resposta inferior a 3 segundos para a solicitação do usuário |  MÉDIA | 
+|RNF-005| O sistema deverá atender às normas e padrões legais exigidos por lei |  ALTA | 
+|RNF-006| O sistema deverá adotar processos para garantir a segurança da informação  |  ALTA | 
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
@@ -133,7 +147,8 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|02| A abrangência do projeto limita-se a Minas Gerais      |
+|03| Apenas os integrantes do grupo terão acesso ao projeto     |
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
