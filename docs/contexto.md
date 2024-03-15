@@ -169,8 +169,7 @@ Descreva aqui todos os serviços que serão disponibilizados pelo seu projeto, d
 |Cadastrar Usuário | Realiza o cadastro de usuários no sistema. São informados os dados de identificação do usuário e gera-se uma senha de acesso dentro dos padrões de segurança estabelecidos. | Usuário administrador. |
 |Gerenciar Usuário | Realiza o gerenciamento de usuários previamente cadastrados. O sistema apresenta as operações de Alteração, Exclusão e Consulta de usuários. | Usuário administrador. |
 |Realizar Depoimento |O usuário cadastra depoimentos contando sua experiência relacionada à violência contra a mulher. | Usuário comum ou administrador. |
-|Gerenciar Depoimento | O usuário pode gerenciar depoimentos que já foram cadastrados.O sistema apresenta as operações de Alteração, Exclusão e Consulta de depoimentos.
- | Usuário comum ou administrador. |
+|Gerenciar Depoimento | O usuário pode gerenciar depoimentos que já foram cadastrados.O sistema apresenta as operações de Alteração, Exclusão e Consulta de depoimentos.| Usuário comum ou administrador. |
 |Consultar Locais de Denúncia |O usuário pesquisa um local de denúncia. Após selecionar a cidade onde se encontra, o sistema lista locais de denúncia próximos a localidade informada.| Usuário comum ou administrador. |
 |Realizar Denúncia |Usuários realizam as denúncias, com informações de localidade e sobre à violência sofrida para que as autoridades consigam realizar as ações necessárias.| Usuário comum ou administrador. |
 |Gerenciar Denúncia |O usuário pode gerenciar as denúncias publicadas no sistema. O sistema apresenta as operações de Alteração, Exclusão e Consulta de denúncia.
