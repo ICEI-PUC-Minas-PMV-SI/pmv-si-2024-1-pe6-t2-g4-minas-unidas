@@ -56,8 +56,10 @@ Desenvolver uma plataforma integrada composta por uma aplicação web e uma vers
 A solução proposta neste projeto para disseminar informações sobre a violência contra mulher, redes de apoio e canais de denúncia por meio de um site mostra-se eficaz, uma vez que o uso da internet tem aumentado no país. De acordo com a pesquisa realizada pelo Centro Regional de Estudos para o Desenvolvimento da Sociedade da Informação (CETIC) em 2020, 83% dos domicílios brasileiros possuem acesso à internet, com menores diferenças regionais em relação a 2019, com maior acesso das classes C, D e E, e 85% das mulheres utilizam a internet.
 
 Espera-se que a página web proposta neste projeto promova o encorajamento a fazer denúncias, por esclarecer as vítimas sobre o tema da violência contra a mulher, sobre as redes de apoio, o acesso aos canais de denúncia e a publicação de depoimentos.
+Em adição queremos colocar a serviço também no celular que por ser de uso corriqueiro em nossas vidas pode facilitar e muito as denúncias. A ideia é criar vários meios para que essa prática criminosa não fique impune.
 
-Portanto, o site proposto será uma fonte de informações e de redes de apoio para as vítimas, além de fomentar o registro de denúncias. O site possibilitará que as vítimas consultem esses dados de maneira discreta, pois poderão acessar dos próprios dispositivos móveis ou computadores sem que os agressores percebam.
+Portanto, a dualidade web e app proposta será uma fonte de informações e de redes de apoio para as vítimas, além de fomentar o registro de denúncias. Isso possibilitará que as vítimas consultem esses dados de maneira discreta, pois poderão acessar dos próprios dispositivos móveis ou computadores sem que os agressores percebam.
+
 
 ## Público-Alvo
 
