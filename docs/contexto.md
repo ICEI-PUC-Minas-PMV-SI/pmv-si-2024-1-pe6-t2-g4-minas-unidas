@@ -160,8 +160,6 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
 
 # Catálogo de Serviços
 
-Descreva aqui todos os serviços que serão disponibilizados pelo seu projeto, detalhando suas características e funcionalidades.
-
 |      `SERVIÇO`     |             `EXECUÇÃO`                                          |             `QUEM EXECUTA`             |
 |--------------------|-----------------------------------------------------------------|----------------------------------------|
 |Fazer Login | O Usuário realiza o acesso ao sistema utilizando credenciais de acesso. O usuário deve estar previamente cadastrado no sistema. | Usuário comum ou administrador. |
