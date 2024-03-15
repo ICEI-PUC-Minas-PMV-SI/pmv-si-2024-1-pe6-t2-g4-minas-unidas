@@ -164,9 +164,7 @@ Descreva aqui todos os serviços que serão disponibilizados pelo seu projeto, d
 
 |      `SERVIÇO`     |             `EXECUÇÃO`                                          |             `QUEM EXECUTA`             |
 |--------------------|-----------------------------------------------------------------|----------------------------------------|
-|Fazer Login | O Usuário realiza o acesso ao sistema utilizando credenciais de acesso.
-
-O usuário deve estar previamente cadastrado no sistema. | Usuário comum ou administrador. |
+|Fazer Login | O Usuário realiza o acesso ao sistema utilizando credenciais de acesso. O usuário deve estar previamente cadastrado no sistema. | Usuário comum ou administrador. |
 
 
 # Gerenciamento de Projeto
