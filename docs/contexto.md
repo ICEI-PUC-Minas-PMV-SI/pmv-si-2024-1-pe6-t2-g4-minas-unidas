@@ -229,7 +229,7 @@ Definição de como o software é estruturado em termos dos componentes que faze
 - **EXPRESS**: Framework WEB utilizado para criar aplicações NEDE.JS onde utiliza seu módulo HTTP para criar as comunicações.
 - **POSTMAN**: Software utilizado para testar APIs.
 
-### Back-end:
+### Banco de dados:
 - **SQLITE**:  biblioteca em linguagem C que implementa uma base de dados SQL embutida. Programas que usem a biblioteca SQLite podem ter acesso a banco de dados SQL sem executar um processo SGBD separado.
 
 ## Hospedagem
