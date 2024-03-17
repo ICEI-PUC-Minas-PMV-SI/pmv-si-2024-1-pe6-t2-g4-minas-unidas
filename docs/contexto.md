@@ -44,12 +44,9 @@ Desenvolver uma plataforma integrada composta por uma aplicação web e uma vers
 
 
 
-A solução proposta neste projeto para disseminar informações sobre a violência contra mulher, redes de apoio e canais de denúncia por meio de um site mostra-se eficaz, uma vez que o uso da internet tem aumentado no país. De acordo com a pesquisa realizada pelo Centro Regional de Estudos para o Desenvolvimento da Sociedade da Informação (CETIC) em 2020, 83% dos domicílios brasileiros possuem acesso à internet, com menores diferenças regionais em relação a 2019, com maior acesso das classes C, D e E, e 85% das mulheres utilizam a internet.
+A solução proposta neste projeto para disseminar informações sobre a violência contra mulher, redes de apoio e canais de denúncia por meio de plataforma mostra-se eficaz, uma vez que o uso da internet tem aumentado no país. De acordo com a pesquisa realizada pelo Centro Regional de Estudos para o Desenvolvimento da Sociedade da Informação (CETIC) em 2020, 83% dos domicílios brasileiros possuem acesso à internet, com menores diferenças regionais em relação a 2019, com maior acesso das classes C, D e E, e 85% das mulheres utilizam a internet.
 
-Espera-se que a página web proposta neste projeto promova o encorajamento a fazer denúncias, por esclarecer as vítimas sobre o tema da violência contra a mulher, sobre as redes de apoio, o acesso aos canais de denúncia e a publicação de depoimentos.
-Em adição queremos colocar a serviço também no celular que por ser de uso corriqueiro em nossas vidas pode facilitar e muito as denúncias. A ideia é criar vários meios para que essa prática criminosa não fique impune.
-
-Portanto, a dualidade web e app proposta será uma fonte de informações e de redes de apoio para as vítimas, além de fomentar o registro de denúncias. Isso possibilitará que as vítimas consultem esses dados de maneira discreta, pois poderão acessar dos próprios dispositivos móveis ou computadores sem que os agressores percebam.
+Espera-se que a plataforma proposta promova o encorajamento necessário á vítimas a fazer suas denúncias, por esclarecer sobre o tema da violência contra a mulher, sobre as redes de apoio, o acesso aos canais de denúncia e a publicação de depoimentos. A dualidade versão web e o aplicativo uma vez integrados possibilitará uma fonte essencial de recursos imediatos, além de fomentar a conscientização da população. 
 
 
 ## Público-Alvo
@@ -125,21 +122,6 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-005| O sistema deverá atender às normas e padrões legais exigidos por lei |  ALTA | 
 |RNF-006| O sistema deverá adotar processos para garantir a segurança da informação  |  ALTA | 
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
-
 ## Restrições
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
@@ -149,12 +131,6 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |01| O projeto deverá ser entregue até o final do semestre |
 |02| A abrangência do projeto limita-se a Minas Gerais      |
 |03| Apenas os integrantes do grupo terão acesso ao projeto     |
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 # Catálogo de Serviços
 
@@ -228,13 +204,6 @@ Nossa solução será composta de uma aplicação web com diferentes funcionalid
 
 ## Hospedagem
 - **AWS** Será realizar em um servidor em núvem AWS.
-
-> **Links Úteis**:
->
-> - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
-> - [Getting Started with Heroku](https://devcenter.heroku.com/start)
-> - [Publicando Seu Site No Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
 
 # Referências
 
