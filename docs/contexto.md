@@ -20,7 +20,7 @@ O desconhecimento da sociedade também contribui para fortalecer esta desorienta
 
 A recorrência das agressões também é uma característica comum nos casos onde a mulher não denuncia seu agressor. Entre as mulheres entrevistadas na PNAD de 2009 que procuraram a polícia quando foram agredidas, uma parcela importante não registrou queixa (12,2%), ou seja, não houve registro formal da agressão. Este número sobe (14,6%), quando se trata de um homem conhecido/próximo. A falta de confiança na polícia ou medo de represálias ao se buscar o auxílio do Estado configuram a principal causa.
 
-A vulnerabilidade das mulheres as torna também mais inseguras, levando ao centro de nosso questionamento - a falta de conhecimento e o medo em fazer a denúncia. Apesar do debate público, ainda configura um caminho difícil para a vítima se desprender de todos os fatores que compõem o ciclo de violência e alcançar a segurança necessária para realizar a denúncia. É necessário fornecer um caminho mais curto e acessível, uma plataforma com conteúdo informativo que forneça acolhimento e estímulo para que vítimas realizem suas denúncias de modo seguro e integrado.
+A vulnerabilidade das mulheres as torna também mais inseguras, levando ao centro de nosso questionamento - a falta de conhecimento e o medo em fazer a denúncia. Apesar do debate público, ainda configura-se um caminho difícil para a vítima, se desprender de todos os fatores que compõem o ciclo de violência e alcançar a segurança necessária para efetivar a denúncia. É necessário fornecer um caminho mais seguro e acessível, um aplicativo que será a extensão de uma plataforma, com conteúdo informativo que forneça acolhimento e estímulo para que vítimas realizem suas denúncias de modo rápido e integrado.
 
 ## Objetivos
 
