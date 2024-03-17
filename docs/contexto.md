@@ -1,6 +1,6 @@
 # Introdução
 
-
+<div align="justify">
 
 Uma em cada três mulheres brasileiras já foi vítima de algum tipo de violência, aponta pesquisa realizada pelo Senado Federal em 2017. Somente no ano de 2020, mais de 105 mil denúncias de violência contra a mulher foram registradas nas plataformas do Ligue 180 e do Disque 100, de acordo com o Ministério da Mulher, da Família e dos Direitos Humanos.
 
