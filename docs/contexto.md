@@ -66,7 +66,7 @@ A seguir, estão descritas três personas que representam diferentes perfis de u
 Mulher de 41 anos, é casada e mãe de dois filhos, residindo em Belo Horizonte, Minas Gerais. Por vinte anos, ela enfrentou violência física por parte do marido, mas ainda não encontrou coragem para denunciar devido às ameaças de perda da guarda dos filhos. Atualmente, ela vive uma vida reclusa, limitada aos afazeres domésticos e às atividades de cuidar dos filhos. Joana anseia por se informar sobre o tema da violência doméstica e, eventualmente, encontrar coragem para realizar uma denúncia, porém, não sabe como ou onde denunciar.
 
 ![Persona 1: Joana](img/persona_joana.png)
-![Mapa de Empatia 1: Joana](img/mapa_joana.png)
+![Mapa de Empatia 1: Joana](img/mapa_joana.png) 
 
 ### Persona 2: Fernanda
 Mulher de 53 anos, aposentada e dona de casa. Não concluiu o ensino fundamental e deseja retomar os estudos para realizar o sonho de se formar. No entanto, seu marido Walter não permite que ela administre o dinheiro que recebe da aposentadoria e, por vontade própria, decidiu que não a permitiria realizar seu sonho acadêmico. Durante anos, Fernanda acreditou que esse comportamento fosse normal, mas ouviu de suas irmãs que isso era um tipo de repressão e que seu marido poderia estar violando a Lei Maria da Penha. Fernanda não entende como o confisco do seu dinheiro por seu marido pode ser considerado um crime.
@@ -158,23 +158,60 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 # Gerenciamento de Projeto
 
-De acordo com o PMBoK v6 as dez áreas que constituem os pilares para gerenciar projetos, e que caracterizam a multidisciplinaridade envolvida, são: Integração, Escopo, Cronograma (Tempo), Custos, Qualidade, Recursos, Comunicações, Riscos, Aquisições, Partes Interessadas. Para desenvolver projetos um profissional deve se preocupar em gerenciar todas essas dez áreas. Elas se complementam e se relacionam, de tal forma que não se deve apenas examinar uma área de forma estanque. É preciso considerar, por exemplo, que as áreas de Escopo, Cronograma e Custos estão muito relacionadas. Assim, se eu amplio o escopo de um projeto eu posso afetar seu cronograma e seus custos.
+O gerenciamento do projeto será baseado na metodologia PMBOK (Project Management Body of Knowledge), priorizando seus cinco processos principais: Iniciação, Planejamento, Execução, Monitoramento e Encerramento. Durante todo o período do projeto, é esperado manter os membros da equipe, o líder do projeto e as tarefas alinhados em relação à demanda, produtividade, feedback e tempo.
 
-## Gerenciamento de Tempo
+Ao longo das cinco etapas do projeto, planeja-se aplicar as fases da metodologia de forma que, no início de cada entrega, sejam analisados os requisitos e as tarefas a serem desenvolvidas. Em seguida, de acordo com as competências de cada membro da equipe, as funções serão atribuídas de modo a otimizar a entrega. Ao final de cada etapa, será realizada uma análise dos pontos positivos e negativos, visando aprimorar a performance na entrega seguinte.
 
-Com diagramas bem organizados que permitem gerenciar o tempo nos projetos, o gerente de projetos agenda e coordena tarefas dentro de um projeto para estimar o tempo necessário de conclusão.
 
-![Diagrama de rede simplificado notação francesa (método francês)](img/02-diagrama-rede-simplificado.png)
+### ETAPA 1: Conceituação e planejamento do projeto - Sistema Distribuído
 
-O gráfico de Gantt ou diagrama de Gantt também é uma ferramenta visual utilizada para controlar e gerenciar o cronograma de atividades de um projeto. Com ele, é possível listar tudo que precisa ser feito para colocar o projeto em prática, dividir em atividades e estimar o tempo necessário para executá-las.
+- Análise dos requisitos da etapa e definição do escopo;
+- Distribuição de tarefas, definição de funções e tempo disponível;
+- Pesquisa e adequação do tema a uma nova funcionalidade;
+- Definição de requisitos funcionais, não funcionais e restrições;
+- Desenvolver um documento do projeto contendo a contextualização do projeto.
 
-![Gráfico de Gantt](img/02-grafico-gantt.png)
+### ETAPA 2: Planejar, desenvolver e gerenciar - APIs e Web Services
 
-## Gerenciamento de Equipe
+- Análise dos requisitos da etapa e definição do escopo;
+- Distribuição de tarefas, definição de funções e tempo disponível;
+- Identificar as APIs e serviços web que formaram parte do sistema;
+- Desenvolver as APIs de acordo com o projeto;
+- Implementar autenticação e segurança nas APIs, se necessário;
+- Realizar testes de unidade e integração nas APIs e serviços web;
+- Documentar as APIs e serviços Web no documento de projeto.
 
-O gerenciamento adequado de tarefas contribuirá para que o projeto alcance altos níveis de produtividade. Por isso, é fundamental que ocorra a gestão de tarefas e de pessoas, de modo que os times envolvidos no projeto possam ser facilmente gerenciados. 
+### ETAPA 3: Planejar, desenvolver e gerenciar - Aplicação Web
 
-![Simple Project Timeline](img/02-project-timeline.png)
+- Análise dos requisitos da etapa e definição do escopo;
+- Distribuição de tarefas, definição de funções e tempo disponível;
+- Desenvolver as diferentes páginas e componentes da aplicação web;
+- Integrar as APIs e serviços web desenvolvidos anteriormente na aplicação;
+- Testar a aplicação web em diferentes navegadores e dispositivos;
+- Realizar testes de desempenho e otimizar a velocidade da aplicação, se necessário.
+- Documentar a aplicação web no documento de projeto.
+
+### ETAPA 4: Planejar, desenvolver e gerenciar - Aplicação Móvel
+
+- Análise dos requisitos da etapa e definição do escopo;
+- Distribuição de tarefas, definição de funções e tempo disponível;
+- Definir a plataforma-alvo para a aplicação móvel (iOS, Android, etc.);
+- Projetar a interface do usuário da aplicação móvel;
+- Desenvolver as telas e fluxos de navegação da aplicação móvel;
+- Integrar as APIs e serviços web relevantes à aplicação móvel;
+- Implementar recursos nativos, como notificações push e geolocalização, etc;
+- Realizar testes em dispositivos reais e emuladores para garantir desempenho;
+- Documentar a aplicação web no documento de projeto.
+
+### ETAPA 5: Apresentação do Projeto
+
+- Análise dos requisitos da etapa e definição do escopo;
+- Preparar materiais visuais e de apresentação, como slides ou demonstrações;
+- Realizar uma apresentação para as partes interessadas, destacando os principais recursos e benefícios do sistema;
+- Demonstrar a funcionalidade das aplicações web e móveis, incluindo o uso das APIs e serviços web.
+- Receber feedback das partes interessadas e responder a perguntas.
+- Fornecer informações sobre como acessar e usar as aplicações após o lançamento.
+
 
 # Arquitetura da Solução
 
