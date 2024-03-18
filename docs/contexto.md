@@ -163,13 +163,15 @@ O gerenciamento do projeto será baseado na metodologia PMBOK (Project Managemen
 Ao longo das cinco etapas do projeto, planeja-se aplicar as fases da metodologia de forma que, no início de cada entrega, sejam analisados os requisitos e as tarefas a serem desenvolvidas. Em seguida, de acordo com as competências de cada membro da equipe, as funções serão atribuídas de modo a otimizar a entrega. Ao final de cada etapa, será realizada uma análise dos pontos positivos e negativos, visando aprimorar a performance na entrega seguinte.
 
 
-### ETAPA 1: Conceituação e planejamento do projeto - Sistema Distribuído
+#### ETAPA 1: Conceituação e planejamento do projeto - Sistema Distribuído
 
 - Análise dos requisitos da etapa e definição do escopo;
 - Distribuição de tarefas, definição de funções e tempo disponível;
 - Pesquisa e adequação do tema a uma nova funcionalidade;
 - Definição de requisitos funcionais, não funcionais e restrições;
 - Desenvolver um documento do projeto contendo a contextualização do projeto.
+
+![Etapa 01: Conceituação e planejamento do projeto - Sistema Distribuído](img/etapa01-gantt.png)
 
 ### ETAPA 2: Planejar, desenvolver e gerenciar - APIs e Web Services
 
