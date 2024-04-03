@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- Meta tags -->
+    <title>Minas Unidas - Denuncie Online</title>
+    <link rel="shortcut icon" type="imagex/png" href="imgs/icone-projeto.ico">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apoio a vitimas de violencia domestica em MG">
+    <meta name="keywords"
+        content="MG, Minas Gerais, mulher, violencia domestica, violencia contra mulher, denuncia, apoio, depoimentos">
+
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- CSS da página -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- CSS Ícone lupa -->
+    <script src="https://kit.fontawesome.com/16bd7ee685.js" crossorigin="anonymous"></script>
+
+    <!-- Script Denúncia -->
+    <script src="js/denuncie-online.js"></script>
+
+    <!-- Script para formatar textos-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+
+</head>
+
+<!-- Corpo da página -->
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+
+        <!-- Barra de navegação -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img class="image-nav" src="imgs/navbar-brand.png" alt="Logo" width="64" height="64"
+                        class="d-inline-block align-top">
+                    <strong class="titulo-pagina"> Minas Unidas</strong>
+                </a>
+
+                <!-- Menu -->
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="quem-somos.html" class="btn">Quem somos</a></li>
+                    <li class="nav-item"><a href="legislacao.html" class="btn">Legislação</a></li>
+                    <li class="nav-item"><a href="redes-apoio.html" class="btn">Redes de apoio</a></li>
+                    <li class="nav-item denuncie"><a href="denuncie.html" class="btn">Denuncie</a></li>
+                </ul>
+
+                <!-- Login -->
+
+                <ul class="navbar-nav navbar-right">
+                    <!-- Botão de Cadastro -->
+                    <li><a href="login.html" class="nav-item d-flex align-items-center btn-cad"><span
+                                class="fa fa-user"></span> Login</a></li>
+                </ul>
+
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- Conteúdo -->
+    <main>
+
+        <!-- Jumbotron -->
+        <section class="jumbotron-testimonials bg-light text-center">
+            <div class="container">
+                <h1>Faça sua denúncia</h1>
+                <p class="text-muted">Caso o crime esteja acontecendo agora, recomendamos ligar para o telefone 190.
+                    A partir de agora você entrou em um ambiente seguro, com certificação digital,
+                    para que possa fazer suas denúncias com total tranquilidade. Não é necessário identificar-se para
+                    fazer
+                    a denúncia. O sigilo das informações será preservado.</p>
+            </div>
+        </section>
+
+        <!-- Seção Cadastro -->
+        <section class="p-5">
+
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div id="cadastro" class="col-md-8 p-5 border bg-light">
+
+                        <!-- Título do formulário-->
+                        <h4 class="pb-4 text-center">Cadastre sua denúncia</h4>
+                        <form id="form-denuncie">
+
+                            <!-- Linha -->
+                            <div class="form-row">
+
+                                <div class="form-group col-md-4">
+                                    <label for="inputCidade">Cidade</label>
+                                    <input id="inputCidade" type="text" class="form-control">
+                                </div>
+
+                                <div class="form-group col-md-3">
+                                    <label for="inputEstado">Estado</label>
+                                    <input id="inputEstado" type="text" class="form-control">
+                                </div>
+
+                                <div class="form-group col-md-5">
+                                    <label for="inputCep">CEP</label>
+                                    <input id="inputCep" type="text" class="form-control"
+                                        placeholder="Informe somente números" size="10" maxlength="10">
+
+                                    <script type="text/javascript">
+                                        $("#inputCep").mask("00000-000");
+                                    </script>
+
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail">E-mail</label>
+                                    <input id="inputEmail" type="text" class="form-control">
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    <label for="inputTelefone">Telefone</label>
+                                    <input id="inputTelefone" type="text" class="form-control"
+                                        placeholder="Informe somente números" size="11" maxlength="11">
+
+                                    <script type="text/javascript">
+                                        $("#inputTelefone").mask("(00) 00000-0000");
+                                    </script>
+
+                                </div>
+
+                            </div>
+                            <!-- Fim da linha -->
+
+                            <!-- Linha -->
+                            <div class="form-row">
+
+                                <!-- Input Denúncia -->
+                                <div class="form-group col-md-12">
+                                    <label for="inputDenuncia">Denúncia</label>
+                                    <textarea id="inputDenuncia" cols="40" rows="5" class="form-control required"
+                                        placeholder="Insira sua denúncia"></textarea>
+                                </div>
+
+                            </div>
+                            <!-- Fim da linha -->
+
+                            <!-- Linha -->
+                            <div class="form row">
+
+                                <!-- Botões -->
+                                <div class="col-lg-10">
+
+                                    <button id="btnClear" type="button" class="btn btn-outline-gray mr-2"
+                                        role="button">Cancelar</button>
+
+                                    <button id="btnInsert" type="button" class="btn btn-purple mr-2"
+                                        data-target="#modal">Publicar</button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modal"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+
+                                            <!-- Conteúdo do modal-->
+                                            <div class="modal-content">
+
+                                                <!-- Header do modal -->
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="modal">Obrigado!</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+
+                                                <!-- Corpo do modal -->
+                                                <div class="modal-body">
+                                                    Denúncia publicada com sucesso.
+                                                </div>
+
+                                                <!-- Rodapé do modal-->
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-purple"
+                                                        data-dismiss="modal">OK</button>
+                                                </div>
+
+                                            </div>
+                                            <!-- Fim do conteúdo do modal -->
+                                        </div>
+                                    </div>
+                                    <!-- Fim do modal -->
+
+                                </div>
+                                <!-- Fim dos botões -->
+
+                            </div>
+                            <!-- Fim da linha -->
+
+                        </form>
+                        <!-- Fim dos formulários -->
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fim da seção -->
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-4 row-cols-sm-1">
+                <div class="col-right"></br>
+                    <img src="imgs/navbar-brand.png" alt="logo" width="64" height="64" class="d-block mx-auto">
+                </div>
+
+                <div class="col"></br>
+                    Minas Unidas &copy 2022 Copyright</br>
+                    Todos os direitos reservados
+                </div>
+
+                <div class="col"></br>
+                    <b>Contato</b></br>
+                    minasunidaspucminas@gmail.com
+                </div>
+
+                <div class="col-left"></br>
+                    <b>Apoio</b></br>
+                    <a
+                        href="https://www.pucminas.br/vestibular/Paginas/default.aspx?utm_source=google&utm_medium=search&utm_campaign=vestibular-22&gclid=EAIaIQobChMI6LjkzqbZ8wIVhg-RCh2F8gu1EAAYASAAEgL5avD_BwE">
+                        <img src="imgs/logo-puc.jpeg" width="64" height="64" alt="Logo PUC Minas">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Script JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+    <!-- Script Denúncia -->
+    <script>
+
+        // obtém os valores dos campos de formulário
+        let campoCidade = document.getElementById("inputCidade");
+        let campoEstado = document.getElementById("inputEstado");
+        let campoCEP = document.getElementById("inputCep");
+        let campoEmail = document.getElementById("inputEmail");
+        let campoTelefone = document.getElementById("inputTelefone");
+        let campoDenuncia = document.getElementById("inputDenuncia");
+
+        btnClear.onclick = function () {
+            $("#form-denuncie")[0].reset();
+        }
+
+        btnInsert.onclick = function () {
+
+            var item = {
+                cidade: campoCidade.value,
+                estado: campoEstado.value,
+                cep: campoCEP.value,
+                email: campoEmail.value,
+                telefone: campoTelefone.value,
+                denuncia: campoDenuncia.value
+            }
+
+            db_denuncieOnline.data[db_denuncieOnline.data.length] = item;
+
+            // console.log(db.data);
+
+            if (campoDenuncia.value) {
+                $('#modal').modal('toggle');
+                localStorage.setItem('db_denuncieOnline', JSON.stringify(db_denuncieOnline));
+                location.reload;
+                $("#form-denuncie")[0].reset();
+            }
+
+        };
+
+    </script>
+
+</body>
+
+</html>
