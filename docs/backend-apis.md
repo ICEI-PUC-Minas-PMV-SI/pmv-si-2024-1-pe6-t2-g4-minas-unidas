@@ -6,6 +6,9 @@ Aqui estão algumas etapas importantes que devem ser consideradas no planejament
 
 [Inclua uma breve descrição do projeto.]
 
+
+Minas unidas é um projeto  que visa ajudar mulheres a se defender ou denunciar atos que atentam contra sua dignidade/vida. Através de um website/ app, as reclamantes podem registrar os maus tratos sofridos. A serviço  também permite uma lista de denuncias ja realizadas pelo usuário , funcionalidade que poderá ser utilizada no futuro a critério da necessidade dos usuários.
+
 ## Objetivos da API
 
 O primeiro passo é definir os objetivos da sua API. O que você espera alcançar com ela? Você quer que ela seja usada por clientes externos ou apenas por aplicações internas? Quais são os recursos que a API deve fornecer?
@@ -13,31 +16,70 @@ O primeiro passo é definir os objetivos da sua API. O que você espera alcança
 [Inclua os objetivos da sua api.]
 
 
+Comunicar  com a central das  autoridades competentes de forma segura e eficiente.
+
+Fornecer operações CRUD (Create, Read, Update, Delete) para entidades principais, como usuários.
+Facilitar a integração de novos recursos e funcionalidades caso seja necessário.
+Garantir a segurança dos dados dos usuários por meio de autenticação e autorização adequadas.
+Fornecer uma lista de atividade(denuncia) quando for solicitado.
+
+
 ## Arquitetura
 
 [Descrição da arquitetura das APIs, incluindo os componentes e suas interações.]
 
+A arquitetura do nossa solução seque o modelo MPAs (Multi-Page Application) que contará com Controladores: Responsáveis por receber as requisições HTTP, Serviço que manipula as operações CRUD ,E sistema de Segurança: Responsável por autenticar e autorizar os usuários antes de permitir o acesso aos endpoints da API.A API da Web tem muitas ações, estas ações na arquitetura REST representam o uso dos verbos HTTP para manipulação dos recursos.
+
+
 ## Modelagem da Aplicação
 [Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
+A aplicação contará com as seguites entidades realizando as seguites ações:
+  Usuario acessa o site/app ->se cadastra  -> realiza a denuncia e envia para nosso banco de dados.
+
+  ![Captura de tela 2024-04-07 124838](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t2-g4-minas-unidas/assets/89945405/f6dcd96b-24fc-46eb-a12e-00a70a0aecbe)
+
 
 
 ## Fluxo de Dados
 
 [Diagrama ou descrição do fluxo de dados na aplicação.]
 
+O cliente após logado solicita a adição de um novo dado o que faz a API invocar a ação  HttpPost  que a depender das acões do cliente pode Salvar(HttpPut) deletar(HttpDelete) ou consultar os dados armazenados .
+
 ## Requisitos Funcionais
 
 [Liste os principais requisitos funcionais da aplicação.]
 
+|ID	   |    Descrição do Requisito                                                                      |   	Prioridade|
+|------|------------------------------------------------------------------------------------------------|--------|
+|RF-001|   Disponibilizar área com informações sobre a violência contra a mulher e os tipos de violência |    Alta|
+|RF-004|    Disponibilizar página em que o usuário poderá inserir depoimentos                             |   Alta|
+|RF-005  |  Disponibilizar página em que o usuário poderá ler os depoimentos                                | Alta|
+
 ## Requisitos Não Funcionais
 
 [Liste os principais requisitos não funcionais da aplicação, como desempenho, segurança, escalabilidade, etc.]
+
+|ID     | Descrição do Requisito  |Prioridade |
+|-------|-------------------------|----|
+|RNF-001| O sistema deverá ser compatível com os principais navegadores | ALTA | 
+|RNF-002| O sistema deverá ter um uma interface gráfica responsiva |  ALTA  | 
+|RNF-003| O sistema deverá ter disponibilidade em 90% do tempo |  ALTA | 
+|RNF-004| O sistema deverá ter tempo de resposta inferior a 3 segundos para a solicitação do usuário |  MÉDIA | 
+|RNF-005| O sistema deverá atender às normas e padrões legais exigidos por lei |  ALTA | 
+|RNF-006| O sistema deverá adotar processos para garantir a segurança da informação  |  ALTA | 
+
 
 ## Tecnologias Utilizadas
 
 Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs Web. A tecnologia certa para o seu projeto dependerá dos seus objetivos, dos seus clientes e dos recursos que a API deve fornecer.
 
 [Lista das tecnologias principais que serão utilizadas no projeto.]
+
+- linguagem de programação C#
+- Framework ASP.NET Core
+- JWT (Json Web Token)
+- OAuth (Open Authorization)
 
 ## API Endpoints
 
@@ -72,7 +114,9 @@ Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs
 ## Considerações de Segurança
 
 [Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
-
+- Todo acesso será concedido atráves de login e senha
+- Cada usuário tera acesso somente ao seu hitorico.
+- A senha do usuário sera armazenada criptografada.
 ## Implantação
 
 [Instruções para implantar a aplicação distribuída em um ambiente de produção.]
@@ -82,6 +126,20 @@ Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs
 3. Configure o ambiente de implantação, incluindo a instalação de dependências e configuração de variáveis de ambiente.
 4. Faça o deploy da aplicação no ambiente escolhido, seguindo as instruções específicas da plataforma de hospedagem.
 5. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.
+ 
+
+   Requisitos de hardware e software necessários:
+Hardware: Um servidor com pelo menos 4 núcleos de CPU e 8 GB de RAM é recomendado para lidar com a carga esperada .
+Software: Sistema operacional linux e windows, com as ferramentas de desenvolvimento necessárias instaladas, como VSCode.
+ Hospedagem:
+- AWS
+3.Configuração do ambiente de implantação:
+
+Dependências necessárias no servidor:
+Variáveis de ambiente necessárias: credenciais do banco de dados, chaves de API.
+4.Deploy da aplicação:
+
+5.Testes no ambiente de produção
 
 ## Testes
 
@@ -93,6 +151,23 @@ Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs
 4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
 5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
 
+
+   Testes a serem realizados:
+
+- Validar o status retornado;
+- Validar o header de retorno;
+- Validar o body do response;
+- Validar como sua API se comporta quando o serviço está fora;
+- Validar o comportamento da API quando enviado um JSON/XML com uma estrutura incorreta;
+
+
+
 # Referências
 
 Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
+
+COULOURIS, George F. et al. Sistemas distribuídos: conceitos e projeto. 5. ed. Porto Alegre: Bookman, 2013.
+
+GOUGH, James; BRYANT, Daniel; AUBURN, Matthew. Mastering API Architecture. O'Reilly Media, Inc.. 2021. 
+
+LAURET, Arnaud. The Design of Web APIs. Manning Publications. 2019.
