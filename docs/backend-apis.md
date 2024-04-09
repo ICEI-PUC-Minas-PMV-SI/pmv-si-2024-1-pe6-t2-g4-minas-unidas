@@ -126,6 +126,9 @@ Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs
 3. Configure o ambiente de implantação, incluindo a instalação de dependências e configuração de variáveis de ambiente.
 4. Faça o deploy da aplicação no ambiente escolhido, seguindo as instruções específicas da plataforma de hospedagem.
 5. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.
+
+
+
  
 
    Requisitos de hardware e software necessários:
