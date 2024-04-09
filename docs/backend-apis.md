@@ -134,8 +134,9 @@ Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs
   Resposta  1 Requisitos de hardware e software necessários:
 Hardware: Um servidor com pelo menos 4 núcleos de CPU e 8 GB de RAM é recomendado para lidar com a carga esperada .
 Software: Sistema operacional linux e windows, com as ferramentas de desenvolvimento necessárias instaladas, como VSCode.
- Hospedagem:
-resposta 2- AWS
+
+Resposta 2 Hospedagem:- AWS
+
 3.Configuração do ambiente de implantação:
 
 Dependências necessárias no servidor:
