@@ -156,18 +156,57 @@ Variáveis de ambiente necessárias: credenciais do banco de dados, chaves de AP
 5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
 
 
-   Testes a serem realizados:
+   Testes a serem realizados:Requisitos Funcionais
 
--ID: 01
--	Caso de teste: Verificar se todos os botões da tela principal respondem ao click.
--	Passo-a-passo (opcional): Acessar a home do website e clicar em todos os botões
--	Resultado esperado: Todos os botoes funcionais;
+- ID: 01
+-	Caso de teste: Verificar se esta disponivel informações sobre a violência contra a mulher e os tipos de violência.
+-	Passo-a-passo : Acessar a home do website e verificar disponibilidade
+-	Resultado esperado:Encontrar pagina com informações;
+-	Resultado obtido: ; 
+-	Estado: Indica se o teste passou, falhou, ficou pendente (bloqueado) ou sem efeito, no caso de se perceber que afinal não era aplicável.
+
+-	ID:04 Verificar disponibilidade da área dedepoimentos.
+-	Passo-a-passo : Acessar a home do website e verificar disponibilidade d área de depoimento
+-	Resultado esperado:Encontrar pagina de depoimentos;
+-	Resultado obtido: ; 
+-	Estado: Indica se o teste passou, falhou, ficou pendente (bloqueado) ou sem efeito, no caso de se perceber que afinal não era aplicável.
+
+-	ID:05 Verificar disponibilidade da área de leitura de depoimentos.
+-	Passo-a-passo : Acessar a home do website e verificar disponibilidade da área de leitura de  depoimentos
+-	Resultado esperado:Encontrar pagina de leitura de  depoimentos;
 -	Resultado obtido: ; 
 -	Estado: Indica se o teste passou, falhou, ficou pendente (bloqueado) ou sem efeito, no caso de se perceber que afinal não era aplicável.
 
 
+   Testes a serem realizados:Requisitos não Funcionais
+
+-	ID:01 Verificar se o sistema é compativel com todos os principais navegadores.
+-	Passo-a-passo : Acessar a home do website através dos principais navegadores
+-	Resultado esperado:Sistema usual e disponivel;
+-	Resultado obtido: ; 
+-	Estado: Indica se o teste passou, falhou, ficou pendente (bloqueado) ou sem efeito, no caso de se perceber que afinal não era aplicável.
 
 
+-	ID:02 Verificar se a interface grafica é responsiva.
+-	Passo-a-passo : Acessar a home do website e realizar testes de responsividade
+-	Resultado esperado:Sistema responsivo;
+-	Resultado obtido: ; 
+-	Estado: Indica se o teste passou, falhou, ficou pendente (bloqueado) ou sem efeito, no caso de se perceber que afinal não era aplicável
+
+-	ID:03 Verificar se o sistema esta disponivel 90% do tempo.
+-	Resultado esperado:Sistema  disponivel;
+-	Resultado obtido: ; 
+-	Estado: Indica se o teste passou, falhou, ficou pendente (bloqueado) ou sem efeito, no caso de se perceber que afinal não era aplicável.
+
+-  ID:04 Verificar se o sistema  esta tem o tempo de resposta inferior a 3 segundos para a solicitação do usuário
+-	Resultado esperado:Resposta inferior a 3 segundos;
+-	Resultado obtido: ; 
+-	Estado: Indica se o teste passou, falhou, ficou pendente (bloqueado) ou sem efeito, no caso de se perceber que afinal não era aplicável.
+
+-  ID:05 Verificar se o sistema  atende as normas e padrões exigidos por lei
+-	Resultado esperado:Atende;
+-	Resultado obtido: ; 
+-	Estado: Indica se o teste passou, falhou, ficou pendente (bloqueado) ou sem efeito, no caso de se perceber que afinal não era aplicável.
 
 # Referências
 
