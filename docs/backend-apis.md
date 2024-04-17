@@ -156,9 +156,10 @@ Variáveis de ambiente necessárias: credenciais do banco de dados, chaves de AP
 5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
 
 
-   Testes a serem realizados:Requisitos Funcionais
+ ##  Testes a serem realizados:Requisitos Funcionais
 
 - ID: 01
+  
 1.	Caso de teste: Verificar se esta disponivel informações sobre a violência contra a mulher e os tipos de violência.
 2.	Passo-a-passo : Acessar a home do website e verificar disponibilidade
 3.Resultado esperado:Encontrar pagina com informações;
@@ -166,19 +167,22 @@ Variáveis de ambiente necessárias: credenciais do banco de dados, chaves de AP
 5.Estado: Indica se o teste passou, falhou, ficou pendente (bloqueado) ou sem efeito, no caso de se perceber que afinal não era aplicável.
 
 -	ID:04 Verificar disponibilidade da área dedepoimentos.
+  
 1.	Passo-a-passo : Acessar a home do website e verificar disponibilidade d área de depoimento
 2.	Resultado esperado:Encontrar pagina de depoimentos;
 3.Resultado obtido: ; 
 4.Estado: Indica se o teste passou, falhou, ficou pendente (bloqueado) ou sem efeito, no caso de se perceber que afinal não era aplicável.
 
 -	ID:05 Verificar disponibilidade da área de leitura de depoimentos.
+  
 1.Passo-a-passo : Acessar a home do website e verificar disponibilidade da área de leitura de  depoimentos
 2.	Resultado esperado:Encontrar pagina de leitura de  depoimentos;
 3.	Resultado obtido: ; 
 4.	Estado: Indica se o teste passou, falhou, ficou pendente (bloqueado) ou sem efeito, no caso de se perceber que afinal não era aplicável.
 
 
-   Testes a serem realizados:Requisitos não Funcionais
+  
+  ## Testes a serem realizados:Requisitos não Funcionais
 
 1.	ID:01 Verificar se o sistema é compativel com todos os principais navegadores.
 2.	Passo-a-passo : Acessar a home do website através dos principais navegadores
