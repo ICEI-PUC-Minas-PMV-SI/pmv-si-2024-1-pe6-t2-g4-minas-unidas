@@ -184,11 +184,11 @@ Variáveis de ambiente necessárias: credenciais do banco de dados, chaves de AP
   
   ## Testes a serem realizados:Requisitos não Funcionais
 
-1.	ID:01 Verificar se o sistema é compativel com todos os principais navegadores.
-2.	Passo-a-passo : Acessar a home do website através dos principais navegadores
-3.	Resultado esperado:Sistema usual e disponivel;
-4.	Resultado obtido: ; 
-5.	Estado: Indica se o teste passou, falhou, ficou pendente (bloqueado) ou sem efeito, no caso de se perceber que afinal não era aplicável.
+-	ID:01 Verificar se o sistema é compativel com todos os principais navegadores.
+1.	Passo-a-passo : Acessar a home do website através dos principais navegadores
+2.	Resultado esperado:Sistema usual e disponivel;
+3.	Resultado obtido: ; 
+4.	Estado: Indica se o teste passou, falhou, ficou pendente (bloqueado) ou sem efeito, no caso de se perceber que afinal não era aplicável.
 
 
 -	ID:02 Verificar se a interface grafica é responsiva.
