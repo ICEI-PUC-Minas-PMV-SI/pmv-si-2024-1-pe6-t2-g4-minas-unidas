@@ -175,7 +175,7 @@ Variáveis de ambiente necessárias: credenciais do banco de dados, chaves de AP
 
 -	ID:05 Verificar disponibilidade da área de leitura de depoimentos.
   
-1.Passo-a-passo : Acessar a home do website e verificar disponibilidade da área de leitura de  depoimentos
+1. Passo-a-passo : Acessar a home do website e verificar disponibilidade da área de leitura de  depoimentos
 2.	Resultado esperado:Encontrar pagina de leitura de  depoimentos;
 3.	Resultado obtido: ; 
 4.	Estado: Indica se o teste passou, falhou, ficou pendente (bloqueado) ou sem efeito, no caso de se perceber que afinal não era aplicável.
