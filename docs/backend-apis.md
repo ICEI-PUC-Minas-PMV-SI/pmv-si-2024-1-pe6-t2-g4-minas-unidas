@@ -158,11 +158,14 @@ Variáveis de ambiente necessárias: credenciais do banco de dados, chaves de AP
 
    Testes a serem realizados:
 
-- Validar o status retornado;
-- Validar o header de retorno;
-- Validar o body do response;
-- Validar como sua API se comporta quando o serviço está fora;
-- Validar o comportamento da API quando enviado um JSON/XML com uma estrutura incorreta;
+•	ID: 01
+•	Caso de teste: Verificar se todos os botões da tela principal respondem ao click.
+•	Passo-a-passo (opcional): Acessar a home do website e clicar em todos os botões
+•	Resultado esperado: Todos os botoes funcionais;
+•	Resultado obtido: ; 
+•	Estado: Indica se o teste passou, falhou, ficou pendente (bloqueado) ou sem efeito, no caso de se perceber que afinal não era aplicável.
+
+
 
 
 
