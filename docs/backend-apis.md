@@ -52,22 +52,11 @@ O cliente após logado solicita a adição de um novo dado o que faz a API invoc
 
 |ID	   |    Descrição do Requisito                                                                      |   	Prioridade|
 |------|------------------------------------------------------------------------------------------------|--------|
-|RF-001|   Disponibilizar área com informações sobre a violência contra a mulher e os tipos de violência |    Alta|
-|RF-004|    Disponibilizar página em que o usuário poderá inserir depoimentos                             |   Alta|
-|RF-005  |  Disponibilizar página em que o usuário poderá ler os depoimentos                                | Alta|
+|RF-001|   O sistema deve permitir que os usuários realizem denúncia através da página |    Alta|
+|RF-002|   O sistema deve permitir gerenciar os depoimentos cadastrados (incluir, alterar, excluir e consultar).                           |   Alta|
+|RF-003| O sistema deve permitir o registro de novos usuários no sistema                              | Alta|
 
-## Requisitos Não Funcionais
 
-[Liste os principais requisitos não funcionais da aplicação, como desempenho, segurança, escalabilidade, etc.]
-
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| O sistema deverá ser compatível com os principais navegadores | ALTA | 
-|RNF-002| O sistema deverá ter um uma interface gráfica responsiva |  ALTA  | 
-|RNF-003| O sistema deverá ter disponibilidade em 90% do tempo |  ALTA | 
-|RNF-004| O sistema deverá ter tempo de resposta inferior a 3 segundos para a solicitação do usuário |  MÉDIA | 
-|RNF-005| O sistema deverá atender às normas e padrões legais exigidos por lei |  ALTA | 
-|RNF-006| O sistema deverá adotar processos para garantir a segurança da informação  |  ALTA | 
 
 
 ## Tecnologias Utilizadas
