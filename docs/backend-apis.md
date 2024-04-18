@@ -52,9 +52,9 @@ O cliente após logado solicita a adição de um novo dado o que faz a API invoc
 
 |ID	   |    Descrição do Requisito                                                                      |   	Prioridade|
 |------|------------------------------------------------------------------------------------------------|--------|
-|RF-001|   O sistema deve permitir que os usuários realizem denúncia através da página |    Alta|
-|RF-002|   O sistema deve permitir gerenciar os depoimentos cadastrados (incluir, alterar, excluir e consultar).                           |   Alta|
-|RF-003| O sistema deve permitir o registro de novos usuários no sistema                              | Alta|
+|RF-001|   A API deve permitir que os usuários realizem denúncia através da página |    Alta|
+|RF-002|   A API deve permitir gerenciar os depoimentos cadastrados (incluir, alterar, excluir e consultar).                           |   Alta|
+|RF-003| AAPI deve permitir o registro de novos usuários no sistema                              | Alta|
 
 
 
