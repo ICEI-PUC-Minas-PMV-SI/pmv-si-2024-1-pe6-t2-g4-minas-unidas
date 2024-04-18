@@ -70,8 +70,8 @@ Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs
 - JWT (Json Web Token)
 - OAuth (Open Authorization)
 - Microsoft entity framework core
--Microsoft entity framework core tools
--Microsoft entity framework core sqlserver
+- Microsoft entity framework core tools
+- Microsoft entity framework core sqlserver
 
 ## API Endpoints
 
