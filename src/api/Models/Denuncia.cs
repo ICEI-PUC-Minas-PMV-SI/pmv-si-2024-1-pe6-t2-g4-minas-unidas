@@ -11,8 +11,6 @@ namespace api.Models
         public TipoViolencia TipoViolencia { get; set; }
         [Required(ErrorMessage = "O campo 'Descrição' é obrigatório.")]
         public string Descricao { get; set; }
-
-        public ICollection<DenunciaUsuarios> Usuarios { get; set; }
     }
 
     public enum TipoViolencia

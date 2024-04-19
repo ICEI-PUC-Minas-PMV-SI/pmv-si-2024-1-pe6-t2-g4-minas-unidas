@@ -9,7 +9,5 @@ namespace api.Models
         [Key]
         public int Id { get; set; }
         public string Descricao { get; set; }
-
-        public ICollection<DepoimentoUsuarios> Usuarios { get; set; }
     }
 }

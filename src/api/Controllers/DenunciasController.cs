@@ -1,11 +1,12 @@
 ﻿using api.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System.Threading.Tasks;
 
 namespace api.Controllers
 {
+    // [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class DenunciasController : ControllerBase
@@ -17,31 +18,32 @@ namespace api.Controllers
             _context = context;
         }
 
+        // [Authorize(Roles = "Usuario")]
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Denuncia>>> GetAll()
+        public async Task<ActionResult> GetAll()
         {
-            var denuncias = await _context.Denuncias.ToListAsync();
-            foreach (var denuncia in denuncias)
-            {
-                GerarLinks(denuncia);
-            }
-            return Ok(denuncias);
+            var model = await _context.Denuncias.ToListAsync();
+            return Ok(model);
         }
 
+        // [Authorize(Roles = "Administrador,Usuário")]
         [HttpPost]
         public async Task<ActionResult<Denuncia>> Create(Denuncia model)
         {
             _context.Denuncias.Add(model);
             await _context.SaveChangesAsync();
-            GerarLinks(model);
+
             return CreatedAtAction(nameof(GetById), new { id = model.Id }, model);
         }
 
+        // [Authorize(Roles = "Administrador")]
         [HttpGet("{id}")]
         public async Task<ActionResult<Denuncia>> GetById(int id)
         {
             var model = await _context.Denuncias.FindAsync(id);
+
             if (model == null) return NotFound();
+
             GerarLinks(model);
             return Ok(model);
         }
@@ -50,11 +52,15 @@ namespace api.Controllers
         public async Task<IActionResult> Update(int id, Denuncia model)
         {
             if (id != model.Id) return BadRequest();
-            var existingDenuncia = await _context.Denuncias.FindAsync(id);
-            if (existingDenuncia == null) return NotFound();
-            _context.Entry(existingDenuncia).CurrentValues.SetValues(model);
+
+            var modeloDb = await _context.Denuncias.AsNoTracking()
+                .FirstOrDefaultAsync(c => c.Id == id);
+
+            if (modeloDb == null) return NotFound();
+
+            _context.Denuncias.Update(model);
             await _context.SaveChangesAsync();
-            GerarLinks(model);
+
             return NoContent();
         }
 
@@ -62,21 +68,45 @@ namespace api.Controllers
         public async Task<IActionResult> Delete(int id)
         {
             var denuncia = await _context.Denuncias.FindAsync(id);
+
             if (denuncia == null) return NotFound();
+            
             _context.Denuncias.Remove(denuncia);
             await _context.SaveChangesAsync();
+            
             return NoContent();
         }
 
-        private void GerarLinks(Denuncia denuncia)
+        private void GerarLinks(Denuncia model)
         {
-            var url = $"{HttpContext.Request.Scheme}://{HttpContext.Request.Host.ToUriComponent()}";
-            denuncia.Links = new List<LinkDto>
-            {
-                new LinkDto(denuncia.Id, $"{url}/api/Denuncias/{denuncia.Id}", rel: "self", metodo: "GET"),
-                new LinkDto(denuncia.Id, $"{url}/api/Denuncias/{denuncia.Id}", rel: "update", metodo: "PUT"),
-                new LinkDto(denuncia.Id, $"{url}/api/Denuncias/{denuncia.Id}", rel: "delete", metodo: "DELETE")
-            };
+            model.Links.Add(new LinkDto(model.Id, Url.ActionLink(), rel: "self", metodo: "GET"));
+            model.Links.Add(new LinkDto(model.Id, Url.ActionLink(), rel: "update", metodo: "PUT"));
+            model.Links.Add(new LinkDto(model.Id, Url.ActionLink(), rel: "delete", metodo: "DELETE"));
+        }
+
+        [HttpPost("{id}/usuarios")]
+        public async Task<ActionResult> AddUsuario(int id, DenunciaUsuarios model)
+        {
+            if (id != model.DenunciaId) return BadRequest();
+            _context.DenunciaUsuarios.Add(model);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction("GetById", new { id = model.DenunciaId }, model);
+        }
+
+        [HttpDelete("{id}/usuarios/{usuarioId}")]
+        public async Task<ActionResult> DeleteUsuario(int id, int usuarioId)
+        {
+            var model = await _context.DenunciaUsuarios
+                .Where(c => c.DenunciaId == id && c.UsuarioId == usuarioId)
+                .FirstOrDefaultAsync();
+
+            if (model == null) return NotFound();
+
+            _context.DenunciaUsuarios.Remove(model);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
         }
     }
 }
