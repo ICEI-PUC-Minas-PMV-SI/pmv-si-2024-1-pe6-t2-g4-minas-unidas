@@ -83,30 +83,5 @@ namespace api.Controllers
             model.Links.Add(new LinkDto(model.Id, Url.ActionLink(), rel: "update", metodo: "PUT"));
             model.Links.Add(new LinkDto(model.Id, Url.ActionLink(), rel: "delete", metodo: "DELETE"));
         }
-
-        [HttpPost("{id}/usuarios")]
-        public async Task<ActionResult> AddUsuario(int id, DenunciaUsuarios model)
-        {
-            if (id != model.DenunciaId) return BadRequest();
-            _context.DenunciaUsuarios.Add(model);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetById", new { id = model.DenunciaId }, model);
-        }
-
-        [HttpDelete("{id}/usuarios/{usuarioId}")]
-        public async Task<ActionResult> DeleteUsuario(int id, int usuarioId)
-        {
-            var model = await _context.DenunciaUsuarios
-                .Where(c => c.DenunciaId == id && c.UsuarioId == usuarioId)
-                .FirstOrDefaultAsync();
-
-            if (model == null) return NotFound();
-
-            _context.DenunciaUsuarios.Remove(model);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
-        }
     }
 }
