@@ -138,8 +138,9 @@ Variáveis de ambiente necessárias: credenciais do banco de dados, chaves de AP
 
 ## Testes
 
-Foram realizados testes de validação da API que possui as funcões CRUD conforme observado abaixo pode se notar o retorno dos codigo "200"  "201" que validam a funcionalidade dos mesmos.
-Dessa forma consta-se abaixo os prints dos testes de denuncia :
+Foram realizados testes de validação da API que possui as funcões CRUD conforme observado abaixo pode se notar o retorno dos codigo "200"  "201"  e "204" de acordo com a solicitação que validam a funcionalidade dos mesmos.
+
+Dessa forma consta-se abaixo os prints dos testes da funcionalidade denuncia :
 
 1. <img width="960" alt="denuncia_getbyid" src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t2-g4-minas-unidas/assets/89945405/0895c983-4c1a-4213-8c1b-d1bc59ff0c64">
 
