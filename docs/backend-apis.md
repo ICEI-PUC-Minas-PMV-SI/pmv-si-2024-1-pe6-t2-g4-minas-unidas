@@ -72,7 +72,11 @@ Principais tecnologias utilizadas no projeto.
 - Microsoft entity framework core
 - Microsoft entity framework core tools
 - Microsoft entity framework core sqlserver
-
+- API Rest
+- Visual Studio Code
+- Swagger
+- Insomnia
+  
 ## API Endpoints
 
 Lista dos principais endpoints da API, incluindo as operações disponíveis, os parâmetros esperados e as respostas retornadas:
@@ -113,26 +117,26 @@ Lista dos principais endpoints da API, incluindo as operações disponíveis, os
 #### Corpo da Requisição:
 
 - Tipo: `application/json`
-
+```
 {
-	"links":[
-		{
-			"": 0,
-			"href": "string",
-			"rel": "string",
-			"metodo": "string"
-		}
-	],
-	"id": 0,
-	"tipoViolencia": 1,
-	"descricao": "Denúncia1"
-}--
+  "links": [
+    {
+      "id": 0,
+      "href": "string",
+      "rel": "string",
+      "metodo": "string"
+    }
+  ],
+  "id": 0,
+  "tipoViolencia": 1,
+  "descricao": "Denúncia1"
+}
 
-
+```
 #### Resposta:
 
 - Sucesso (201 Created)
-  ---
+```
   {
     "id": 1,
     "tipoViolencia": 1,
@@ -146,16 +150,16 @@ Lista dos principais endpoints da API, incluindo as operações disponíveis, os
       }
     ]
   }
-  ---
+```
 - Erro (4XX, 5XX)
-  ---
+```
   {
     "message": "Error",
     "error": {
       
     }
   }
-  ---
+```
   
 
 ### GET by ID
@@ -167,7 +171,7 @@ Lista dos principais endpoints da API, incluindo as operações disponíveis, os
 #### Resposta:
 
 - Sucesso (200 OK)
-  ```
+```
   {
     "id": 1,
     "tipoViolencia": 1,
@@ -193,6 +197,16 @@ Lista dos principais endpoints da API, incluindo as operações disponíveis, os
       }
     ]
   }
+ ```
+  - Erro (4XX, 5XX)
+```
+  {
+    "message": "Error",
+    "error": {
+      
+    }
+  }
+```
   
 
 
@@ -200,7 +214,7 @@ Lista dos principais endpoints da API, incluindo as operações disponíveis, os
 - Método: PUT
 - URL: `/api/Denuncias/{id}`
 - Parâmetros:
-  - id: *integer* (path)
+  - id, tipoViolência e descricao
 
 #### Corpo da Requisição:
 
@@ -220,7 +234,46 @@ Lista dos principais endpoints da API, incluindo as operações disponíveis, os
   "descricao": "Denuncia atualizada"
 }
 ```
+#### Resposta:
+```
+curl -X PUT 'https://localhost:7084/api/Denuncias/1' \
+  -H 'accept: */*' \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "links": [
+      {
+        "id": 0,
+        "href": "string",
+        "rel": "string",
+        "metodo": "string"
+      }
+    ],
+    "id": 1,
+    "tipoViolencia": 3,
+    "descricao": "Denuncia atualizada"
+  }'
 
+```
+- Response Reader (204 - Sucesso):
+```
+date: Sun, 21 Apr 2024 18:55:44 GMT
+server: Kestrel
+```
+
+- Response Server (200 - Sucesso):
+```
+Code Description Links
+200 Success
+```
+  - Erro (4XX, 5XX)
+```
+  {
+    "message": "Error",
+    "error": {
+      
+    }
+  }
+```
 
 ### DELETE
 - Método: DELETE
@@ -237,9 +290,18 @@ Lista dos principais endpoints da API, incluindo as operações disponíveis, os
 
 
 #### Resposta:
-
+```
 - Sucesso (204 No Content)
----
+```
+  - Erro (4XX, 5XX)
+```
+  {
+    "message": "Error",
+    "error": {
+      
+    }
+  }
+```
 
 #### API de Depoimentos
 
@@ -252,8 +314,8 @@ Lista dos principais endpoints da API, incluindo as operações disponíveis, os
 #### Resposta:
 
 - Sucesso (200 OK)
-  ```json
-  [
+ 
+ ``` [
     {
       "id": 1,
       "descricao": "Teste2",
@@ -265,7 +327,19 @@ Lista dos principais endpoints da API, incluindo as operações disponíveis, os
       "links": []
     }
   ]
-  ```
+```
+
+  - Erro (4XX, 5XX)
+```
+  {
+    "message": "Error",
+    "error": {
+      
+    }
+  }
+```
+
+
 ### POST
 - Método: POST
 - URL: `/api/Depoimentos`
@@ -307,6 +381,17 @@ Lista dos principais endpoints da API, incluindo as operações disponíveis, os
     ]
   }
   ```
+  - Erro (4XX, 5XX)
+```
+  {
+    "message": "Error",
+    "error": {
+      
+    }
+  }
+```
+
+  
 ### POST
 - Método: POST
 - URL: `/api/Depoimentos`
@@ -335,7 +420,16 @@ Lista dos principais endpoints da API, incluindo as operações disponíveis, os
 
 - Sucesso (201 Created)
 
----
+- Erro (4XX, 5XX)
+```
+  {
+    "message": "Error",
+    "error": {
+      
+    }
+  }
+```
+
 
 ### GET by ID
 - Método: GET
@@ -372,19 +466,27 @@ Lista dos principais endpoints da API, incluindo as operações disponíveis, os
     ]
   }
 
-
+- Erro (4XX, 5XX)
+```
+  {
+    "message": "Error",
+    "error": {
+      
+    }
+  }
+```
 
 
 ### PUT
 - Método: PUT
 - URL: `/api/Depoimentos/{id}`
 - Parâmetros:
-  - id: *integer* (path)
+  - id e descricao
 
 #### Corpo da Requisição:
 
 - Tipo: `application/json`
-json
+```
 {
   "links": [
     {
@@ -397,10 +499,10 @@ json
   "id": 1,
   "descricao": "Teste2"
 }
-
+```
 
 #### Resposta:
-```bash
+```
 curl -X PUT \
   https://localhost:7084/api/Depoimentos/1 \
   -H 'accept: */*' \
@@ -417,8 +519,31 @@ curl -X PUT \
     "id": 1,
     "descricao": "Teste2"
   }'
+```
+- Request URL
+```
+https://localhost:7084/api/Depoimentos/1
+```
 
+Server response
 
+ - Sucesso ( 204 - Undocumented Response headers)
+```
+date: Sun, 21 Apr 2024 18:50:51 GMT
+server: Kestrel
+```
+
+- Sucesso (200)
+  
+- Erro (4XX, 5XX)
+```
+  {
+    "message": "Error",
+    "error": {
+      
+    }
+  }
+```
 
 ### DELETE
 
@@ -429,10 +554,18 @@ curl -X PUT \
 
 #### Resposta:
 
-- Sucesso (200 OK)
-  ```
-  []
-  ```
+```
+- Sucesso (204 No Content)
+```
+  - Erro (4XX, 5XX)
+```
+  {
+    "message": "Error",
+    "error": {
+      
+    }
+  }
+```
 
 
 ## Considerações de Segurança
