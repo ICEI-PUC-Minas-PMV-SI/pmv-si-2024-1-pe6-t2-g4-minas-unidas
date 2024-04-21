@@ -138,7 +138,7 @@ Variáveis de ambiente necessárias: credenciais do banco de dados, chaves de AP
 
 ## Testes
 
-Foram realizados testes de validação da API que possui as funcões CRUD conforme observado abaixo pode se notar o retorno dos codigo "200"  "201"  e "204" de acordo com a solicitação que validam a funcionalidade dos mesmos.
+Foram realizados testes de validação da API que possui as funcões CRUD conforme observado abaixo pode se notar o retorno de acordo com a solicitação dos métodos GET/UPDATE/CREATE/GETALL que validam a funcionalidade dos mesmos.
 
 Dessa forma consta-se abaixo os prints dos testes da funcionalidade denuncia :
 
