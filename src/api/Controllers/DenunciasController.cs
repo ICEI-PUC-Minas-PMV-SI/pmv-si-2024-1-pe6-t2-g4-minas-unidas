@@ -6,7 +6,6 @@ using Microsoft.EntityFrameworkCore;
 
 namespace api.Controllers
 {
-    // [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class DenunciasController : ControllerBase
@@ -17,8 +16,6 @@ namespace api.Controllers
         {
             _context = context;
         }
-
-        // [Authorize(Roles = "Usuario")]
         [HttpGet]
         public async Task<ActionResult> GetAll()
         {
@@ -26,7 +23,6 @@ namespace api.Controllers
             return Ok(model);
         }
 
-        // [Authorize(Roles = "Administrador,Usuário")]
         [HttpPost]
         public async Task<ActionResult<Denuncia>> Create(Denuncia model)
         {
@@ -36,7 +32,6 @@ namespace api.Controllers
             return CreatedAtAction(nameof(GetById), new { id = model.Id }, model);
         }
 
-        // [Authorize(Roles = "Administrador")]
         [HttpGet("{id}")]
         public async Task<ActionResult<Denuncia>> GetById(int id)
         {
