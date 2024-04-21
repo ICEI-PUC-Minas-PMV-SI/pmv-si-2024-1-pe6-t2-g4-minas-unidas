@@ -138,9 +138,9 @@ Variáveis de ambiente necessárias: credenciais do banco de dados, chaves de AP
 
 ## Testes
 
-Foram realizados testes de validação da API q conforme observado abaixo pode se notar o retorno de acordo com a solicitação dos métodos GET/UPDATE/CREATE/GETALL que validam a funcionalidade dos mesmos.
+Foram realizados testes de validação da API que conforme observado abaixo pode se notar o retorno de acordo com a solicitação dos métodos GET/UPDATE/CREATE/GETALL que validam a funcionalidade dos mesmos.
 
-Dessa forma consta-se abaixo os prints dos testes da funcionalidade denuncia :
+Dessa forma consta-se abaixo os prints dos testes da funcionalidade DENUNCIA :
 
 1. <img width="960" alt="denuncia_getbyid" src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t2-g4-minas-unidas/assets/89945405/0895c983-4c1a-4213-8c1b-d1bc59ff0c64">
 
@@ -152,7 +152,7 @@ Dessa forma consta-se abaixo os prints dos testes da funcionalidade denuncia :
 
 
 
-  E de forma análoga logo abaixo a funcionalidade depoimento com a adicão do metodo DELETE  funcionando conforme demonstrado abaixo :
+  E de forma análoga logo abaixo a funcionalidade DEPOIMENTO com a adicão do metodo DELETE  funcionando conforme demonstrado abaixo :
 
 
   
