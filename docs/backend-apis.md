@@ -132,7 +132,7 @@ json
 #### Resposta:
 
 - Sucesso (201 Created)
-  
+  ---
   {
     "id": 1,
     "tipoViolencia": 1,
@@ -146,16 +146,16 @@ json
       }
     ]
   }
-  
+  ---
 - Erro (4XX, 5XX)
-  
+  ---
   {
     "message": "Error",
     "error": {
       
     }
   }
-  
+  ---
   
 
 ### GET by ID
