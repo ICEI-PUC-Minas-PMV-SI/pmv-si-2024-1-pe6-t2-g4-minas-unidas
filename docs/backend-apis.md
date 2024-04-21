@@ -140,17 +140,27 @@ Variáveis de ambiente necessárias: credenciais do banco de dados, chaves de AP
 
 Foram realizados testes de validação da API que possui as funcões CRUD conforme observado abaixo pode se notar o retorno dos codigo "200"  "201" que validam a funcionalidade dos mesmos.
 Dessa forma consta-se abaixo os prints dos testes de denuncia :
--------
+
 1. <img width="960" alt="denuncia_getbyid" src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t2-g4-minas-unidas/assets/89945405/0895c983-4c1a-4213-8c1b-d1bc59ff0c64">
+
 2. <img width="960" alt="denuncia_update" src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t2-g4-minas-unidas/assets/89945405/95ac90c0-451c-41c5-b608-ccb05ff34277">
+
 3. <img width="960" alt="depoimento_create" src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t2-g4-minas-unidas/assets/89945405/1768cd03-15e9-48d1-986f-d44ae6d85072">
+
 4. <img width="960" alt="depoimento_getall" src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t2-g4-minas-unidas/assets/89945405/27f5e577-c1bd-4288-a824-b45aa404a394">
 
+
+
   E de forma análoga logo abaixo a funcionalidade depoimento com CRUD  funcionando :
+
+
   
 <img width="960" alt="depoimento_getbyid" src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t2-g4-minas-unidas/assets/89945405/19ae21a2-1f4a-4b10-9f9d-1a3131e06995">
+
 <img width="960" alt="denuncia_create" src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t2-g4-minas-unidas/assets/89945405/65e499d4-4769-4054-b1de-26ac09109e59">
+
 <img width="960" alt="denuncia_delete" src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t2-g4-minas-unidas/assets/89945405/170839f5-fef8-46ea-8456-d915ae33fa57">
+
 <img width="960" alt="denuncia_getall" src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t2-g4-minas-unidas/assets/89945405/8aae019f-5418-41fe-8929-e64bc023f272">
 
 # Referências
