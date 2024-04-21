@@ -147,62 +147,14 @@ Variáveis de ambiente necessárias: credenciais do banco de dados, chaves de AP
 4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
 5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
 
-
- ##  Testes a serem realizados:Requisitos Funcionais
-
-- ID: 01
-  
-1.	Caso de teste: Verificar se esta disponivel informações sobre a violência contra a mulher e os tipos de violência.
-2.	Passo-a-passo : Acessar a home do website e verificar disponibilidade
-3.Resultado esperado:Encontrar pagina com informações;
-4.	Resultado obtido: ; 
-5.Estado: Indica se o teste passou, falhou, ficou pendente (bloqueado) ou sem efeito, no caso de se perceber que afinal não era aplicável.
-
--	ID:04 Verificar disponibilidade da área dedepoimentos.
-  
-1.	Passo-a-passo : Acessar a home do website e verificar disponibilidade d área de depoimento
-2.	Resultado esperado:Encontrar pagina de depoimentos;
-3.Resultado obtido: ; 
-4.Estado: Indica se o teste passou, falhou, ficou pendente (bloqueado) ou sem efeito, no caso de se perceber que afinal não era aplicável.
-
--	ID:05 Verificar disponibilidade da área de leitura de depoimentos.
-  
-1. Passo-a-passo : Acessar a home do website e verificar disponibilidade da área de leitura de  depoimentos
-2.	Resultado esperado:Encontrar pagina de leitura de  depoimentos;
-3.	Resultado obtido: ; 
-4.	Estado: Indica se o teste passou, falhou, ficou pendente (bloqueado) ou sem efeito, no caso de se perceber que afinal não era aplicável.
-
-
-  
-  ## Testes a serem realizados:Requisitos não Funcionais
-
--	ID:01 Verificar se o sistema é compativel com todos os principais navegadores.
-1.	Passo-a-passo : Acessar a home do website através dos principais navegadores
-2.	Resultado esperado:Sistema usual e disponivel;
-3.	Resultado obtido: ; 
-4.	Estado: Indica se o teste passou, falhou, ficou pendente (bloqueado) ou sem efeito, no caso de se perceber que afinal não era aplicável.
-
-
--	ID:02 Verificar se a interface grafica é responsiva.
-1.	Passo-a-passo : Acessar a home do website e realizar testes de responsividade
-2.	Resultado esperado:Sistema responsivo;
-3.	Resultado obtido: ; 
-4.	Estado: Indica se o teste passou, falhou, ficou pendente (bloqueado) ou sem efeito, no caso de se perceber que afinal não era aplicável
-
--	ID:03 Verificar se o sistema esta disponivel 90% do tempo.
-1.	Resultado esperado:Sistema  disponivel;
-2.	Resultado obtido: ; 
-3.	Estado: Indica se o teste passou, falhou, ficou pendente (bloqueado) ou sem efeito, no caso de se perceber que afinal não era aplicável.
-
--  ID:04 Verificar se o sistema  esta tem o tempo de resposta inferior a 3 segundos para a solicitação do usuário
-1.	Resultado esperado:Resposta inferior a 3 segundos;
-2.	Resultado obtido: ; 
-3.	Estado: Indica se o teste passou, falhou, ficou pendente (bloqueado) ou sem efeito, no caso de se perceber que afinal não era aplicável.
-
--  ID:05 Verificar se o sistema  atende as normas e padrões exigidos por lei
-  1. Resultado esperado:Atende;
-  2. Resultado obtido: ; 
-  3. Estado: Indica se o teste passou, falhou, ficou pendente (bloqueado) ou sem efeito, no caso de se perceber que afinal não era aplicável.
+<img width="960" alt="denuncia_getbyid" src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t2-g4-minas-unidas/assets/89945405/0895c983-4c1a-4213-8c1b-d1bc59ff0c64">
+<img width="960" alt="denuncia_update" src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t2-g4-minas-unidas/assets/89945405/95ac90c0-451c-41c5-b608-ccb05ff34277">
+<img width="960" alt="depoimento_create" src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t2-g4-minas-unidas/assets/89945405/1768cd03-15e9-48d1-986f-d44ae6d85072">
+<img width="960" alt="depoimento_getall" src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t2-g4-minas-unidas/assets/89945405/27f5e577-c1bd-4288-a824-b45aa404a394">
+<img width="960" alt="depoimento_getbyid" src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t2-g4-minas-unidas/assets/89945405/19ae21a2-1f4a-4b10-9f9d-1a3131e06995">
+<img width="960" alt="denuncia_create" src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t2-g4-minas-unidas/assets/89945405/65e499d4-4769-4054-b1de-26ac09109e59">
+<img width="960" alt="denuncia_delete" src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t2-g4-minas-unidas/assets/89945405/170839f5-fef8-46ea-8456-d915ae33fa57">
+<img width="960" alt="denuncia_getall" src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t2-g4-minas-unidas/assets/89945405/8aae019f-5418-41fe-8929-e64bc023f272">
 
 # Referências
 
