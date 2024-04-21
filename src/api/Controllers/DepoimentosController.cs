@@ -1,12 +1,11 @@
 ﻿using api.Models;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
 
 namespace api.Controllers
 {
-    // [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class DepoimentosController : ControllerBase
@@ -18,7 +17,6 @@ namespace api.Controllers
             _context = context;
         }
 
-        // [Authorize(Roles = "Usuario")]
         [HttpGet]
         public async Task<ActionResult> GetAll()
         {
@@ -26,7 +24,6 @@ namespace api.Controllers
             return Ok(model);
         }
 
-        // [Authorize(Roles = "Administrador,Usuário")]
         [HttpPost]
         public async Task<ActionResult<Depoimento>> Create(Depoimento model)
         {
@@ -36,7 +33,6 @@ namespace api.Controllers
             return CreatedAtAction(nameof(GetById), new { id = model.Id }, model);
         }
 
-        // [Authorize(Roles = "Administrador")]
         [HttpGet("{id}")]
         public async Task<ActionResult<Depoimento>> GetById(int id)
         {
@@ -57,6 +53,8 @@ namespace api.Controllers
                 .FirstOrDefaultAsync(c => c.Id == id);
 
             if (modeloDb == null) return NotFound();
+
+            _context.Entry(modeloDb).CurrentValues.SetValues(model);
 
             _context.Depoimentos.Update(model);
             await _context.SaveChangesAsync();
@@ -82,31 +80,6 @@ namespace api.Controllers
             model.Links.Add(new LinkDto(model.Id, Url.ActionLink(), rel: "self", metodo: "GET"));
             model.Links.Add(new LinkDto(model.Id, Url.ActionLink(), rel: "update", metodo: "PUT"));
             model.Links.Add(new LinkDto(model.Id, Url.ActionLink(), rel: "delete", metodo: "DELETE"));
-        }
-
-        [HttpPost("{id}/usuarios")]
-        public async Task<ActionResult> AddUsuario(int id, DepoimentoUsuarios model)
-        {
-            if (id != model.DepoimentoId) return BadRequest();
-            _context.DepoimentoUsuarios.Add(model);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetById", new { id = model.DepoimentoId }, model);
-        }
-
-        [HttpDelete("{id}/usuarios/{usuarioId}")]
-        public async Task<ActionResult> DeleteUsuario(int id, int usuarioId)
-        {
-            var model = await _context.DepoimentoUsuarios
-                .Where(c => c.DepoimentoId == id && c.UsuarioId == usuarioId)
-                .FirstOrDefaultAsync();
-
-            if (model == null) return NotFound();
-
-            _context.DepoimentoUsuarios.Remove(model);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
         }
     }
 }
