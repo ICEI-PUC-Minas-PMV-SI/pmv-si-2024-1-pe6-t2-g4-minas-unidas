@@ -113,7 +113,7 @@ Lista dos principais endpoints da API, incluindo as operações disponíveis, os
 #### Corpo da Requisição:
 
 - Tipo: `application/json`
----json
+
 {
   "links": [
     {
