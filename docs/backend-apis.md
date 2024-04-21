@@ -43,101 +43,89 @@ A aplicação contará com as seguites entidades realizando as seguites ações:
 
 ## Fluxo de Dados
 
-[Diagrama ou descrição do fluxo de dados na aplicação.]
 
-API Denúncia
+## API Denúncia
 
 
 - Método GET
-O usuário acessa a página de denúncias;
-A API Denúncia envia via HTTP a solicitação usando o método GET /api/Denúncias;
-A API de Consulta os dados no banco de dados e lista os todos os registros de Denúncias existentes no banco de dados.
+1. O usuário acessa a página de denúncias;
+2. A API Denúncia envia via HTTP a solicitação usando o método GET /api/Denúncias;
+3. A API de Consulta os dados no banco de dados e lista os todos os registros de Denúncias existentes no banco de dados.
 
 
 - Método POST
-O usuário acessa a página de denúncias;
-O usuário informa os dados do tipo de violência e a descrição da ocorrência;
-A API de Denúncia envia via HTTP a solicitação usando o método POST e através da rota /api/Denúncias; 
-O registro é criado no banco de dados.
+1. O usuário acessa a página de denúncias;
+2. O usuário informa os dados do tipo de violência e a descrição da ocorrência;
+3. A API de Denúncia envia via HTTP a solicitação usando o método POST e através da rota /api/Denúncias; 
+4. O registro é criado no banco de dados.
 
 
 - Método GET by ID
+1. O usuário acessa a página de denúncias;
+2. O usuário informa os dado da denúncia que deseja visualizar através do ID da denúncia;
+3. A API Denúncia envia via HTTP a solicitação usando o método GET através da rota /api/Denúncias/{id};
+4. É identificado pelo sistema o registro é exibido ao usuário na tela o registro solicitado.
 
 
-O usuário acessa a página de denúncias;
-O usuário informa os dado da denúncia que deseja visualizar através do ID da denúncia;
-A API Denúncia envia via HTTP a solicitação usando o método GET através da rota /api/Denúncias/{id};
-É identificado pelo sistema o registro é exibido ao usuário na tela o registro solicitado.
 - Método PUT
-
-
-O usuário acessa a página de denúncias;
-O usuário informa os dado da denúncia que deseja visualizar através do ID da denúncia;
-A API Denúncia envia via HTTP a solicitação usando o método GET através da rota /api/Denúncias/{id};
-É identificado pelo sistema o registro é exibido ao usuário na tela o registro solicitado.
-O usuário seleciona a opção de Atualizar o Registro e realiza as alterações necessárias e clica no botão Salvar;
-A API Denúncia envia via HTTP a solicitação usando o método PUT através da rota /api/Denúncias/{id};
+1. O usuário acessa a página de denúncias;
+2. O usuário informa os dado da denúncia que deseja visualizar através do ID da denúncia;
+3. A API Denúncia envia via HTTP a solicitação usando o método GET através da rota /api/Denúncias/{id};
+4. É identificado pelo sistema o registro é exibido ao usuário na tela o registro solicitado.
+5. O usuário seleciona a opção de Atualizar o Registro e realiza as alterações necessárias e clica no botão Salvar;
+6. A API Denúncia envia via HTTP a solicitação usando o método PUT através da rota /api/Denúncias/{id};
 Os dados são armazenados no Banco de Dados.
 
 
 - Método DELETE
-
-
-O usuário acessa a página de denúncias;
-O usuário informa os dado da denúncia que deseja visualizar através do ID da denúncia;
-A API Denúncia envia via HTTP a solicitação usando o método GET através da rota /api/Denúncias/{id};
-É identificado pelo sistema o registro é exibido ao usuário na tela o registro solicitado.
-O usuário seleciona a opção de Deletar o Registro e realiza as alterações necessárias e clica no botão Salvar;
-A API Denúncia envia via HTTP a solicitação usando o método DELETE através da rota /api/Denúncias/{id};
+1. O usuário acessa a página de denúncias;
+2. O usuário informa os dado da denúncia que deseja visualizar através do ID da denúncia;
+3. A API Denúncia envia via HTTP a solicitação usando o método GET através da rota /api/Denúncias/{id};
+4. É identificado pelo sistema o registro é exibido ao usuário na tela o registro solicitado.
+5. O usuário seleciona a opção de Deletar o Registro e realiza as alterações necessárias e clica no botão Salvar;
+6. A API Denúncia envia via HTTP a solicitação usando o método DELETE através da rota /api/Denúncias/{id};
 Os dados são armazenados no Banco de Dados.
 
 
-API Depoimentos
-
+## API Depoimentos
 
 - Método GET
-O usuário acessa a página de depoimentos;
-A API Denúncia envia via HTTP a solicitação usando o método GET /api/Depoimentos;
-A API de Consulta os dados no banco de dados e lista os todos os registros de Depoimentos existentes no banco de dados.
+1. O usuário acessa a página de depoimentos;
+2. A API Denúncia envia via HTTP a solicitação usando o método GET /api/Depoimentos;
+3. A API de Consulta os dados no banco de dados e lista os todos os registros de Depoimentos existentes no banco de dados.
 
 
 - Método POST
-O usuário acessa a página de depoimentos;
-O usuário informa o descrição do seu depoimento e clica no botão Salvar;
-A API de Denúncia envia via HTTP a solicitação usando o método POST e através da rota /api/Depoimentos; 
-O registro é criado no banco de dados.
+1. O usuário acessa a página de depoimentos;
+2. O usuário informa o descrição do seu depoimento e clica no botão Salvar;
+3. A API de Denúncia envia via HTTP a solicitação usando o método POST e através da rota /api/Depoimentos; 
+4. O registro é criado no banco de dados.
 
 
 - Método GET by ID
-
-
-O usuário acessa a página de Depoimentos;
-O usuário informa os dado do depoimento que deseja visualizar através do ID da depoimento;
-A API Depoimento envia via HTTP a solicitação usando o método GET através da rota /api/Depoimento/{id};
-É identificado pelo sistema o registro é exibido ao usuário na tela o registro solicitado.
+1. O usuário acessa a página de Depoimentos;
+2. O usuário informa os dado do depoimento que deseja visualizar através do ID da depoimento;
+3. A API Depoimento envia via HTTP a solicitação usando o método GET através da rota /api/Depoimento/{id};
+4. É identificado pelo sistema o registro é exibido ao usuário na tela o registro solicitado.
 
 
 - Método PUT
-
-
-O usuário acessa a página de Depoimentos;
-O usuário informa os dado do depoimento que deseja visualizar através do ID do depoimento;
-A API Depoimentos envia via HTTP a solicitação usando o método GET através da rota /api/Denúncias/{id};
-É identificado pelo sistema o registro e é exibido ao usuário na tela o registro solicitado.
-O usuário seleciona a opção de Atualizar o Registro e realiza as alterações necessárias e clica no botão Salvar;
-A API Denúncia envia via HTTP a solicitação usando o método PUT através da rota /api/Denúncias/{id};
-Os dados são armazenados no Banco de Dados.
+1. O usuário acessa a página de Depoimentos;
+2. O usuário informa os dado do depoimento que deseja visualizar através do ID do depoimento;
+3. A API Depoimentos envia via HTTP a solicitação usando o método GET através da rota /api/Denúncias/{id};
+4. É identificado pelo sistema o registro e é exibido ao usuário na tela o registro solicitado.
+5. O usuário seleciona a opção de Atualizar o Registro e realiza as alterações necessárias e clica no botão Salvar;
+6. A API Denúncia envia via HTTP a solicitação usando o método PUT através da rota /api/Denúncias/{id};
+7. Os dados são armazenados no Banco de Dados.
 
 
 - Método DELETE
-
-
-O usuário acessa a página de denúncias;
-O usuário informa os dado da denúncia que deseja visualizar através do ID da denúncia;
-A API Denúncia envia via HTTP a solicitação usando o método GET através da rota /api/Denúncias/{id};
-É identificado pelo sistema o registro é exibido ao usuário na tela o registro solicitado.
-O usuário seleciona a opção de Deletar o Registro e realiza as alterações necessárias e clica no botão Salvar;
-A API Denúncia envia via HTTP a solicitação usando o método DELETE através da rota /api/Denúncias/{id};
+1. O usuário acessa a página de denúncias;
+2. O usuário informa os dado da denúncia que deseja visualizar através do ID da denúncia;
+3. A API Denúncia envia via HTTP a solicitação usando o método GET através da rota /api/Denúncias/{id};
+4. É identificado pelo sistema o registro é exibido ao usuário na tela o registro solicitado.
+5. O usuário seleciona a opção de Deletar o Registro e realiza as alterações necessárias e clica no botão Salvar;
+6. A API Denúncia envia via HTTP a solicitação usando o método DELETE através da rota /api/Denúncias/{id};
 Os dados são armazenados no Banco de Dados.
 
 
