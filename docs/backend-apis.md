@@ -26,10 +26,11 @@ Fornecer uma lista de atividade(denuncia) quando for solicitado.
 
 ## Arquitetura
 
-[Descrição da arquitetura das APIs, incluindo os componentes e suas interações.]
+Nossa arquitetura será composta inicialmente de três APIs necessárias para a funcionalidade da aplicação, sendo elas: API de denúncias, API de depoimentos e API de usuários. Cada uma delas será responsável pela gerência das respectivas informações assinaladas anteriormente. Nessa nova versão da arquitetura optamos pela simplicidade para uma construção mais efetiva da base da aplicação web. Observamos ao longo da construção das APIs que essa abordagem auxiliaria na estabilidade e efetividade da aplicação. Entretanto, o objetivo é expandir essas funcionalidade de maneira que a integridade e a disponibilidade não sejam afetadas ao longo do caminho.
 
-A arquitetura do nossa solução seque o modelo MPAs (Multi-Page Application) que contará com Controladores: Responsáveis por receber as requisições HTTP, Serviço que manipula as operações CRUD ,E sistema de Segurança: Responsável por autenticar e autorizar os usuários antes de permitir o acesso aos endpoints da API.A API da Web tem muitas ações, estas ações na arquitetura REST representam o uso dos verbos HTTP para manipulação dos recursos.
+A remoção da funcionalidade de busca de antecedentes criminais da nossa arquitetura reflete essa nova abordagem que optamos, mas desejamos adicionar novamente essa expansão futuramente assim que as funcionalidades básicas forem estabelecidas sem falhas.
 
+![Arquitetura da Solução Versão 2](img/02-arquiteturaV2.png)
 
 ## Modelagem da Aplicação
 [Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
