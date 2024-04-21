@@ -115,18 +115,18 @@ Lista dos principais endpoints da API, incluindo as operações disponíveis, os
 - Tipo: `application/json`
 
 {
-  "links": [
-    {
-      "id": 0,
-      "href": "string",
-      "rel": "string",
-      "metodo": "string"
-    }
-  ],
-  "id": 0,
-  "tipoViolencia": 1,
-  "descricao": "Denúncia1"
-}---
+	"links":[
+		{
+			"": 0,
+			"href": "string",
+			"rel": "string",
+			"metodo": "string"
+		}
+	],
+	"id": 0,
+	"tipoViolencia": 1,
+	"descricao": "Denúncia1"
+}--
 
 
 #### Resposta:
