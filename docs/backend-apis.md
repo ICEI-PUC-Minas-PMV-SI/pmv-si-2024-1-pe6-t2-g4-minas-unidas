@@ -138,7 +138,7 @@ Variáveis de ambiente necessárias: credenciais do banco de dados, chaves de AP
 
 ## Testes
 
-Foram realizados testes de validação da API que conforme observado abaixo pode se notar o retorno de acordo com a solicitação dos métodos GET/UPDATE/CREATE/GETALL que validam a funcionalidade dos mesmos.
+Foram realizados testes de validação da API que conforme observado abaixo pode se notar o retorno de acordo com a solicitação dos métodos GET/PUT/POST que validam a funcionalidade dos mesmos.
 
 Dessa forma consta-se abaixo os prints dos testes da funcionalidade DENUNCIA :
 
