@@ -26,7 +26,7 @@ Fornecer uma lista de atividade(denuncia) quando for solicitado.
 
 ## Arquitetura
 
-Nossa arquitetura será composta inicialmente de três APIs necessárias para a funcionalidade da aplicação, sendo elas: API de denúncias, API de depoimentos e API de usuários. Cada uma delas será responsável pela gerência das respectivas informações assinaladas anteriormente. Nessa nova versão da arquitetura optamos pela simplicidade para uma construção mais efetiva da base da aplicação web. Observamos ao longo da construção das APIs que essa abordagem auxiliaria na estabilidade e efetividade da aplicação. Entretanto, o objetivo é expandir essas funcionalidade de maneira que a integridade e a disponibilidade não sejam afetadas ao longo do caminho.
+Nossa arquitetura será composta inicialmente de três APIs necessárias para a funcionalidade da aplicação, sendo elas: API de denúncias e API de depoimentos. Cada uma delas será responsável pela gerência das respectivas informações assinaladas anteriormente. Nessa nova versão da arquitetura optamos pela simplicidade para uma construção mais efetiva da base da aplicação web. Observamos ao longo da construção das APIs que essa abordagem auxiliaria na estabilidade e efetividade da aplicação. Entretanto, o objetivo é expandir essas funcionalidade de maneira que a integridade e a disponibilidade não sejam afetadas ao longo do caminho.
 
 A remoção da funcionalidade de busca de antecedentes criminais da nossa arquitetura reflete essa nova abordagem que optamos, mas desejamos adicionar novamente essa expansão futuramente assim que as funcionalidades básicas forem estabelecidas sem falhas.
 
