@@ -75,32 +75,364 @@ Principais tecnologias utilizadas no projeto.
 
 ## API Endpoints
 
-[Liste os principais endpoints da API, incluindo as operações disponíveis, os parâmetros esperados e as respostas retornadas.]
+Lista dos principais endpoints da API, incluindo as operações disponíveis, os parâmetros esperados e as respostas retornadas:
 
-### Endpoint 1
+### API de Denuncias
+
+### GET
 - Método: GET
-- URL: /endpoint1
+- URL: `/api/Denuncias`
 - Parâmetros:
-  - param1: [descrição]
-- Resposta:
-  - Sucesso (200 OK)
-    ```
-    {
-      "message": "Success",
-      "data": {
-        ...
-      }
+  - Nenhum
+
+#### Resposta:
+
+- Sucesso (200 OK)
+  ```
+  {
+    "message": "Success",
+    "data": []
+  }
+  ```
+- Erro (4XX, 5XX)
+  ```
+  {
+    "message": "Error",
+    "error": {
+      ...
     }
-    ```
-  - Erro (4XX, 5XX)
-    ```
+  }
+
+ 
+### POST
+- Método: POST
+- URL: `/api/Denuncias`
+- Parâmetros:
+  - Nenhum
+  
+#### Corpo da Requisição:
+
+- Tipo: `application/json`
+json
+{
+  "links": [
     {
-      "message": "Error",
-      "error": {
-        ...
-      }
+      "id": 0,
+      "href": "string",
+      "rel": "string",
+      "metodo": "string"
     }
-    ```
+  ],
+  "id": 0,
+  "tipoViolencia": 1,
+  "descricao": "Denúncia1"
+}
+
+
+#### Resposta:
+
+- Sucesso (201 Created)
+  
+  {
+    "id": 1,
+    "tipoViolencia": 1,
+    "descricao": "Denúncia1",
+    "links": [
+      {
+        "id": 5,
+        "href": "string",
+        "rel": "string",
+        "metodo": "string"
+      }
+    ]
+  }
+  
+- Erro (4XX, 5XX)
+  
+  {
+    "message": "Error",
+    "error": {
+      
+    }
+  }
+  
+  
+
+### GET by ID
+- Método: GET
+- URL: `/api/Denuncias/{id}`
+- Parâmetros:
+  - id: *integer* (path)
+
+#### Resposta:
+
+- Sucesso (200 OK)
+  ```
+  {
+    "id": 1,
+    "tipoViolencia": 1,
+    "descricao": "Denúncia1",
+    "links": [
+      {
+        "id": 1,
+        "href": "https://localhost:7084/api/Denuncias/1",
+        "rel": "self",
+        "metodo": "GET"
+      },
+      {
+        "id": 1,
+        "href": "https://localhost:7084/api/Denuncias/1",
+        "rel": "update",
+        "metodo": "PUT"
+      },
+      {
+        "id": 1,
+        "href": "https://localhost:7084/api/Denuncias/1",
+        "rel": "delete",
+        "metodo": "DELETE"
+      }
+    ]
+  }
+  
+
+
+### PUT
+- Método: PUT
+- URL: `/api/Denuncias/{id}`
+- Parâmetros:
+  - id: *integer* (path)
+
+#### Corpo da Requisição:
+
+- Tipo: `application/json`
+```json
+{
+  "links": [
+    {
+      "id": 0,
+      "href": "string",
+      "rel": "string",
+      "metodo": "string"
+    }
+  ],
+  "id": 1,
+  "tipoViolencia": 3,
+  "descricao": "Denuncia atualizada"
+}
+```
+
+
+### DELETE
+- Método: DELETE
+- URL: `/api/Denuncias/{id}`
+- Parâmetros:
+  - id: *integer* (path)
+
+#### Resposta:
+
+- Sucesso (200 OK)
+  ```
+  []
+  ```
+
+
+#### Resposta:
+
+- Sucesso (204 No Content)
+---
+
+#### API de Depoimentos
+
+### GET
+- Método: GET
+- URL: `/api/Depoimentos`
+- Parâmetros:
+  - Nenhum
+
+#### Resposta:
+
+- Sucesso (200 OK)
+  ```json
+  [
+    {
+      "id": 1,
+      "descricao": "Teste2",
+      "links": []
+    },
+    {
+      "id": 2,
+      "descricao": "Teste3",
+      "links": []
+    }
+  ]
+  ```
+### POST
+- Método: POST
+- URL: `/api/Depoimentos`
+- Parâmetros:
+  - Nenhum
+  
+#### Corpo da Requisição:
+
+- Tipo: `application/json`
+```json
+{
+  "links": [
+    {
+      "id": 0,
+      "href": "string",
+      "rel": "string",
+      "metodo": "string"
+    }
+  ],
+  "id": 0,
+  "descricao": "Teste3"
+}
+```
+
+#### Resposta:
+
+- Sucesso (201 Created)
+  ```
+  {
+    "id": 2,
+    "descricao": "Teste3",
+    "links": [
+      {
+        "id": 4,
+        "href": "string",
+        "rel": "string",
+        "metodo": "string"
+      }
+    ]
+  }
+  ```
+### POST
+- Método: POST
+- URL: `/api/Depoimentos`
+- Parâmetros:
+  - Nenhum
+  
+#### Corpo da Requisição:
+
+- Tipo: `application/json`
+```json
+{
+  "links": [
+    {
+      "id": 0,
+      "href": "string",
+      "rel": "string",
+      "metodo": "string"
+    }
+  ],
+  "id": 0,
+  "descricao": "Teste3"
+}
+```
+
+#### Resposta:
+
+- Sucesso (201 Created)
+
+---
+
+### GET by ID
+- Método: GET
+- URL: `/api/Depoimentos/{id}`
+- Parâmetros:
+  - id: *integer* (path)
+
+#### Resposta:
+
+- Sucesso (200 OK)
+  ```json
+  {
+    "id": 2,
+    "descricao": "Teste3",
+    "links": [
+      {
+        "id": 2,
+        "href": "https://localhost:7084/api/Depoimentos/2",
+        "rel": "self",
+        "metodo": "GET"
+      },
+      {
+        "id": 2,
+        "href": "https://localhost:7084/api/Depoimentos/2",
+        "rel": "update",
+        "metodo": "PUT"
+      },
+      {
+        "id": 2,
+        "href": "https://localhost:7084/api/Depoimentos/2",
+        "rel": "delete",
+        "metodo": "DELETE"
+      }
+    ]
+  }
+
+
+
+
+### PUT
+- Método: PUT
+- URL: `/api/Depoimentos/{id}`
+- Parâmetros:
+  - id: *integer* (path)
+
+#### Corpo da Requisição:
+
+- Tipo: `application/json`
+json
+{
+  "links": [
+    {
+      "id": 0,
+      "href": "string",
+      "rel": "string",
+      "metodo": "string"
+    }
+  ],
+  "id": 1,
+  "descricao": "Teste2"
+}
+
+
+#### Resposta:
+```bash
+curl -X PUT \
+  https://localhost:7084/api/Depoimentos/1 \
+  -H 'accept: */*' \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "links": [
+      {
+        "id": 0,
+        "href": "string",
+        "rel": "string",
+        "metodo": "string"
+      }
+    ],
+    "id": 1,
+    "descricao": "Teste2"
+  }'
+
+
+
+### DELETE
+
+- Método: DELETE
+- URL: `/api/Depoimentos/{id}`
+- Parâmetros:
+  - id: *integer* (path)
+
+#### Resposta:
+
+- Sucesso (200 OK)
+  ```
+  []
+  ```
 
 
 ## Considerações de Segurança
