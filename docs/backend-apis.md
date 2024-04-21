@@ -105,10 +105,21 @@ Principais tecnologias utilizadas no projeto.
 
 ## Considerações de Segurança
 
-[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
-- Todo acesso será concedido atráves de login e senha
-- Cada usuário tera acesso somente ao seu hitorico.
-- A senha do usuário sera armazenada criptografada.
+A princípio as APIs de nossa aplicação web conterão funcionalidades básicas de segurança mais relacionadas ao seu código fonte e a estrutura das comunicações que as APIs farão com outros serviços da aplicação web. Como ainda não temos uma comunicação externa das APIs para a internet e nenhum dado pessoal foi alocado na aplicação, algumas características de segurança não precisam ser implantadas nesse momento. Sendo assim, a segurança nesse momento está sendo pensada mais focadamente na estrutura base da aplicação web. Segue algumas considerações já observadas e que serão consideradas até a finalização completa de nossas APIs:
+
+| Segurança das APIs                                                                                                                                                                                                                      |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1 - Será exigido métodos de autenticação para a comunicação da aplicação web com a API como tokens ou chaves de API. Ainda estamos trabalhando na definição de qual será o método escolhido.                                            |
+| 2 - Cada usuário ou serviço conectado a API terá acesso a um grupo específico de recursos para que o princípio de menor privilégio seja atendido.                                                                                       |
+| 3 - Os protocolos utilizados para a comunicação das APIs será sempre aquele que preza pela segurança das transmissões de dados enviados ou recebidos pela API. Ex: HTTPS, SFTP etc                                                      |
+| 4 - O código fonte da API será implantando de maneira que seja feita sempre uma validação de entrada nos dados recebidos pela API. Isso garante que ataques como SQL Injection, Cross-Site Scripting, entre outros, não tenham sucesso. |
+| 5 - Limite de taxas no número de solicitações realizadas por determinado usuário ou conta de serviço serão feitos para que ataques como força bruta não tenham sucesso.                                                                 |
+| 6 -  As tecnologias utilizadas no desenvolvimento da API serão as mais estáveis e atualizadas de maneira que os patches de segurança desenvolvidos sejam aplicados.                                                                     |
+| 7 - O código fonte não deverá conter nenhum senha em texto claro ou dado armazenado e transmitido sem criptografia                                                                                                                      |
+| 8 - Serão aplicados ferramentas de varredura automatizada para verificação de brechas de segurança que as APIs poderão conter de maneira que as correções sejam estabelecidas                                                           |
+| 9 - Se possível os logs da API serão armazenados de maneira que todas as interações com a API sejam registradas para que qualquer ataque ou alteração feita seja do conhecimento dos administradores das APIs                            |
+| 10 - Se possível outras camadas de segurança serão aplicadas junto as APIs para a prevenção de atividades maliciosas ou acidentais. Alguns exemplos: WAF, firewalls, IDS/IPS, proxy etc                                                 |
+
 ## Implantação
 
 [Instruções para implantar a aplicação distribuída em um ambiente de produção.]
