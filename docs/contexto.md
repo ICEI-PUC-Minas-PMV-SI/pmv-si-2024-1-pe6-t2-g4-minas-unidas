@@ -183,6 +183,8 @@ Ao longo das cinco etapas do projeto, planeja-se aplicar as fases da metodologia
 - Realizar testes de unidade e integração nas APIs e serviços web;
 - Documentar as APIs e serviços Web no documento de projeto.
 
+![Etapa 02: APIs e Web Services](img/etapa2-gen-gantt.png)
+
 ### ETAPA 3: Planejar, desenvolver e gerenciar - Aplicação Web
 
 - Análise dos requisitos da etapa e definição do escopo;
