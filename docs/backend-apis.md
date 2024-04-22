@@ -21,13 +21,13 @@ A remoção da funcionalidade de busca de antecedentes criminais da nossa arquit
 ![Arquitetura da Solução Versão 2](img/02-arquiteturaV2.png)
 
 ## Modelagem da Aplicação
-[Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
-A aplicação contará com as seguites entidades realizando as seguites ações:
-  Usuario acessa o site/app ->se cadastra  -> realiza a denuncia e envia para nosso banco de dados.
 
-  ![Captura de tela 2024-04-07 124838](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t2-g4-minas-unidas/assets/89945405/f6dcd96b-24fc-46eb-a12e-00a70a0aecbe)
+A aplicação contará com as seguintes entidades realizando as ações descritas abaixo:
 
+1. Usuário acessa o website/Aplicativo → se cadastra → registra a denúncia e envia para nosso banco de dados.
+2. Usuário acessa o website/Aplicativo → se cadastra → registra o depoimento e envia para nosso banco de dados.
 
+![Modelagem de dados](img/modelagem-dados.png)
 
 ## Fluxo de Dados
 
