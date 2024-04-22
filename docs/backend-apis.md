@@ -1,27 +1,15 @@
 # APIs e Web Services
 
-O planejamento de uma aplicação de APIS Web é uma etapa fundamental para o sucesso do projeto. Ao planejar adequadamente, você pode evitar muitos problemas e garantir que a sua API seja segura, escalável e eficiente.
-
-Aqui estão algumas etapas importantes que devem ser consideradas no planejamento de uma aplicação de APIS Web.
-
-[Inclua uma breve descrição do projeto.]
-
-
-Minas unidas é um projeto  que visa ajudar mulheres a se defender ou denunciar atos que atentam contra sua dignidade/vida. Através de um website/ app, as reclamantes podem registrar os maus tratos sofridos. A serviço  também permite uma lista de denuncias ja realizadas pelo usuário , funcionalidade que poderá ser utilizada no futuro a critério da necessidade dos usuários.
+<b>Minas unidas</b> é um projeto que tem como objetivo auxiliar mulheres no processo de conscientização, diagnóstico de situações de violação e facilitar a realização de denúncias de atos que atentem contra sua dignidade e vida. Por meio de um website/aplicativo, os usuários podem relatar seus depoimentos e registrar suas denúncias de maus-tratos. O serviço também oferece a funcionalidade de visualização de uma lista de depoimentos/denúncias já realizadas pelo usuário, que poderá ser utilizada no futuro, conforme a necessidade do usuário.
 
 ## Objetivos da API
 
-O primeiro passo é definir os objetivos da sua API. O que você espera alcançar com ela? Você quer que ela seja usada por clientes externos ou apenas por aplicações internas? Quais são os recursos que a API deve fornecer?
+O objetivo principal é fornecer às aplicações web e móvel acesso ao registro de depoimentos e denúncias, bem como seu gerenciamento e posterior compartilhamento seja com as autoridades competentes em Minas Gerais ou disponibilizando no mural de depoimentos.
 
-[Inclua os objetivos da sua api.]
-
-
-Comunicar  com a central das  autoridades competentes de forma segura e eficiente.
-
-Fornecer operações CRUD (Create, Read, Update, Delete) para entidades principais, como usuários.
-Facilitar a integração de novos recursos e funcionalidades caso seja necessário.
-Garantir a segurança dos dados dos usuários por meio de autenticação e autorização adequadas.
-Fornecer uma lista de atividade(denuncia) quando for solicitado.
+- Fornecer operações CRUD (Create, Read, Update, Delete) para entidades principais, como usuários;
+- Facilitar a integração de novos recursos e funcionalidades caso seja necessário;
+- Garantir a segurança dos dados dos usuários por meio de autenticação e autorização adequadas;
+- Fornecer uma lista de atividade (denúncias e depoimentos) quando for solicitado.
 
 
 ## Arquitetura
