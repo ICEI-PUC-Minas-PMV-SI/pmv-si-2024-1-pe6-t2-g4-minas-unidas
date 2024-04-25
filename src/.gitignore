@@ -360,4 +360,19 @@ MigrationBackup/
 .ionide/
 
 # Fody - auto-generated XML schema
-FodyWeavers.xsd
+FodyWeavers.xsd# Arquivos de configuração sensíveis
+config.json
+
+# Módulos do Node.js
+node_modules/
+
+# Arquivos de log
+*.log
+*.txt
+
+# Arquivos de build e distribuição
+/build
+/dist
+
+# Arquivos de ambiente
+.env
