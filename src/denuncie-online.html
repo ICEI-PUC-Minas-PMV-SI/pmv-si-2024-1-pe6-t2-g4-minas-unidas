@@ -9,9 +9,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Apoio a vitimas de violencia domestica em MG">
+    <meta name="description" content="Apoio a vítimas de violência doméstica em MG">
     <meta name="keywords"
-        content="MG, Minas Gerais, mulher, violencia domestica, violencia contra mulher, denuncia, apoio, depoimentos">
+        content="MG, Minas Gerais, mulher, violência doméstica, violência contra mulher, denúncia, apoio, depoimentos">
 
     <!-- CSS Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
@@ -22,13 +22,6 @@
 
     <!-- CSS Ícone lupa -->
     <script src="https://kit.fontawesome.com/16bd7ee685.js" crossorigin="anonymous"></script>
-
-    <!-- Script Denúncia -->
-    <script src="js/denuncie-online.js"></script>
-
-    <!-- Script para formatar textos-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
 
 </head>
 
@@ -80,8 +73,7 @@
                 <p class="text-muted">Caso o crime esteja acontecendo agora, recomendamos ligar para o telefone 190.
                     A partir de agora você entrou em um ambiente seguro, com certificação digital,
                     para que possa fazer suas denúncias com total tranquilidade. Não é necessário identificar-se para
-                    fazer
-                    a denúncia. O sigilo das informações será preservado.</p>
+                    fazer a denúncia. O sigilo das informações será preservado.</p>
             </div>
         </section>
 
@@ -99,52 +91,24 @@
                             <!-- Linha -->
                             <div class="form-row">
 
-                                <div class="form-group col-md-4">
-                                    <label for="inputCidade">Cidade</label>
-                                    <input id="inputCidade" type="text" class="form-control">
-                                </div>
-
-                                <div class="form-group col-md-3">
-                                    <label for="inputEstado">Estado</label>
-                                    <input id="inputEstado" type="text" class="form-control">
-                                </div>
-
-                                <div class="form-group col-md-5">
-                                    <label for="inputCep">CEP</label>
-                                    <input id="inputCep" type="text" class="form-control"
-                                        placeholder="Informe somente números" size="10" maxlength="10">
-
-                                    <script type="text/javascript">
-                                        $("#inputCep").mask("00000-000");
-                                    </script>
-
-                                </div>
-
-                                <div class="form-group col-md-6">
-                                    <label for="inputEmail">E-mail</label>
-                                    <input id="inputEmail" type="text" class="form-control">
-                                </div>
-
-                                <div class="form-group col-md-6">
-                                    <label for="inputTelefone">Telefone</label>
-                                    <input id="inputTelefone" type="text" class="form-control"
-                                        placeholder="Informe somente números" size="11" maxlength="11">
-
-                                    <script type="text/javascript">
-                                        $("#inputTelefone").mask("(00) 00000-0000");
-                                    </script>
-
-                                </div>
-
-                            </div>
-                            <!-- Fim da linha -->
-
-                            <!-- Linha -->
-                            <div class="form-row">
-
-                                <!-- Input Denúncia -->
+                                <!-- Tipo de Violência -->
                                 <div class="form-group col-md-12">
-                                    <label for="inputDenuncia">Denúncia</label>
+                                    <label for="selectTipoViolencia">Tipo de Violência</label>
+                                    <select id="selectTipoViolencia" class="form-control">
+                                        <option selected disabled>Selecione o tipo de violência</option>
+                                        <option value="1">Física</option> <!-- ID do tipo de violência Física -->
+                                        <option value="2">Psicológica</option>
+                                        <!-- ID do tipo de violência Psicológica -->
+                                        <option value="3">Sexual</option> <!-- ID do tipo de violência Sexual -->
+                                        <option value="4">Patrimonial</option>
+                                        <!-- ID do tipo de violência Patrimonial -->
+                                        <option value="5">Moral</option> <!-- ID do tipo de violência Moral -->
+                                    </select>
+                                </div>
+
+                                <!-- Descrição da Denúncia -->
+                                <div class="form-group col-md-12">
+                                    <label for="inputDenuncia">Descrição da Denúncia</label>
                                     <textarea id="inputDenuncia" cols="40" rows="5" class="form-control required"
                                         placeholder="Insira sua denúncia"></textarea>
                                 </div>
@@ -152,57 +116,44 @@
                             </div>
                             <!-- Fim da linha -->
 
-                            <!-- Linha -->
-                            <div class="form row">
-
-                                <!-- Botões -->
-                                <div class="col-lg-10">
-
-                                    <button id="btnClear" type="button" class="btn btn-outline-gray mr-2"
-                                        role="button">Cancelar</button>
-
-                                    <button id="btnInsert" type="button" class="btn btn-purple mr-2"
-                                        data-target="#modal">Publicar</button>
-
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modal"
-                                        aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered">
-
-                                            <!-- Conteúdo do modal-->
-                                            <div class="modal-content">
-
-                                                <!-- Header do modal -->
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title" id="modal">Obrigado!</h5>
-                                                    <button type="button" class="close" data-dismiss="modal"
-                                                        aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                </div>
-
-                                                <!-- Corpo do modal -->
-                                                <div class="modal-body">
-                                                    Denúncia publicada com sucesso.
-                                                </div>
-
-                                                <!-- Rodapé do modal-->
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-purple"
-                                                        data-dismiss="modal">OK</button>
-                                                </div>
-
-                                            </div>
-                                            <!-- Fim do conteúdo do modal -->
-                                        </div>
-                                    </div>
-                                    <!-- Fim do modal -->
-
-                                </div>
-                                <!-- Fim dos botões -->
-
+                            <!-- Botões -->
+                            <div class="form-row justify-content-center">
+                                <button id="btnClear" type="button" class="btn btn-outline-gray mr-2"
+                                    role="button">Cancelar</button>
+                                <button id="btnInsert" type="button" class="btn btn-purple mr-2">Publicar</button>
                             </div>
-                            <!-- Fim da linha -->
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modal" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+
+                                    <!-- Conteúdo do modal-->
+                                    <div class="modal-content">
+
+                                        <!-- Header do modal -->
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modal">Obrigado!</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+
+                                        <!-- Corpo do modal -->
+                                        <div class="modal-body">
+                                            Denúncia publicada com sucesso.
+                                        </div>
+
+                                        <!-- Rodapé do modal-->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-purple"
+                                                data-dismiss="modal">OK</button>
+                                        </div>
+
+                                    </div>
+                                    <!-- Fim do conteúdo do modal -->
+                                </div>
+                            </div>
+                            <!-- Fim do modal -->
 
                         </form>
                         <!-- Fim dos formulários -->
@@ -247,10 +198,10 @@
 
     </footer>
 
+    <!-- Script JS jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <!-- Script JS Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
@@ -258,41 +209,37 @@
     <!-- Script Denúncia -->
     <script>
 
-        // obtém os valores dos campos de formulário
-        let campoCidade = document.getElementById("inputCidade");
-        let campoEstado = document.getElementById("inputEstado");
-        let campoCEP = document.getElementById("inputCep");
-        let campoEmail = document.getElementById("inputEmail");
-        let campoTelefone = document.getElementById("inputTelefone");
-        let campoDenuncia = document.getElementById("inputDenuncia");
+        // Função para enviar denúncia para a API
+        $("#btnInsert").click(function () {
+            var tipoViolenciaId = $("#selectTipoViolencia").val();
+            var descricao = $("#inputDenuncia").val();
 
-        btnClear.onclick = function () {
+            // Verificar se o tipoViolenciaId é um número válido
+            if (tipoViolenciaId && !isNaN(tipoViolenciaId)) {
+                // Enviar a solicitação apenas se o tipoViolenciaId for válido
+                $.ajax({
+                    url: 'http://localhost:3000/denuncias', // URL da sua API de denúncias
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({ tipoViolenciaId: tipoViolenciaId, descricao: descricao }),
+                    success: function (response) {
+                        $('#modal').modal('show');
+                        $("#form-denuncie")[0].reset();
+                    },
+                    error: function (xhr, status, error) {
+                        console.error(xhr.responseText);
+                    }
+                });
+            } else {
+                // Se o tipoViolenciaId não for válido, exiba uma mensagem de erro
+                console.error("Tipo de violência inválido.");
+            }
+        });
+
+        // Função para limpar o formulário de denúncia
+        $("#btnClear").click(function () {
             $("#form-denuncie")[0].reset();
-        }
-
-        btnInsert.onclick = function () {
-
-            var item = {
-                cidade: campoCidade.value,
-                estado: campoEstado.value,
-                cep: campoCEP.value,
-                email: campoEmail.value,
-                telefone: campoTelefone.value,
-                denuncia: campoDenuncia.value
-            }
-
-            db_denuncieOnline.data[db_denuncieOnline.data.length] = item;
-
-            // console.log(db.data);
-
-            if (campoDenuncia.value) {
-                $('#modal').modal('toggle');
-                localStorage.setItem('db_denuncieOnline', JSON.stringify(db_denuncieOnline));
-                location.reload;
-                $("#form-denuncie")[0].reset();
-            }
-
-        };
+        });
 
     </script>
 

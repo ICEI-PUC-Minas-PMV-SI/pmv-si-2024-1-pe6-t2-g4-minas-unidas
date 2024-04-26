@@ -9,9 +9,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Apoio a vitimas de violencia domestica em MG">
-    <meta name="keywords"
-        content="MG, Minas Gerais, mulher, violencia domestica, violencia contra mulher, denuncia, apoio, depoimentos">
+    <meta name="description" content="Apoio a vítimas de violência doméstica em MG">
+    <meta name="keywords" content="MG, Minas Gerais, mulher, violência doméstica, violência contra mulher, depoimentos">
 
     <!-- CSS Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
@@ -22,9 +21,6 @@
 
     <!-- CSS Ícone lupa -->
     <script src="https://kit.fontawesome.com/16bd7ee685.js" crossorigin="anonymous"></script>
-
-    <!-- Script Depoimentos -->
-    <script src="js/depoimentos.js"></script>
 
 </head>
 
@@ -79,106 +75,6 @@
                         <!-- Título do formulário-->
                         <h4 class="pb-4 text-center">Cadastre seu depoimento</h4>
                         <form id="form-depoimentos">
-
-                            <!-- Linha -->
-                            <div class="form-row">
-
-                                <!-- Input Nome-->
-                                <div class="form-group col-md-8">
-                                    <label for="inputNome">Nome</label>
-                                    <input id="inputNome" type="text" class="form-control">
-                                </div>
-
-                                <!-- Checkbox anonimato -->
-                                <div class="form-group col-md-4">
-                                    <div class="form-check">
-                                        <input id="inputCheckbox" type="checkbox" class="form-check-input" value="">
-                                        <label class="form-check-label" for="checkbox">Publicar como anônimo</label>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <!-- Fim da linha -->
-
-                            <!-- Linha-->
-                            <div class="form-row">
-
-                                <!-- Input Cidade -->
-                                <div class="form-group col-md-8">
-
-                                    <label for="inputCidade">Cidade</label>
-                                    <select id="inputCidade" class="form-control">
-                                        <option selected>Selecionar cidade</option>
-                                        <option>Alfenas</option>
-                                        <option>Araguari</option>
-                                        <option>Araxá</option>
-                                        <option>Barbacena</option>
-                                        <option>Belo Horizonte</option>
-                                        <option>Betim</option>
-                                        <option>Caratinga</option>
-                                        <option>Cataguases</option>
-                                        <option>Conselheiro Lafaiete</option>
-                                        <option>Contagem</option>
-                                        <option>Coronel Fabriciano</option>
-                                        <option>Diamantina</option>
-                                        <option>Divinópolis</option>
-                                        <option>Formiga</option>
-                                        <option>Governador Valadares</option>
-                                        <option>Guaxupé</option>
-                                        <option>Ibirité</option>
-                                        <option>Ipatinga</option>
-                                        <option>Itabira</option>
-                                        <option>Itabirito</option>
-                                        <option>Itajubá</option>
-                                        <option>Itaúna</option>
-                                        <option>Ituiutaba</option>
-                                        <option>Janaúba</option>
-                                        <option>Januária</option>
-                                        <option>João Monlevade</option>
-                                        <option>Juiz de Fora</option>
-                                        <option>Lavras</option>
-                                        <option>Manhuaçu</option>
-                                        <option>Montes Claros</option>
-                                        <option>Muriaé</option>
-                                        <option>Nova Lima</option>
-                                        <option>Pará de Minas</option>
-                                        <option>Passos</option>
-                                        <option>Patos de Minas</option>
-                                        <option>Patrocínio</option>
-                                        <option>Pedro Leopoldo</option>
-                                        <option>Pirapora</option>
-                                        <option>Poços de Caldas</option>
-                                        <option>Ponte Nova</option>
-                                        <option>Pouso Alegre</option>
-                                        <option>Ribeirão das Neves</option>
-                                        <option>Sabará</option>
-                                        <option>Santa Luzia</option>
-                                        <option>Santa Maria</option>
-                                        <option>Santos Dumont</option>
-                                        <option>São João Del Rei</option>
-                                        <option>São Lourenço</option>
-                                        <option>São Sebastião do Paraíso</option>
-                                        <option>Sete Lagoas</option>
-                                        <option>Teófilo Otoni</option>
-                                        <option>Três Corações</option>
-                                        <option>Ubá</option>
-                                        <option>Uberaba</option>
-                                        <option>Uberlândia</option>
-                                        <option>Unaí</option>
-                                        <option>Varginha</option>
-                                        <option>Vespasiano</option>
-                                    </select>
-                                </div>
-
-                                <!-- Input Idade-->
-                                <div class="form-group col-md-4">
-                                    <label for="inputIdade">Idade</label>
-                                    <input id="inputIdade" type="number" maxlength="2" min="18" max="99"
-                                        class="form-control">
-                                </div>
-
-                            </div>
-                            <!-- Fim da linha -->
 
                             <!-- Linha -->
                             <div class="form-row">
@@ -288,54 +184,56 @@
 
     </footer>
 
+    <!-- Script JS jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <!-- Script JS Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
 
     <!-- Script Depoimentos -->
     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Função para enviar depoimento para a API
+            document.getElementById("btnInsert").onclick = function () {
+                var descricao = document.getElementById("inputTexto").value;
 
-        // obtém os valores dos campos de formulário
-        let campoNome = document.getElementById("inputNome");
-        let campoCidade = document.getElementById("inputCidade");
-        let campoIdade = document.getElementById("inputIdade");
-        let campoTexto = document.getElementById("inputTexto");
-        let checkbox = document.getElementById("inputCheckbox");
+                if (descricao.trim() === '') {
+                    alert('Por favor, insira o texto do depoimento.');
+                    return;
+                }
 
-        btnClear.onclick = function () {
-            $("#form-depoimentos")[0].reset();
-        }
+                var depoimento = {
+                    descricao: descricao
+                };
 
-        btnInsert.onclick = function () {
+                // Envio do depoimento para a API via AJAX
+                fetch('http://localhost:3000/depoimentos', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(depoimento),
+                })
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Erro ao adicionar depoimento.');
+                        }
+                        $('#modal').modal('show');
+                        document.getElementById("form-depoimentos").reset();
+                    })
+                    .catch(error => {
+                        console.error('Erro:', error);
+                        alert('Erro ao adicionar depoimento. Por favor, tente novamente.');
+                    });
+            };
 
-            var item = {
-                nome: campoNome.value,
-                cidade: campoCidade.value,
-                idade: campoIdade.value,
-                texto: campoTexto.value
-            }
-
-            if ((checkbox.checked) !== false) {
-                item.nome = 'Anônima';
-            }
-
-            db.data[db.data.length] = item;
-
-            // console.log(db.data);
-
-            if (campoTexto.value) {
-                $('#modal').modal('toggle');
-                localStorage.setItem('db', JSON.stringify(db));
-                location.reload;
-                $("#form-depoimentos")[0].reset();
-            }
-
-        };
-
+            // Função para limpar o formulário de depoimento
+            document.getElementById("btnClear").onclick = function () {
+                document.getElementById("form-depoimentos").reset();
+            };
+        });
     </script>
 
 </body>
