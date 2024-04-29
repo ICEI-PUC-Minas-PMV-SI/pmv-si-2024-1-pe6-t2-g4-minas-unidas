@@ -1,15 +1,7 @@
 const sql = require('mssql');
+const configData = require('./config.json');
 
-const config = {
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  server: process.env.DB_SERVER,
-  database: process.env.DB_NAME,
-  options: {
-    encrypt: true,
-    trustServerCertificate: true // Alterar isso somente se estiver no ambiente de desenvolvimento
-  }
-};
+const config = configData.dbConfig;
 
 const poolPromise = new sql.ConnectionPool(config)
   .connect()
