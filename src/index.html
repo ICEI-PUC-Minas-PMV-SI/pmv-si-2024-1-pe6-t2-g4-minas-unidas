@@ -23,9 +23,6 @@
     <!-- CSS Ícone lupa -->
     <script src="https://kit.fontawesome.com/16bd7ee685.js" crossorigin="anonymous"></script>
 
-    <!-- Script Depoimentos -->
-    <script src="js/depoimentos.js"></script>
-
 </head>
 
 <!-- Corpo da página -->
@@ -73,11 +70,10 @@
         <section class="jumbotron">
 
             <div class="container">
-                <p>A página <b>Minas Unidas</b> é uma iniciativa dos alunos do primeiro período do curso de Sistema de
-                    Informação da Puc Minas no semestre 2021/2 para a matéria de Projeto Web I. Com a supervisão do
-                    corpo docente e parceiros nas mais diversas frentes de apoio, a página fornece um centro de
-                    informação e conexão a toda a população, principalmente a vítimas e espectadores de violência
-                    doméstica no estado de Minas Gerais.
+                <p>A página <b>Minas Unidas</b> é uma iniciativa de alunos do curso de Sistema de Informação da
+                    PUC Minas. Com a supervisão do corpo docente e parceiros nas mais diversas frentes de apoio,
+                    a página fornece um centro de informação e conexão a toda a população, principalmente a vítimas
+                    e espectadores de violência doméstica no estado de Minas Gerais.
 
                 </p>
                 <p><a class="btn btn-purple" href="quem-somos.html" role="button">Saiba mais &raquo;</a></p>
@@ -104,26 +100,28 @@
 
                         <!-- Script Depoimentos -->
                         <script>
-
-                            var depoimentos = '';
-
-                            // popula o grid de depoimentos com os registros do banco de dados
-                            for (let i = db.data.length - 1; i >= 0; i--) {
-                                depoimentos += `<div class="col-md-6 internal-grid-col">
-                                                    <div class="card mb-4 shadow-sm h-100">
-                                                        <div class="card-body d-flex flex-column">
-                                                            <p class="card-text">${db.data[i].texto}</p>
-                                                            <div class="d-flex justify-content-between align-items-center mt-auto">
-                                                                <small class="text-muted">${db.data[i].nome}, ${db.data[i].idade}</small>
-                                                                <small class="text-muted">${db.data[i].cidade}</small>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>`;
-                            }
-
-                            document.getElementById('grid-depoimentos').innerHTML = depoimentos;
-
+                            document.addEventListener('DOMContentLoaded', function () {
+                                fetch('http://localhost:3000/depoimentos')
+                                    .then(response => response.json())
+                                    .then(data => {
+                                        var depoimentos = '';
+                                        data.reverse().forEach(function (depoimento) { // Revertendo a ordem dos depoimentos
+                                            depoimentos += `<div class="col-md-6 internal-grid-col">
+                                                                <div class="card mb-4 shadow-sm h-100">
+                                                                    <div class="card-body d-flex flex-column">
+                                                                        <p class="card-text">${depoimento.descricao}</p>
+                                                                        <div class="d-flex justify-content-between align-items-center mt-auto">
+                                                                            <small class="text-muted">${depoimento.nome}, ${depoimento.idade}</small>
+                                                                            <small class="text-muted">${depoimento.cidade}</small>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>`;
+                                        });
+                                        document.getElementById('grid-depoimentos').innerHTML = depoimentos;
+                                    })
+                                    .catch(error => console.error('Erro ao obter depoimentos:', error));
+                            });
                         </script>
 
                     </div>
@@ -301,7 +299,7 @@
                 </div>
 
                 <div class="col"></br>
-                    Minas Unidas &copy 2022 Copyright</br>
+                    Minas Unidas &copy 2024 Copyright</br>
                     Todos os direitos reservados
                 </div>
 
