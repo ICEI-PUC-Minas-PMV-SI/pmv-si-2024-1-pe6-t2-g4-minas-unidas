@@ -1,31 +1,41 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 const { sql, poolPromise } = require('./dbConfig');
-const cors = require('cors'); // Importa o pacote cors
 
-// Importa as rotas
+// Import routes
 const denunciasRoutes = require('./routes/denuncias');
 const depoimentosRoutes = require('./routes/depoimentos');
-const usuariosRoutes = require('./routes/usuarios');
+const { router: usuariosRoutes, findOne } = require('./routes/usuarios');
+const authenticationRoutes = require('./routes/authentication');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
-// Middleware para analisar corpos de solicitação JSON
+// Middleware for parsing JSON bodies
 app.use(bodyParser.json());
 
-// Middleware CORS
+// CORS middleware
 app.use(cors());
 
-// Rotas para Denúncias
+// Routes for Denuncias
 app.use('/denuncias', denunciasRoutes);
 
-// Rotas para Depoimentos
+// Routes for Depoimentos
 app.use('/depoimentos', depoimentosRoutes);
 
-// Rotas para Usuários
+// Routes for Users
 app.use('/usuarios', usuariosRoutes);
 
+// Authentication routes
+app.use('/authentication', authenticationRoutes);
+
+// Error handling middleware
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send('Something broke!');
+});
+
 app.listen(port, () => {
-    console.log(`Servidor Minas Unidas rodando em http://localhost:${port}`);
+  console.log(`Server running at http://localhost:${port}`);
 });
