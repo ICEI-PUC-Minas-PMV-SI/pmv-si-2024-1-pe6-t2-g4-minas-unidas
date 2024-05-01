@@ -1,9 +1,9 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const { sql, poolPromise } = require('./dbConfig');
-const cors = require('cors'); // Importe o pacote cors
+const cors = require('cors'); // Importa o pacote cors
 
-// Importa   as rotas
+// Importa as rotas
 const denunciasRoutes = require('./routes/denuncias');
 const depoimentosRoutes = require('./routes/depoimentos');
 const usuariosRoutes = require('./routes/usuarios');
