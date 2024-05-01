@@ -1,8 +1,22 @@
 const express = require('express');
 const router = express.Router();
 const { sql, poolPromise } = require('../dbConfig');
+const bcrypt = require('bcrypt');
 
-// Rota para listar todos os usuários
+// Function to find a user by email
+async function findOne(email) {
+    try {
+        const pool = await poolPromise;
+        const result = await pool.request()
+            .input('email', sql.NVarChar, email)
+            .query('SELECT * FROM Usuarios WHERE email = @email');
+        return result.recordset[0];
+    } catch (err) {
+        throw new Error('Error fetching user from the database');
+    }
+}
+
+// Route to list all users
 router.get('/', async (req, res) => {
     try {
         const pool = await poolPromise;
@@ -13,7 +27,7 @@ router.get('/', async (req, res) => {
     }
 });
 
-// Rota para buscar um usuário específico por ID
+// Route to get a specific user by ID
 router.get('/:id', async (req, res) => {
     const { id } = req.params;
     try {
@@ -31,49 +45,51 @@ router.get('/:id', async (req, res) => {
     }
 });
 
-// Rota para criar um novo usuário
+// Route to create a new user
 router.post('/', async (req, res) => {
     const { nome, email, senha, data_nascimento, cidade, estado, perfil_id } = req.body;
     try {
+        const hashedPassword = await bcrypt.hash(senha, 10); // Hash the password
         const pool = await poolPromise;
         const result = await pool.request()
             .input('nome', sql.NVarChar, nome)
             .input('email', sql.NVarChar, email)
-            .input('senha', sql.NVarChar, senha)
+            .input('senha', sql.NVarChar, hashedPassword) // Use hashed password
             .input('data_nascimento', sql.Date, data_nascimento)
             .input('cidade', sql.NVarChar, cidade)
             .input('estado', sql.NVarChar, estado)
             .input('perfil_id', sql.NVarChar, perfil_id)
-            .query('INSERT INTO Usuarios (nome, email, senha, data_nascimento, cidade, estado, perfil_id) VALUES (@nome, @email, @senha, @data_nascimento, @cidade, @estado, @perfil_id)');            
+            .query('INSERT INTO Usuarios (nome, email, senha, data_nascimento, cidade, estado, perfil_id) VALUES (@nome, @email, @senha, @data_nascimento, @cidade, @estado, @perfil_id)');
         res.status(201).send('Usuário criado com sucesso!');
     } catch (err) {
         res.status(500).send(err.message);
     }
 });
 
-// Rota para atualizar um usuário existente
+// Route to update an existing user
 router.put('/:id', async (req, res) => {
     const { id } = req.params;
     const { nome, email, senha, data_nascimento, cidade, estado, perfil_id } = req.body;
     try {
         const pool = await poolPromise;
+        const hashedPassword = await bcrypt.hash(senha, 10); // Hash password
         const result = await pool.request()
             .input('id', sql.Int, id)
             .input('nome', sql.NVarChar, nome)
             .input('email', sql.NVarChar, email)
-            .input('senha', sql.NVarChar, senha)
+            .input('senha', sql.NVarChar, hashedPassword) // Save hashed password
             .input('data_nascimento', sql.Date, data_nascimento)
             .input('cidade', sql.NVarChar, cidade)
             .input('estado', sql.NVarChar, estado)
             .input('perfil_id', sql.NVarChar, perfil_id)
-            .query('UPDATE Usuarios SET nome = @nome, email = @email, senha = @senha, data_nascimento = @data_nascimento, cidade = @cidade, estado = @estado, perfil_id = @perfil_id WHERE id = @id');            
+            .query('UPDATE Usuarios SET nome = @nome, email = @email, senha = @senha, data_nascimento = @data_nascimento, cidade = @cidade, estado = @estado, perfil_id = @perfil_id WHERE id = @id');
         res.send('Usuário atualizado com sucesso!');
     } catch (err) {
         res.status(500).send(err.message);
     }
 });
 
-// Rota para excluir um usuário existente
+// Route to delete an existing user
 router.delete('/:id', async (req, res) => {
     const { id } = req.params;
     try {
@@ -87,4 +103,7 @@ router.delete('/:id', async (req, res) => {
     }
 });
 
-module.exports = router;
+module.exports = {
+    router,
+    findOne
+};

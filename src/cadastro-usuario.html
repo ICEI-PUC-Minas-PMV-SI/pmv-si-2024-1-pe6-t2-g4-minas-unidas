@@ -22,9 +22,6 @@
     <!-- CSS Ícone lupa -->
     <script src="https://kit.fontawesome.com/16bd7ee685.js" crossorigin="anonymous"></script>
 
-    <!-- Script Denúncia -->
-    <script src="js/cadastro-usuario.js"></script>
-
 </head>
 
 <!-- Corpo da página -->
@@ -87,7 +84,7 @@
                                 <div class="form-group col-md-6">
                                     <label for="inputDataNascimento">Data de Nascimento</label>
                                     <input id="inputDataNascimento" type="text" class="form-control"
-                                        placeholder="DD/MM/AAAA" required>
+                                        placeholder="DD/MM/AAAA" required onkeyup="formatarData(this)">
                                 </div>
                                 <!-- Input Cidade -->
                                 <div class="form-group col-md-6">
@@ -341,6 +338,14 @@
             }
 
             return true; // Formulário válido
+        }
+
+        // Função para formatar a data enquanto o usuário digita
+        function formatarData(input) {
+            var valor = input.value;
+            if (valor.length === 2 || valor.length === 5) {
+                input.value += '/';
+            }
         }
     </script>
 
