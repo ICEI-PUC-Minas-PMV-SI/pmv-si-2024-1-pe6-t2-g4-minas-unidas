@@ -147,6 +147,7 @@
                   <th scope="col">Cidade</th>
                   <th scope="col">Estado</th>
                   <th scope="col">Tipo de perfil</th>
+                  <th scope="col">Ações</th>
                 </tr>
               </thead>
               <tbody id="table-cadastroUsuario"></tbody>
@@ -202,19 +203,60 @@
         .then((data) => {
           // Iterando sobre os dados recebidos e adicionando-os à tabela
           data.forEach((usuario) => {
+            // Adicionando um ID único a cada linha da tabela para identificação posterior
+            const rowId = `user-${usuario.id}`;
             document.getElementById("table-cadastroUsuario").innerHTML += `
-            <tr>
-              <td>${usuario.nome}</td>
-              <td>${getFormattedDate(usuario.data_nascimento)}</td>
-              <td>${usuario.email}</td>
-              <td>${usuario.cidade}</td>
-              <td>${usuario.estado}</td>
-              <td>${getProfileType(usuario.perfil_id)}</td>
-            </tr>
-          `;
+                <tr id="${rowId}">
+                    <td>${usuario.nome}</td>
+                    <td>${getFormattedDate(usuario.data_nascimento)}</td>
+                    <td>${usuario.email}</td>
+                    <td>${usuario.cidade}</td>
+                    <td>${usuario.estado}</td>
+                    <td>${getProfileType(usuario.perfil_id)}</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm" onclick="openUpdateModal(${
+                          usuario.id
+                        })">Editar</button>
+                        <button class="btn btn-danger btn-sm" onclick="confirmDelete(${
+                          usuario.id
+                        })">Excluir</button>
+                    </td>
+                </tr>
+            `;
           });
         })
         .catch((error) => console.error("Erro ao buscar usuários:", error));
+
+      // Função para confirmar a exclusão
+      function confirmDelete(userId) {
+        console.log("Tentativa de exclusão do usuário com ID:", userId);
+        if (confirm("Tem certeza que deseja excluir este usuário?")) {
+          fetch(`http://localhost:3000/usuarios/${userId}`, {
+            method: "DELETE",
+          })
+            .then((response) => {
+              if (response.ok) {
+                const userRow = document.getElementById(`user-${userId}`);
+                console.log("Elemento encontrado:", userRow);
+                if (userRow) {
+                  userRow.remove();
+                  alert("Usuário excluído com sucesso!");
+                } else {
+                  console.error("Erro: Elemento não encontrado");
+                  alert("Erro ao excluir usuário. Elemento não encontrado.");
+                }
+              } else {
+                throw new Error("Erro ao excluir usuário");
+              }
+            })
+            .catch((error) => {
+              console.error("Erro:", error);
+              alert(
+                "Erro ao excluir usuário. Por favor, tente novamente mais tarde."
+              );
+            });
+        }
+      }
     </script>
   </body>
 </html>
