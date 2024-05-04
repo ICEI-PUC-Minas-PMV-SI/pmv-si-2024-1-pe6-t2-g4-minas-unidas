@@ -42,7 +42,7 @@ Para utilizar este projeto, siga as etapas abaixo:
     ```bash
     npm install
 3. Certifique-se de configurar corretamente o arquivo config.json com as informações de conexão com o banco de dados.
-4. Execute o servidor Node.js:
+4. Navegue até a pasta onde está localizado o arquivo server.js e execute o servidor Node.js:
     ```bash
     node server.js
 5. O servidor estará disponível em http://localhost:3000.
