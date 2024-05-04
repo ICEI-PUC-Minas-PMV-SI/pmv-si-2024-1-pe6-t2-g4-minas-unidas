@@ -1,5 +1,5 @@
 const sql = require('mssql');
-const configData = require('./config.json');
+const configData = require('../config.json');
 
 const config = configData.dbConfig;
 
