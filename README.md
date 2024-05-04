@@ -24,21 +24,33 @@ Este projeto visa preencher a lacuna existente nas plataformas dedicadas a mulhe
 # Planejamento
 
 | Etapa         | Atividades |
-|  :----:       | ----------- |
-| ETAPA 1         |[Documentação de Contexto](docs/contexto.md) <br> |
-| ETAPA 2         |[Planejar, desenvolver e gerenciar APIs e Web Services](docs/backend-apis.md) <br> |
-| ETAPA 3         |[Planejar, desenvolver e gerenciar uma aplicação Web](docs/frontend-web.md) |
-| ETAPA 4         |[Planejar, desenvolver e gerenciar uma aplicação Móvel](docs/frontend-mobile.md) <br>  |
-| ETAPA 5         | [Apresentação](presentation/README.md) |
+| ------------- | ----------- |
+| ETAPA 1       | [Documentação de Contexto](docs/contexto.md) |
+| ETAPA 2       | [Planejar, desenvolver e gerenciar APIs e Web Services](docs/backend-apis.md) |
+| ETAPA 3       | [Planejar, desenvolver e gerenciar uma aplicação Web](docs/frontend-web.md) |
+| ETAPA 4       | [Planejar, desenvolver e gerenciar uma aplicação Móvel](docs/frontend-mobile.md) |
+| ETAPA 5       | [Apresentação](presentation/README.md) |
 
 ## Instruções de utilização
 
-> Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+Para utilizar este projeto, siga as etapas abaixo:
+
+1. Clone o repositório para o seu ambiente local:
+   ```bash
+   git clone https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t2-g4-minas-unidas.git
+2. Instale as dependências do projeto utilizando npm:
+    ```bash
+    npm install
+3. Certifique-se de configurar corretamente o arquivo config.json com as informações de conexão com o banco de dados.
+4. Navegue até a pasta onde está localizado o arquivo server.js e execute o servidor Node.js:
+    ```bash
+    node server.js
+5. O servidor estará disponível em http://localhost:3000.
 
 # Código
 
-<li><a href="src/README.md"> Código Fonte</a></li>
+- [Código Fonte](src/README.md)
 
 # Apresentação
 
-<li><a href="presentation/README.md"> Apresentação da solução</a></li>
+- [Apresentação da Solução](presentation/README.md)

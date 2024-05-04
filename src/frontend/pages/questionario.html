@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- Meta tags -->
+    <title>Minas Unidas - Teste de perfil de violência</title>
+    <link rel="shortcut icon" type="image/png" href="../imgs/icone-projeto.ico">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apoio a vitimas de violencia domestica em MG">
+    <meta name="keywords"
+        content="MG, Minas Gerais, mulher, violencia domestica, violencia contra mulher, denuncia, apoio, depoimentos">
+
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- CSS da página -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- CSS Ícone lupa -->
+    <script src="https://kit.fontawesome.com/16bd7ee685.js" crossorigin="anonymous"></script>
+
+</head>
+
+<!-- Corpo da página -->
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+
+        <!-- Barra de navegação -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img class="image-nav" src="../imgs/navbar-brand.png" alt="Logo" width="64" height="64" class="d-inline-block align-top">
+                    <strong class="titulo-pagina"> Minas Unidas</strong>
+                </a>
+
+                <!-- Menu -->
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="quem-somos.html" class="btn">Quem somos</a></li>
+                    <li class="nav-item"><a href="legislacao.html" class="btn">Legislação</a></li>
+                    <li class="nav-item"><a href="redes-apoio.html" class="btn">Redes de apoio</a></li>
+                    <li class="nav-item denuncie"><a href="denuncie.html" class="btn">Denuncie</a></li>
+                </ul>
+
+                <!-- Login -->
+
+                <ul class="navbar-nav navbar-right">
+                <!-- Emoticon Login -->
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="White"
+                        class="bi-bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                        <path fill-rule="evenodd"
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                    </svg> -->
+                    <!-- Botão de Cadastro -->
+                    <li><a href="login.html" class="nav-item d-flex align-items-center btn-cad"><span class="fa fa-user"></span> Login</a></li>
+                </ul>
+                
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- Conteúdo -->
+    <main>
+
+        <!-- Jumbotron -->
+        <section class="jumbotron-testimonials bg-light text-center">
+            <div class="container-lg">
+                <h1>Teste de perfil de violência    </h1>
+                <p class="lead text-muted">Identifique se você está sendo vítima de algum tipo de violência.</p>
+                <p class="text-muted">Este teste tem a intenção de te apoiar na identificação de situações de violência vividas ou presenciadas sem a intenção de armazenar sua identificação pessoal ou a de terceiros. No início, você deverá responder a questões relacionadas à você para construção de seu perfil social e ao clicar no botão “Teste o seu Perfil”, o sistema apresenta uma série de questões que podem ser respondidas selecionando múltiplas opções, apenas uma opção, ou mesmo nenhuma.
+                    Ao final, o sistema qualifica seu perfil de acordo com as respostas enviadas.
+                    Fique tranquilo(a)! Seu resultado é apagado após o término do teste e ninguém poderá visualizá-lo.
+                </p>
+            </div>
+        </section>
+
+        <!-- Seção Questionário -->
+        <section class="container">
+            <div class="row">
+                <div id="progress-bar"></div>
+            </div>
+                <div id="box" class="justify-content-center align-items-center">
+                    <form class="questions-box">
+
+                        <!-- Pergunta 1 -->
+                        <div id="question-1" class="text-center p-3">
+                            <h4>1. Você já sofreu ou sofre com algum tipo de agressão física?</h4>
+                            <p class="text-muted">(Empurrões, chutes, aperto no braço, arremesso de objetos, outros)</p>
+
+                            <!-- Linha -->
+                            <div class="row justify-content-center align-items-center">
+                                <!-- Input Answer A -->
+                                <div class="form-check mb-2">
+                                    <input id="question-1-answer-a" class="form-check-input" type="radio"
+                                        name="favelang" value=1 />
+                                    <label class="form-check-label" for="question-1-answer-a">Sim</label>
+                                </div>
+                            </div>
+                            <!-- Fim da linha -->
+
+                            <!-- Linha-->
+                            <div class="row justify-content-center align-items-center">
+                                <!-- Input Answer B -->
+                                <div class="form-check mb-2">
+                                    <input id="question-1-answer-b" class="form-check-input" type="radio"
+                                        name="favelang" value=0 />
+                                    <label class="form-check-label" for="question-1-answer-b">Não</label>
+                                </div>
+                            </div>
+                            <!-- Fim da linha -->
+
+                            <!-- Linha -->
+                            <!-- Botão -->
+                            <div class="text-end row justify-content-center align-items-center p-3">
+                                <button id="submit1" type="button" class="btn btn-purple mr-2">Enviar resposta</button>
+                            </div>
+                            <div class="clearfix"></div>
+                            <!-- Fim do botão -->
+                        </div>
+                        <!-- Fim da pergunta 1 -->
+
+                        <!-- Pergunta 2 -->
+                        <div id="question-2" class="text-center p-3">
+                            <h4>2. Você já foi alvo de conteúdo íntimo ou inverdades divulgados por seu parceiro(a)?</h4>
+                            <p class="text-muted">(Fotos e vídeos íntimos, calúnia, acusação de traição, juízo de valor a respeito do modo de se vestir)</p>
+
+                            <!-- Linha -->
+                            <div class="row justify-content-center align-items-center">
+                                <!-- Input Answer A -->
+                                <div class="form-check mb-2">
+                                    <input id="question-2-answer-a" class="form-check-input" type="radio"
+                                        name="favelang" value=1 />
+                                    <label class="form-check-label" for="question-2-answer-a">Sim</label>
+                                </div>
+                            </div>
+                            <!-- Fim da linha -->
+
+                            <!-- Linha-->
+                            <div class="row justify-content-center align-items-center">
+                                <!-- Input Answer B -->
+                                <div class="form-check mb-2">
+                                    <input id="question-2-answer-b" class="form-check-input" type="radio"
+                                        name="favelang" value=0 />
+                                    <label class="form-check-label" for="question-2-answer-b">Não</label>
+                                </div>
+                            </div>
+                            <!-- Fim da linha -->
+
+                            <!-- Linha -->
+                            <!-- Botão -->
+                            <div class="text-end row justify-content-center align-items-center p-3">
+                                <button id="submit2" type="button" class="btn btn-purple mr-2">Enviar resposta</button>
+                            </div>
+                            <div class="clearfix"></div>
+                            <!-- Fim do botão -->
+                        </div>
+                        <!-- Fim da pergunta 2 -->
+
+                        <!-- Pergunta 3 -->
+                        <div id="question-3" class="text-center p-3">
+                            <h4>3. Você já foi impedida(o) de sair de casa ou teve bens pessoais destruídos por seu parceiro(a)?</h4>
+                            <p class="text-muted">(Impossibilidade de sair com alguma roupa, destruição de documentos ou material de trabalho)</p>
+
+                            <!-- Linha -->
+                            <div class="row justify-content-center align-items-center">
+                                <!-- Input Answer A -->
+                                <div class="form-check mb-2">
+                                    <input id="question-3-answer-a" class="form-check-input" type="radio"
+                                        name="favelang" value=1 />
+                                    <label class="form-check-label" for="question-3-answer-a">Sim</label>
+                                </div>
+                            </div>
+                            <!-- Fim da linha -->
+
+                            <!-- Linha-->
+                            <div class="row justify-content-center align-items-center">
+                                <!-- Input Answer B -->
+                                <div class="form-check mb-2">
+                                    <input id="question-3-answer-b" class="form-check-input" type="radio"
+                                        name="favelang" value=0 />
+                                    <label class="form-check-label" for="question-3-answer-b">Não</label>
+                                </div>
+                            </div>
+                            <!-- Fim da linha -->
+
+                            <!-- Linha -->
+                            <!-- Botão -->
+                            <div class="text-end row justify-content-center align-items-center p-3">
+                                <button id="submit3" type="button" class="btn btn-purple mr-2">Enviar resposta</button>
+                            </div>
+                            <div class="clearfix"></div>
+                            <!-- Fim do botão -->
+                        </div>
+                        <!-- Fim da pergunta 3 -->
+
+                        <!-- Pergunta 4 -->
+                        <div id="question-4" class="text-center p-3">
+                            <h4>4. O comportamento de seu parceiro(a) te faz sentir culpada(o) ou inferiorizada(o)?</h4>
+                            <p class="text-muted">(Atos de humilhação, desvalorização moral ou deboche público)</p>
+                            <!-- Linha -->
+                            <div class="row justify-content-center align-items-center">
+                                <!-- Input Answer A -->
+                                <div class="form-check mb-2">
+                                    <input id="question-4-answer-a" class="form-check-input" type="radio"
+                                        name="favelang" value=1 />
+                                    <label class="form-check-label" for="question-4-answer-a">Sim</label>
+                                </div>
+                            </div>
+                            <!-- Fim da linha -->
+
+                            <!-- Linha-->
+                            <div class="row justify-content-center align-items-center">
+                                <!-- Input Answer B -->
+                                <div class="form-check mb-2">
+                                    <input id="question-4-answer-b" class="form-check-input" type="radio"
+                                        name="favelang" value=0 />
+                                    <label class="form-check-label" for="question-4-answer-b">Não</label>
+                                </div>
+                            </div>
+                            <!-- Fim da linha -->
+
+                            <!-- Linha -->
+                            <!-- Botão -->
+                            <div class="text-end row justify-content-center align-items-center p-3">
+                                <button id="submit4" type="button" class="btn btn-purple mr-2">Enviar resposta</button>
+                            </div>
+                            <div class="clearfix"></div>
+                            <!-- Fim do botão -->
+                        </div>
+                        <!-- Fim da pergunta 4 -->
+
+                        <!-- Pergunta 5 -->
+                        <div id="question-5" class="text-center p-3">
+                            <h4>5. Já vivenciou algum ato invasivo ou insinuativo de caráter sexual por parte de seu parceiro(a)?</h4>
+                            <p class="text-muted">(Relação sexual sem consentimento, sexualização verbal, restrição ao uso de preservativo, masturbação)</p>
+
+                            <!-- Linha -->
+                            <div class="row justify-content-center align-items-center">
+                                <!-- Input Answer A -->
+                                <div class="form-check mb-2">
+                                    <input id="question-5-answer-a" class="form-check-input" type="radio"
+                                        name="favelang" value=1 />
+                                    <label class="form-check-label" for="question-5-answer-a">Sim</label>
+                                </div>
+                            </div>
+                            <!-- Fim da linha -->
+
+                            <!-- Linha-->
+                            <div class="row justify-content-center align-items-center">
+                                <!-- Input Answer B -->
+                                <div class="form-check mb-2">
+                                    <input id="question-5-answer-b" class="form-check-input" type="radio"
+                                        name="favelang" value=0 />
+                                    <label class="form-check-label" for="question-5-answer-b">Não</label>
+                                </div>
+                            </div>
+                            <!-- Fim da linha -->
+
+                            <!-- Linha -->
+                            <!-- Botão -->
+                            <div class="text-end row justify-content-center align-items-center p-3">
+                                <button id="submit5" type="button" class="btn btn-purple mr-2">Enviar resposta</button>
+                            </div>
+                            <div class="clearfix"></div>
+                            <!-- Fim do botão -->
+                        </div>
+                        <!-- Fim da pergunta 5 -->
+
+                        <!-- Resultado -->
+                        <div id="question-6" class="text-center p-3">
+                            <h4>Resultado</h4>
+                            <p class="text-muted">Segundo suas respostas, identificamos o seguinte status para o seu perfil:</p>
+
+                            <!-- Linha -->
+                            <div class="row justify-content-center align-items-center">
+                                <!-- Input Answer A -->
+                                <div class="form-check mb-2">
+                                    <!-- <h1 id="printtotalscore"></h1>-->
+                                    <p id="printscoreinfo"></p>
+                                </div>
+                            </div>
+                            <!-- Fim da linha -->
+
+
+                            <!-- Linha -->
+                            <!-- Botão -->
+                            <div class="row justify-content-center align-items-center p-3">
+                                <a href="legislacao.html" class="btn btn-purple my-2 mr-2">Entenda sobre</a>
+                                <a href="denuncie.html" class="btn btn-purple my-2 mr-2">Denuncie</a>
+                                <a href="questionario.html" class="btn btn-outline-gray mr-2">Refazer teste</a>
+                            </div>
+                            <div class="clearfix"></div>
+                            <!-- Fim do botão -->
+                        </div>
+                        <!-- Fim da pergunta 6 -->
+
+                        <!-- Fim dos formulários -->
+                    </form>
+                </div>
+
+        </section>
+        <!-- Fim da seção -->
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-4 row-cols-sm-1">
+                <div class="col-right"></br>
+                    <img src="../imgs/navbar-brand.png" alt="logo" width="64" height="64" class="d-block mx-auto">
+                </div>
+
+                <div class="col"></br>
+                    Minas Unidas &copy 2024 Copyright</br>
+                    Todos os direitos reservados
+                </div>
+
+                <div class="col"></br>
+                    <b>Contato</b></br>
+                    minasunidaspucminas@gmail.com
+                </div>
+
+                <div class="col-left"></br>
+                    <b>Apoio</b></br>
+                    <a
+                        href="https://www.pucminas.br/vestibular/Paginas/default.aspx?utm_source=google&utm_medium=search&utm_campaign=vestibular-22&gclid=EAIaIQobChMI6LjkzqbZ8wIVhg-RCh2F8gu1EAAYASAAEgL5avD_BwE">
+                        <img src="../imgs/logo-puc.jpeg" width="64" height="64" alt="Logo PUC Minas">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Script JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+    <!-- Script JS Questionário -->
+    <script src="../js/script-questionario.js"></script>
+
+</body>
+
+</html>
