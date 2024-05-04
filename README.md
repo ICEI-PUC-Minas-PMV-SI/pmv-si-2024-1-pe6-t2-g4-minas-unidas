@@ -1,7 +1,9 @@
 # MINAS UNIDAS
 
 `CURSO: Sistemas de Informação`
+
 `DISCIPLINA: Projeto - Arquitetura de Sistemas Distribuídos`
+
 `SEMESTRE: 6º`
 
 Este projeto visa preencher a lacuna existente nas plataformas dedicadas a mulheres vítimas de violência em Minas Gerais. A solução proposta consiste na criação de uma página web e um aplicativo móvel, ambos oferecendo conteúdo informativo para orientar tanto vítimas quanto testemunhas desse tipo de violência. O sistema incluirá um catálogo com informações sobre redes de apoio locais, permitindo às vítimas acessar recursos e suporte multidisciplinar disponibilizados por essas redes. A ideia é incentivar as vítimas a realizar denúncias e interromper o ciclo de violência ao qual estão submetidas. A arquitetura de sistemas distribuídos será empregada para garantir a eficiência, escalabilidade e acessibilidade da plataforma, promovendo uma resposta integrada e ágil diante das necessidades das usuárias.
