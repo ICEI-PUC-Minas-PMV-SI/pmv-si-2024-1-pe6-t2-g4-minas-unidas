@@ -206,42 +206,8 @@
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
 
-    <!-- Script Denúncia -->
-    <script>
-
-        // Função para enviar denúncia para a API
-        $("#btnInsert").click(function () {
-            var tipoViolenciaId = $("#selectTipoViolencia").val();
-            var descricao = $("#inputDenuncia").val();
-
-            // Verificar se o tipoViolenciaId é um número válido
-            if (tipoViolenciaId && !isNaN(tipoViolenciaId)) {
-                // Enviar a solicitação apenas se o tipoViolenciaId for válido
-                $.ajax({
-                    url: 'http://localhost:3000/denuncias', // URL da sua API de denúncias
-                    type: 'POST',
-                    contentType: 'application/json',
-                    data: JSON.stringify({ tipoViolenciaId: tipoViolenciaId, descricao: descricao }),
-                    success: function (response) {
-                        $('#modal').modal('show');
-                        $("#form-denuncie")[0].reset();
-                    },
-                    error: function (xhr, status, error) {
-                        console.error(xhr.responseText);
-                    }
-                });
-            } else {
-                // Se o tipoViolenciaId não for válido, exiba uma mensagem de erro
-                console.error("Tipo de violência inválido.");
-            }
-        });
-
-        // Função para limpar o formulário de denúncia
-        $("#btnClear").click(function () {
-            $("#form-denuncie")[0].reset();
-        });
-
-    </script>
+  <!-- Script CRUD Denúncias -->
+  <script src="../js/crud-denuncias.js" defer></script>
 
 </body>
 
