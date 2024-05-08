@@ -1,37 +1,6 @@
-# MINAS UNIDAS
+# Instruções de utilização
 
-`CURSO: Sistemas de Informação`
-
-`DISCIPLINA: Projeto - Arquitetura de Sistemas Distribuídos`
-
-`SEMESTRE: 6º`
-
-Este projeto visa preencher a lacuna existente nas plataformas dedicadas a mulheres vítimas de violência em Minas Gerais. A solução proposta consiste na criação de uma página web e um aplicativo móvel, ambos oferecendo conteúdo informativo para orientar tanto vítimas quanto testemunhas desse tipo de violência. O sistema incluirá um catálogo com informações sobre redes de apoio locais, permitindo às vítimas acessar recursos e suporte multidisciplinar disponibilizados por essas redes. A ideia é incentivar as vítimas a realizar denúncias e interromper o ciclo de violência ao qual estão submetidas. A arquitetura de sistemas distribuídos será empregada para garantir a eficiência, escalabilidade e acessibilidade da plataforma, promovendo uma resposta integrada e ágil diante das necessidades das usuárias.
-
-## Integrantes
-
-* Andressa Cordeiro Kahn 
-* Carolina Meneses de Carvalho Moura
-* Gabriella Victória da Silveira Pecsén
-* Luiz Carlos Ferreira
-* Rafael Machado Bueno
-* Davisson José de Souza Gomes
-
-## Orientador
-
-* Josiane da Costa Vieira Resende
-
-# Planejamento
-
-| Etapa         | Atividades |
-| ------------- | ----------- |
-| ETAPA 1       | [Documentação de Contexto](docs/contexto.md) |
-| ETAPA 2       | [Planejar, desenvolver e gerenciar APIs e Web Services](docs/backend-apis.md) |
-| ETAPA 3       | [Planejar, desenvolver e gerenciar uma aplicação Web](docs/frontend-web.md) |
-| ETAPA 4       | [Planejar, desenvolver e gerenciar uma aplicação Móvel](docs/frontend-mobile.md) |
-| ETAPA 5       | [Apresentação](presentation/README.md) |
-
-## Instruções de utilização
+## Instalação do projeto
 
 Para utilizar este projeto, siga as etapas abaixo:
 
@@ -47,10 +16,16 @@ Para utilizar este projeto, siga as etapas abaixo:
     node server.js
 5. O servidor estará disponível em http://localhost:3000.
 
-# Código
+## Histórico de versões
 
-- [Código Fonte](src/README.md)
+### [1.0.0] - 21/04/2024
+#### Adicionado
+- Implementação de CRUD back-end para denúncias, depoimentos, usuários e autenticação.
 
-# Apresentação
+### [1.1.0] - 12/05/2024
+#### Adicionado
+- Implementação de front-end para aplicação web.
 
-- [Apresentação da Solução](presentation/README.md)
+### [1.2.0] - 16/06/2024
+#### Adicionado
+- Implementação de front-end para aplicação mobile.
