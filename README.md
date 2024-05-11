@@ -1,44 +1,11 @@
-# MINAS UNIDAS
+# Instruções de utilização
 
-`CURSO: Sistemas de Informação`
+## Instalação do Site
 
-`DISCIPLINA: Projeto - Arquitetura de Sistemas Distribuídos`
+O site em HTML/CSS/JS é um projeto estático, logo pode ser utilizado tanto em servidores...
 
-`SEMESTRE: 6º`
+## Histórico de versões
 
-Este projeto visa preencher a lacuna existente nas plataformas dedicadas a mulheres vítimas de violência em Minas Gerais. A solução proposta consiste na criação de uma página web e um aplicativo móvel, ambos oferecendo conteúdo informativo para orientar tanto vítimas quanto testemunhas desse tipo de violência. O sistema incluirá um catálogo com informações sobre redes de apoio locais, permitindo às vítimas acessar recursos e suporte multidisciplinar disponibilizados por essas redes. A ideia é incentivar as vítimas a realizar denúncias e interromper o ciclo de violência ao qual estão submetidas. A arquitetura de sistemas distribuídos será empregada para garantir a eficiência, escalabilidade e acessibilidade da plataforma, promovendo uma resposta integrada e ágil diante das necessidades das usuárias.
-
-## Integrantes
-
-* Andressa Cordeiro Kahn 
-* Carolina Meneses de Carvalho Moura
-* Gabriella Victória da Silveira Pecsén
-* Luiz Carlos Ferreira
-* Rafael Machado Bueno
-* Davisson José de Souza Gomes
-
-## Orientador
-
-* Josiane da Costa Vieira Resende
-
-# Planejamento
-
-| Etapa         | Atividades |
-|  :----:       | ----------- |
-| ETAPA 1         |[Documentação de Contexto](docs/contexto.md) <br> |
-| ETAPA 2         |[Planejar, desenvolver e gerenciar APIs e Web Services](docs/backend-apis.md) <br> |
-| ETAPA 3         |[Planejar, desenvolver e gerenciar uma aplicação Web](docs/frontend-web.md) |
-| ETAPA 4         |[Planejar, desenvolver e gerenciar uma aplicação Móvel](docs/frontend-mobile.md) <br>  |
-| ETAPA 5         | [Apresentação](presentation/README.md) |
-
-## Instruções de utilização
-
-> Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
-
-# Código
-
-<li><a href="src/README.md"> Código Fonte</a></li>
-
-# Apresentação
-
-<li><a href="presentation/README.md"> Apresentação da solução</a></li>
+### [0.1.0] - DD/MM/AAAA
+#### Adicionado
+- Adicionado ...
