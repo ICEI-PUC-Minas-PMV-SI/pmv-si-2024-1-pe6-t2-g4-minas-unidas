@@ -1,0 +1,13 @@
+{
+    "dbConfig": {
+      "user": "process.env.DATABASE_USR",
+      "password": "process.env.DATABASE_PSW",
+      "server": "minasunidas-db-server.database.windows.net",
+      "database": "MinasUnidasDB",
+      "options": {
+        "encrypt": true,
+        "trustServerCertificate": true
+      }
+    }
+  }
+  
