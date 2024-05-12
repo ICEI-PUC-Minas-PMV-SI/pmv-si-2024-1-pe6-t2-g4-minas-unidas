@@ -59,4 +59,4 @@ jobs:
           app-name: 'MinasUnidas'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B1F7D7070F544C19B1330C88E0458474 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9BD72739229248689785065F053AFF50 }}
