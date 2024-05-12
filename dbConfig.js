@@ -1,7 +1,25 @@
 const sql = require('mssql');
-const configData = require('./config.json');
+const dotenv = require('dotenv');
+dotenv.config();
 
-const config = configData.dbConfig;
+const user = process.env.DATUSR;
+const password = process.env.DATPSW;
+
+const config = {
+  user,
+  password,
+  server: "minasunidas-db-server.database.windows.net",
+  database: "MinasUnidasDB",
+  options: {
+    encrypt: true,
+    trustServerCertificate: true
+  }
+};
+
+//const sql = require('mssql');
+//const configData = require('./config.json');
+
+//const config = configData.dbConfig;
 
 const poolPromise = new sql.ConnectionPool(config)
   .connect()
