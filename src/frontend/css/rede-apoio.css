@@ -28,7 +28,7 @@
 
 /* caixa de texto selecionar cidade - pagina denuncia presencial/telefone */
 .selecione-cidade {
-    background-color:#a071d1;
+    background-color:rgb(89, 53, 154);
     width: 360px;
     height: 50px;
     display: inline;
@@ -41,7 +41,8 @@
     font-weight: bold;
     font-size: large;
     text-align: center;
-    text-decoration: none;    
+    text-decoration: none;
+    margin-bottom: 10px;    
 }
 
 /* caixa de selecao - pagina denuncia presencial/telefone */
@@ -62,6 +63,7 @@
     font-size: medium;
     text-align: center;
     text-decoration: none;
+    margin-top: 10px;
 }
 
 /*Ajustes responsivos*/
