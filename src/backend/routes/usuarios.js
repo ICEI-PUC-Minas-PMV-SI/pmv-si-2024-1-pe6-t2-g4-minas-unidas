@@ -3,7 +3,7 @@ const router = express.Router();
 const { sql, poolPromise } = require('../dbConfig');
 const bcrypt = require('bcrypt');
 
-// Function to find a user by email
+// Rota para listar todos os usuários
 async function findOne(email) {
     try {
         const pool = await poolPromise;
@@ -27,7 +27,7 @@ router.get('/', async (req, res) => {
     }
 });
 
-// Route to get a specific user by ID
+// Rota para buscar um usuário específico por ID
 router.get('/:id', async (req, res) => {
     const { id } = req.params;
     try {
@@ -66,7 +66,7 @@ router.post('/', async (req, res) => {
     }
 });
 
-// Route to update an existing user
+// Rota para atualizar um usuário existente
 router.put('/:id', async (req, res) => {
     const { id } = req.params;
     const { nome, email, senha, data_nascimento, cidade, estado, perfil_id } = req.body;
@@ -89,7 +89,7 @@ router.put('/:id', async (req, res) => {
     }
 });
 
-// Route to delete an existing user
+// Rota para excluir um usuário existente
 router.delete('/:id', async (req, res) => {
     const { id } = req.params;
     try {

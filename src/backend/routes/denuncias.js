@@ -33,13 +33,19 @@ router.get('/:id', async (req, res) => {
 
 // Rota para criar uma nova denúncia
 router.post('/', async (req, res) => {
-    const { tipoViolenciaId, descricao } = req.body; // Modifique para tipoViolenciaId
+    const { nome, data_nascimento, cidade, estado, email, telefone, tipoViolenciaId, descricao } = req.body;
     try {
         const pool = await poolPromise;
         const result = await pool.request()
-            .input('tipoViolenciaId', sql.Int, tipoViolenciaId) // Modifique para tipoViolenciaId
+            .input('nome', sql.NVarChar, nome)
+            .input('data_nascimento', sql.Date, data_nascimento)
+            .input('cidade', sql.NVarChar, cidade)
+            .input('estado', sql.NVarChar, estado)
+            .input('email', sql.NVarChar, email)
+            .input('telefone', sql.NVarChar, telefone)
+            .input('tipoViolenciaId', sql.Int, tipoViolenciaId)
             .input('descricao', sql.NVarChar, descricao)
-            .query('INSERT INTO Denuncias (tipoviolenciaid, descricao) VALUES (@tipoViolenciaId, @descricao)'); // Modifique para tipoviolenciaid
+            .query('INSERT INTO Denuncias (nome, data_nascimento, cidade, estado, email, telefone, tipoViolenciaId, descricao) VALUES (@nome, @data_nascimento, @cidade, @estado, @email, @telefone, @tipoViolenciaId, @descricao)');
         res.status(201).send('Denúncia criada com sucesso!');
     } catch (err) {
         res.status(500).send(err.message);
@@ -49,14 +55,20 @@ router.post('/', async (req, res) => {
 // Rota para atualizar uma denúncia existente
 router.put('/:id', async (req, res) => {
     const { id } = req.params;
-    const { tipoViolenciaId, descricao } = req.body; // Modifique para tipoViolenciaId
+    const { nome, data_nascimento, cidade, estado, email, telefone, tipoViolenciaId, descricao } = req.body;
     try {
         const pool = await poolPromise;
         const result = await pool.request()
             .input('id', sql.Int, id)
-            .input('tipoViolenciaId', sql.Int, tipoViolenciaId) // Modifique para tipoViolenciaId
+            .input('nome', sql.NVarChar, nome)
+            .input('data_nascimento', sql.Date, data_nascimento)
+            .input('cidade', sql.NVarChar, cidade)
+            .input('estado', sql.NVarChar, estado)
+            .input('email', sql.NVarChar, email)
+            .input('telefone', sql.NVarChar, telefone)
+            .input('tipoViolenciaId', sql.Int, tipoViolenciaId)
             .input('descricao', sql.NVarChar, descricao)
-            .query('UPDATE Denuncias SET tipoviolenciaid = @tipoViolenciaId, descricao = @descricao WHERE id = @id'); // Modifique para tipoviolenciaid
+            .query('UPDATE Denuncias SET nome = @nome, data_nascimento = @data_nascimento, cidade = @cidade, estado = @estado, email = @email, telefone = @telefone, tipoViolenciaId = @tipoViolenciaId, descricao = @descricao WHERE id = @id');
         res.send('Denúncia atualizada com sucesso!');
     } catch (err) {
         res.status(500).send(err.message);
