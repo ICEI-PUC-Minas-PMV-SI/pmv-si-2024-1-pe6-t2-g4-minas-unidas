@@ -11,10 +11,14 @@ p.tab-pane{
     font-weight: normal;
 }
 
+p.title-page{
+   background-color: rgb(89, 53, 154) ; 
+}
+
 
 /*Estilo dos botões direciona*/
 a.btn-direciona{
-    background-color:#711BCF;
+    background-color:rgb(89, 53, 154);
     
     height: 50px;
     padding: 5px 10px;
@@ -38,7 +42,7 @@ a.btn-direciona:hover{
 /* Navpills - Tipos de violência*/
 /* Botões/pílulas ativos*/
 .nav-pills .nav-link.active {
-    background-color: #711BCF;
+    background-color: rgb(89, 53, 154);
     font-weight: bold;
     margin-inline: 5px;
     margin-bottom: 5px;
@@ -48,7 +52,7 @@ a.btn-direciona:hover{
 
 /* Botões/pílulas inativas*/
 .nav-link{
-    color: #711BCF;
+    color: rgb(89, 53, 154);
     font-weight: bold;
     margin-left: 40px;
     
@@ -57,7 +61,7 @@ a.btn-direciona:hover{
 /*Botões/pílulas ao passar ponteiro*/
 .nav-link:hover{
     color: #FFFFFF;
-    background-color: #711BCF;
+    background-color: rgb(89, 53, 154);
 }
 
 
