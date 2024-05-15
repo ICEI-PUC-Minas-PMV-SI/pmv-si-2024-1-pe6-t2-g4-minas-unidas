@@ -36,7 +36,7 @@ app.get('/dashboard-usuarios.html', (req, res) => {
 
 // Rota para servir a página dashboard-denuncias.html
 app.get('/dashboard-denuncias.html', (req, res) => {
-  const filePath = path.join(__dirname, '/../frontend/pages/dashboard-usuarios.html');
+  const filePath = path.join(__dirname, '/../frontend/pages/dashboard-denuncias.html');
   res.sendFile(filePath);
 });
 
