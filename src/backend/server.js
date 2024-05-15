@@ -1,9 +1,10 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const path = require('path');
 const { sql, poolPromise } = require('./dbConfig');
 
-// Import routes
+// Importação das rotas
 const denunciasRoutes = require('./routes/denuncias');
 const depoimentosRoutes = require('./routes/depoimentos');
 const { router: usuariosRoutes, findOne } = require('./routes/usuarios');
@@ -12,28 +13,37 @@ const authenticationRoutes = require('./routes/authentication');
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Middleware for parsing JSON bodies
+// Middleware para análise de corpos JSON
 app.use(bodyParser.json());
 
-// CORS middleware
+// Middleware de CORS
 app.use(cors());
 
-// Routes for Denuncias
-app.use('/denuncias', denunciasRoutes);
+// Configuração para servir arquivos estáticos
+app.use(express.static(path.join(__dirname, '/../frontend')));
 
-// Routes for Depoimentos
-app.use('/depoimentos', depoimentosRoutes);
+// Rotas
+app.use('/denuncias', denunciasRoutes); // Rotas para denúncias
+app.use('/depoimentos', depoimentosRoutes); // Rotas para depoimentos
+app.use('/usuarios', usuariosRoutes); // Rotas para usuários
+app.use('/authentication', authenticationRoutes); // Rotas para autenticação
 
-// Routes for Users
-app.use('/usuarios', usuariosRoutes);
+// Rota para servir a página dashboard-usuarios.html
+app.get('/dashboard-usuarios.html', (req, res) => {
+  const filePath = path.join(__dirname, '/../frontend/pages/dashboard-usuarios.html');
+  res.sendFile(filePath);
+});
 
-// Authentication routes
-app.use('/authentication', authenticationRoutes);
+// Rota para servir a página dashboard-denuncias.html
+app.get('/dashboard-denuncias.html', (req, res) => {
+  const filePath = path.join(__dirname, '/../frontend/pages/dashboard-usuarios.html');
+  res.sendFile(filePath);
+});
 
-// Error handling middleware
+// Middleware de tratamento de erros
 app.use((err, req, res, next) => {
   console.error(err.stack);
-  res.status(500).send('Something broke!');
+  res.status(500).send('Internal Server Error');
 });
 
 app.listen(port, () => {
