@@ -1,16 +1,99 @@
 # Front-end Web
 
-[Inclua uma breve descrição do projeto e seus objetivos.]
+Este documento aborda o desenvolvimento do front-end web para o projeto **Minas Unidas**. O objetivo principal do front-end web é fornecer uma interface amigável e intuitiva para os usuários interagirem com as funcionalidades oferecidas pelo sistema. Isso inclui o registro e login de usuários, visualização e criação de denúncias e depoimentos. O front-end será desenvolvido utilizando tecnologias como HTML, CSS, Bootstrap e JavaScript. O foco será na usabilidade e na integração com o back-end da aplicação.
 
 ## Tecnologias Utilizadas
-[Lista das tecnologias principais que serão utilizadas no projeto.]
+
+A seguir, estão listadas as tecnologias utilizadas no desenvolvimento do projeto:
+
+### Ambiente de desenvolvimento:
+- **Visual Studio Code**: IDE para desenvolvimento do código-fonte.
+- **Git**: Sistema de controle de versão para rastreamento e gerenciamento de alterações no código-fonte, possibilitando colaboração e versionamento.
+- **GitHub**: Plataforma de hospedagem de código-fonte e colaboração para desenvolvimento de projetos.
+
+### Front-end:
+- **HTML**: Linguagem de marcação para estruturação do conteúdo na web.
+- **CSS**: Linguagem de estilização para design e apresentação visual da plataforma.
+- **Bootstrap**: Framework front-end que será empregado para facilitar o desenvolvimento responsivo, garantindo uma experiência do usuário consistente em diferentes dispositivos.
+- **JavaScript**: Linguagem de programação para implementar funcionalidades dinâmicas e interativas na página web.
+
+### Back-end:
+- **Node.js**: Framework de execução JavaScript assíncrono orientado a eventos, projetado para construir aplicativos de rede escalonáveis, onde muitas conexões podem ser tratadas simultaneamente.
+- **Express**: Framework web utilizado para criar aplicações Node.js, aproveitando seu módulo HTTP para criar as comunicações.
+- **Postman**: Software utilizado para testar APIs.
+- **Body-parser**: Middleware utilizado para fazer o parsing do corpo das requisições HTTP.
+- **Cors**: Middleware utilizado para habilitar o CORS (Cross-Origin Resource Sharing) no servidor Express.
+
+### Banco de dados:
+- **Microsoft SQL Server**: Sistema de gerenciamento de banco de dados relacional desenvolvido pela Microsoft.
+
+### Hospedagem
+- **Azure**: A aplicação será hospedada em um servidor na nuvem Azure da Microsoft.
 
 ## Arquitetura
 
-[Descrição da arquitetura das aplicação web, incluindo os componentes e suas interações.]
+A arquitetura das APIs do projeto será baseada em uma abordagem de microsserviços, visando modularidade, escalabilidade e facilidade de manutenção. As APIs serão desenvolvidas utilizando Node.js com o framework Express.
+
+### Componentes principais
+
+1. **Serviço de Denúncias**:
+- Fornece operações CRUD (Create, Read, Update, Delete) para manipulação de denúncias.
+
+2. **Serviço de Depoimentos**:
+- Permite aos usuários registrar e visualizar depoimentos sobre suas experiências de violência doméstica.
+
+3. **Serviço de Usuários**:
+- Fornece operações CRUD (Create, Read, Update, Delete) para manipulação de usuários;
+- Responsável pela autenticação de usuários, integrando-se ao serviço de autenticação para fornecer tokens de acesso.
+
+4. **Serviço de Autenticação**:
+- Responsável por gerenciar o processo de autenticação de usuários, fornecendo tokens de acesso para operações seguras nas APIs;
+- Implementado utilizando JSON Web Tokens (JWT) para autenticação segura.
+
+### Interações:
+
+- As aplicações web e móveis interagem com os serviços através de requisições HTTP, utilizando endpoints específicos para cada operação;
+- O serviço de autenticação valida as credenciais dos usuários e emite tokens JWT para permitir acesso seguro aos outros serviços;
+- Os serviços de denúncias, depoimentos e usuários utilizam o banco de dados para armazenar e recuperar informações relevantes;
+- A comunicação entre os serviços é realizada de forma assíncrona;
+- A segurança é garantida por meio de práticas como autenticação de usuários, autorização de acesso e validação de entrada de dados.
+
+![Arquitetura da Solução]()
 
 ## Modelagem da Aplicação
-[Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
+
+Nesta seção, será apresentada a modelagem da aplicação, que inclui a definição das entidades do sistema, seus atributos e relacionamentos.
+
+### Entidades
+
+A seguir, são detalhadas as entidades do sistema:
+
+#### 1. Tipo de violência:
+
+- Representa os cinco tipos de violência: física, psicológica, moral, sexual ou patrimonial;
+- Atributos: ID (chave primária), Tipo.
+
+#### 2. Perfil:
+
+- Define os diferentes perfis de usuários no sistema;
+- Atributos: ID (chave primária), Descrição.
+
+#### 3. Usuário:
+
+- Representa os usuários do sistema;
+- Atributos: ID (chave primária), Nome, Data de Nascimento, Cidade, Estado, E-mail, Senha, Perfil ID (chave estrangeira referenciando o perfil associado).
+
+#### 4. Denúncia:
+
+- Armazena as denúncias feitas pelos usuários;
+- Atributos: ID (chave primária), Nome, Data de Nascimento, Cidade, Estado, E-mail, Telefone, Tipo de Violência ID (chave estrangeira referenciando o tipo de violência associado), Descrição.
+
+#### 5. Depoimento:
+
+- Armazena os depoimentos dos usuários sobre suas experiências;
+- Atributos: ID (chave primária), Descrição.
+
+![Modelagem de dados](img/modelagem-dados.png)
 
 ## Projeto da Interface Web
 [Descreva o projeto da interface Web da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]
@@ -29,20 +112,58 @@
 
 ## Fluxo de Dados
 
-[Diagrama ou descrição do fluxo de dados na aplicação.]
+Neste fluxo, descrevemos as etapas do ciclo de interação entre os usuários e a aplicação:
 
-## Requisitos Funcionais
+- **Registro e Autenticação do Usuário**: Ao acessar a aplicação, os usuários podem se cadastrar ou fazer login. O serviço de usuários gerencia essas ações, validando as credenciais e fornecendo tokens JWT para autenticar os usuários;
+- **Criação de Denúncias e Depoimentos**: Os usuários têm a capacidade de registrar denúncias ou compartilhar depoimentos sobre suas experiências. Esses dados são submetidos às APIs correspondentes, onde são validados e armazenados no banco de dados;
+- **Visualização de Dados**: As denúncias e depoimentos armazenados no banco de dados podem ser acessados e visualizados pelos usuários através da interface da aplicação. As APIs recuperam esses dados do banco e os entregam às interfaces do usuário;
+- **Operações de CRUD**: As operações CRUD, como criar, ler, atualizar e excluir, são aplicáveis aos usuários e às denúncias. As APIs correspondentes lidam com essas solicitações, interagindo com o banco de dados para executar as operações conforme necessário;
+- **Autenticação e autorização**: As solicitações de usuário são autenticadas e autorizadas usando tokens JWT. O serviço de autenticação valida os tokens e verifica as permissões do usuário antes de processar a solicitação.
 
-[Liste os principais requisitos funcionais da aplicação.]
+### Requisitos Funcionais
 
-## Requisitos Não Funcionais
+Para atender às demandas dos usuários, foram estabelecidos os seguintes requisitos funcionais:
 
-[Liste os principais requisitos não funcionais da aplicação, como desempenho, segurança, escalabilidade, etc.]
+| ID     | Descrição do Requisito                              | Prioridade |
+|--------|-----------------------------------------------------|------------|
+| RF-001 | Cadastrar denúncia de violência doméstica           | ALTA       |
+| RF-002 | Consultar denúncia de violência doméstica           | ALTA       |
+| RF-003 | Editar denúncia de violência doméstica              | ALTA       |
+| RF-004 | Excluir denúncia de violência doméstica             | ALTA       |
+| RF-005 | Gerenciar denúncias de violência doméstica          | ALTA       |
+| RF-006 | Consultar redes de apoio disponíveis                | ALTA       |
+| RF-007 | Visualizar depoimentos de vítimas                   | MÉDIA      |
+| RF-008 | Realizar teste sobre violência doméstica            | MÉDIA      |
+| RF-009 | Gerenciar perfis de usuários                        | ALTA       |
+| RF-010 | Criar perfil de usuário                             | ALTA       |
+| RF-011 | Consultar perfil de usuário                         | ALTA       |
+| RF-012 | Editar perfil de usuário                            | ALTA       |
+| RF-013 | Excluir perfil de usuário                           | ALTA       |
+| RF-014 | Fazer login no sistema                              | BAIXA      |
+| RF-015 | Fazer logout do sistema                             | BAIXA      |
 
+### Requisitos não Funcionais
+
+Abaixo estão listados os requisitos não funcionais identificados para o sistema:
+
+| ID      | Descrição do Requisito                                                  | Prioridade |
+|---------|-------------------------------------------------------------------------|------------|
+| RNF-001 | Compatibilidade com os principais navegadores                           | ALTA       |
+| RNF-002 | Interface gráfica responsiva                                            | MÉDIA      |
+| RNF-003 | Disponibilidade do sistema por pelo menos 90% do tempo                  | ALTA       |
+| RNF-004 | Tempo de resposta inferior a 3 segundos para as solicitações do usuário | MÉDIA      |
+| RNF-005 | Conformidade com as normas e padrões legais                             | ALTA       |
+| RNF-006 |  Implementação de medidas de segurança da informação                    | MÉDIA      |
 
 ## Considerações de Segurança
 
-[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
+Para garantir a segurança da aplicação distribuída, foram implementadas as seguintes considerações de segurança:
+
+- **Autenticação de usuários**: A autenticação de usuários é realizada utilizando tokens JWT (JSON Web Tokens). Isso permite que apenas usuários autenticados tenham acesso às funcionalidades protegidas da aplicação;
+- **Proteção de senhas**: As senhas dos usuários são protegidas utilizando o algoritmo de hash bcrypt. Isso garante que as senhas não sejam armazenadas em texto simples no banco de dados, aumentando a segurança em caso de violações de dados;
+- **Controle de acesso**: As operações de CRUD (Create, Read, Update, Delete) são protegidas por meio de controle de acesso baseado em funções. Isso garante que apenas usuários autorizados possam realizar alterações no sistema.
+- **Proteção contra injeção de SQL**: Para proteger contra ataques de injeção de SQL, consultas parametrizadas são utilizadas ao acessar o banco de dados;
+- **Cors**: O pacote é utilizado para configurar as políticas de compartilhamento de recursos entre origens diferentes, ajudando a evitar ataques de scripts entre sites.
 
 ## Implantação
 
@@ -66,4 +187,12 @@
 
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
+BRASIL. <b>Decreto nº. 1.973, de 1º de agosto de 1996.</b> Presidência da República, Casa Civil, Subchefia para Assuntos Jurídicos. Disponível em: http://www.planalto.gov.br/ccivil_03/decreto/1996/d1973.htm. Acesso em: 5 de mar. de 2024.
+
+BRASIL. <b>Lei nº. 11.340, de 7 de agosto de 2006.</b> Presidência da República, Secretaria-Geral, Subchefia para Assuntos Jurídicos. Disponível em: http://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/lei/l11340.htm. Acesso em: 5 de mar. de 2024.
+
+<b>CANAIS registram mais de 105 mil denúncias de violência contra mulher em 2020, </b>Governo do Brasil, 08 de mar. de 2021. Disponível em: https://www.gov.br/pt-br/noticias/assistencia-social/2021/03/canais-registram-mais-de-105-mil-denuncias-de-violencia-contra-mulher-em-2020. Acesso em: 5 de mar. de 2024.
+
+CETIC, <b>TIC Domicílios 2020.</b> Disponível em: https://cetic.br/media/analises/tic_domicilios_2020_coletiva_imprensa.pdf. Acesso em: 5 de mar. de 2024.
+
+SENADO FEDERAL. <b>Violência doméstica e familiar contra a mulher. </b> Pesquisa DataSenado. Brasília, 2017. Disponível em: https://www12.senado.leg.br/institucional/datasenado/arquivos/aumenta-numero-de-mulheres-que-declaram-ter-sofrido-violencia. Acesso em: 5 de mar. de 2024.
