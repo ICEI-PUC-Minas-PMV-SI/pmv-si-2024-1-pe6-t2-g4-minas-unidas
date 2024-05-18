@@ -4,7 +4,7 @@ function getProfileType(profileId) {
         case 1:
             return "Administrador";
         case 2:
-            return "Usuário comum";
+            return "Usuário";
         default:
             return "Tipo de perfil desconhecido";
     }
