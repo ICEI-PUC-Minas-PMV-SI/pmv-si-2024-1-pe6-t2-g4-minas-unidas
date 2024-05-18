@@ -1,6 +1,6 @@
 // Função para mapear o tipo de violência para o nome correspondente
-function getTipoViolenciaId(tipoViolenciaId) {
-    switch (tipoViolenciaId) {
+function gettipoviolencia_id(tipoviolencia_id) {
+    switch (tipoviolencia_id) {
         case 1:
             return "Física";
         case 2:
@@ -76,7 +76,7 @@ $("#btnCadastrar").click(function () {
         var estado = $("#inputEstado").val();
         var email = $("#inputEmail").val();
         var telefone = $("#inputTelefone").val();
-        var tipoViolenciaId = $("#selectTipoViolencia").val();
+        var tipoviolencia_id = $("#selectTipoViolencia").val();
         var descricao = $("#inputDenuncia").val();
 
         // Formatar a data de nascimento no formato AAAA-MM-DD, se estiver preenchida e for válida
@@ -99,7 +99,7 @@ $("#btnCadastrar").click(function () {
                 estado: estado,
                 email: email,
                 telefone: telefone,
-                tipoViolenciaId: tipoViolenciaId,
+                tipoviolencia_id: tipoviolencia_id,
                 descricao: descricao
             }),
             success: function (response) {
@@ -185,7 +185,7 @@ function carregarDenuncias() {
                     '<td>' + denuncia.estado + '</td>' +
                     '<td>' + denuncia.email + '</td>' +
                     '<td>' + denuncia.telefone + '</td>' +
-                    '<td>' + getTipoViolenciaId(denuncia.tipoViolenciaId) + '</td>' +
+                    '<td>' + gettipoviolencia_id(denuncia.tipoviolencia_id) + '</td>' +
                     '<td>' + denuncia.descricao + '</td>' +
                     '<td>' +
                     '<button class="btn btn-primary btn-sm" onclick="fillEditForm(' + denuncia.id + ')" data-toggle="modal" data-target="#modalEditar">Editar</button>' +
@@ -225,7 +225,7 @@ window.fillEditForm = function (denunciaId) {
             document.getElementById("inputEstadoEditar").value = data.estado;
             document.getElementById("inputEmailEditar").value = data.email;
             document.getElementById("inputTelefoneEditar").value = data.telefone;
-            document.getElementById("selectTipoEditar").value = data.tipoViolenciaId;
+            document.getElementById("selectTipoEditar").value = data.tipoviolencia_id;
             document.getElementById("inputDenunciaEditar").value = data.descricao;
             // Define o ID da denúncia para uso posterior na atualização
             window.denunciaId = denunciaId;
@@ -247,7 +247,7 @@ window.updateDenunciaData = function () {
     var estado = $("#inputEstadoEditar").val();
     var email = $("#inputEmailEditar").val();
     var telefone = $("#inputTelefoneEditar").val();
-    var tipoViolenciaId = $("#selectTipoEditar").val();
+    var tipoviolencia_id = $("#selectTipoEditar").val();
     var descricao = $("#inputDenunciaEditar").val();
 
     // Obtém a data de nascimento apenas se estiver preenchida
@@ -268,7 +268,7 @@ window.updateDenunciaData = function () {
             estado: estado,
             email: email,
             telefone: telefone,
-            tipoViolenciaId: tipoViolenciaId,
+            tipoviolencia_id: tipoviolencia_id,
             descricao: descricao
         }),
         success: function (response) {

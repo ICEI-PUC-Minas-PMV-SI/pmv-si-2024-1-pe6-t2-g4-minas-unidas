@@ -9,7 +9,7 @@ async function findOne(email) {
         const pool = await poolPromise;
         const result = await pool.request()
             .input('email', sql.NVarChar, email)
-            .query('SELECT * FROM Usuarios WHERE email = @email');
+            .query('SELECT * FROM usuario WHERE email = @email');
         return result.recordset[0];
     } catch (err) {
         throw new Error('Error fetching user from the database');
@@ -20,7 +20,7 @@ async function findOne(email) {
 router.get('/', async (req, res) => {
     try {
         const pool = await poolPromise;
-        const result = await pool.request().query('SELECT * FROM Usuarios');
+        const result = await pool.request().query('SELECT * FROM usuario');
         res.json(result.recordset);
     } catch (err) {
         res.status(500).send(err.message);
@@ -34,7 +34,7 @@ router.get('/:id', async (req, res) => {
         const pool = await poolPromise;
         const result = await pool.request()
             .input('id', sql.Int, id)
-            .query('SELECT * FROM Usuarios WHERE id = @id');
+            .query('SELECT * FROM usuario WHERE id = @id');
         if (result.recordset.length === 0) {
             res.status(404).send('Usuário não encontrado');
         } else {
@@ -59,7 +59,7 @@ router.post('/', async (req, res) => {
             .input('cidade', sql.NVarChar, cidade)
             .input('estado', sql.NVarChar, estado)
             .input('perfil_id', sql.NVarChar, perfil_id)
-            .query('INSERT INTO Usuarios (nome, email, senha, data_nascimento, cidade, estado, perfil_id) VALUES (@nome, @email, @senha, @data_nascimento, @cidade, @estado, @perfil_id)');
+            .query('INSERT INTO usuario (nome, email, senha, data_nascimento, cidade, estado, perfil_id) VALUES (@nome, @email, @senha, @data_nascimento, @cidade, @estado, @perfil_id)');
         res.status(201).send('Usuário criado com sucesso!');
     } catch (err) {
         res.status(500).send(err.message);
@@ -82,7 +82,7 @@ router.put('/:id', async (req, res) => {
             .input('cidade', sql.NVarChar, cidade)
             .input('estado', sql.NVarChar, estado)
             .input('perfil_id', sql.NVarChar, perfil_id)
-            .query('UPDATE Usuarios SET nome = @nome, email = @email, senha = @senha, data_nascimento = @data_nascimento, cidade = @cidade, estado = @estado, perfil_id = @perfil_id WHERE id = @id');
+            .query('UPDATE usuario SET nome = @nome, email = @email, senha = @senha, data_nascimento = @data_nascimento, cidade = @cidade, estado = @estado, perfil_id = @perfil_id WHERE id = @id');
         res.send('Usuário atualizado com sucesso!');
     } catch (err) {
         res.status(500).send(err.message);
@@ -96,7 +96,7 @@ router.delete('/:id', async (req, res) => {
         const pool = await poolPromise;
         const result = await pool.request()
             .input('id', sql.Int, id)
-            .query('DELETE FROM Usuarios WHERE id = @id');
+            .query('DELETE FROM usuario WHERE id = @id');
         res.send('Usuário excluído com sucesso!');
     } catch (err) {
         res.status(500).send(err.message);

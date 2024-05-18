@@ -6,7 +6,7 @@ const { sql, poolPromise } = require('../dbConfig');
 router.get('/', async (req, res) => {
     try {
         const pool = await poolPromise;
-        const result = await pool.request().query('SELECT * FROM Denuncias');
+        const result = await pool.request().query('SELECT * FROM denuncia');
         res.json(result.recordset);
     } catch (err) {
         res.status(500).send(err.message);
@@ -20,7 +20,7 @@ router.get('/:id', async (req, res) => {
         const pool = await poolPromise;
         const result = await pool.request()
             .input('id', sql.Int, id)
-            .query('SELECT * FROM Denuncias WHERE id = @id');
+            .query('SELECT * FROM denuncia WHERE id = @id');
         if (result.recordset.length === 0) {
             res.status(404).send('Denúncia não encontrada');
         } else {
@@ -33,7 +33,7 @@ router.get('/:id', async (req, res) => {
 
 // Rota para criar uma nova denúncia
 router.post('/', async (req, res) => {
-    const { nome, data_nascimento, cidade, estado, email, telefone, tipoViolenciaId, descricao } = req.body;
+    const { nome, data_nascimento, cidade, estado, email, telefone, tipoviolencia_id, descricao } = req.body;
     try {
         const pool = await poolPromise;
         const result = await pool.request()
@@ -43,9 +43,9 @@ router.post('/', async (req, res) => {
             .input('estado', sql.NVarChar, estado)
             .input('email', sql.NVarChar, email)
             .input('telefone', sql.NVarChar, telefone)
-            .input('tipoViolenciaId', sql.Int, tipoViolenciaId)
+            .input('tipoviolencia_id', sql.Int, tipoviolencia_id)
             .input('descricao', sql.NVarChar, descricao)
-            .query('INSERT INTO Denuncias (nome, data_nascimento, cidade, estado, email, telefone, tipoViolenciaId, descricao) VALUES (@nome, @data_nascimento, @cidade, @estado, @email, @telefone, @tipoViolenciaId, @descricao)');
+            .query('INSERT INTO denuncia (nome, data_nascimento, cidade, estado, email, telefone, tipoviolencia_id, descricao) VALUES (@nome, @data_nascimento, @cidade, @estado, @email, @telefone, @tipoviolencia_id, @descricao)');
         res.status(201).send('Denúncia criada com sucesso!');
     } catch (err) {
         res.status(500).send(err.message);
@@ -55,7 +55,7 @@ router.post('/', async (req, res) => {
 // Rota para atualizar uma denúncia existente
 router.put('/:id', async (req, res) => {
     const { id } = req.params;
-    const { nome, data_nascimento, cidade, estado, email, telefone, tipoViolenciaId, descricao } = req.body;
+    const { nome, data_nascimento, cidade, estado, email, telefone, tipoviolencia_id, descricao } = req.body;
     try {
         const pool = await poolPromise;
         const result = await pool.request()
@@ -66,9 +66,9 @@ router.put('/:id', async (req, res) => {
             .input('estado', sql.NVarChar, estado)
             .input('email', sql.NVarChar, email)
             .input('telefone', sql.NVarChar, telefone)
-            .input('tipoViolenciaId', sql.Int, tipoViolenciaId)
+            .input('tipoviolencia_id', sql.Int, tipoviolencia_id)
             .input('descricao', sql.NVarChar, descricao)
-            .query('UPDATE Denuncias SET nome = @nome, data_nascimento = @data_nascimento, cidade = @cidade, estado = @estado, email = @email, telefone = @telefone, tipoViolenciaId = @tipoViolenciaId, descricao = @descricao WHERE id = @id');
+            .query('UPDATE denuncia SET nome = @nome, data_nascimento = @data_nascimento, cidade = @cidade, estado = @estado, email = @email, telefone = @telefone, tipoviolencia_id = @tipoviolencia_id, descricao = @descricao WHERE id = @id');
         res.send('Denúncia atualizada com sucesso!');
     } catch (err) {
         res.status(500).send(err.message);
@@ -82,7 +82,7 @@ router.delete('/:id', async (req, res) => {
         const pool = await poolPromise;
         const result = await pool.request()
             .input('id', sql.Int, id)
-            .query('DELETE FROM Denuncias WHERE id = @id');
+            .query('DELETE FROM denuncia WHERE id = @id');
         res.send('Denúncia excluída com sucesso!');
     } catch (err) {
         res.status(500).send(err.message);

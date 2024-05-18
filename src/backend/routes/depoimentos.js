@@ -6,7 +6,7 @@ const { sql, poolPromise } = require('../dbConfig');
 router.get('/', async (req, res) => {
     try {
         const pool = await poolPromise;
-        const result = await pool.request().query('SELECT * FROM Depoimentos');
+        const result = await pool.request().query('SELECT * FROM depoimento');
         res.json(result.recordset);
     } catch (err) {
         res.status(500).send(err.message);
@@ -20,7 +20,7 @@ router.get('/:id', async (req, res) => {
         const pool = await poolPromise;
         const result = await pool.request()
             .input('id', sql.Int, id)
-            .query('SELECT * FROM Depoimentos WHERE id = @id');
+            .query('SELECT * FROM depoimento WHERE id = @id');
         if (result.recordset.length === 0) {
             res.status(404).send('Depoimento não encontrado');
         } else {
@@ -38,7 +38,7 @@ router.post('/', async (req, res) => {
         const pool = await poolPromise;
         const result = await pool.request()
             .input('descricao', sql.NVarChar, descricao)
-            .query('INSERT INTO Depoimentos (descricao) VALUES (@descricao)');
+            .query('INSERT INTO depoimento (descricao) VALUES (@descricao)');
         res.status(201).send('Depoimento criado com sucesso!');
     } catch (err) {
         res.status(500).send(err.message);
@@ -54,7 +54,7 @@ router.put('/:id', async (req, res) => {
         const result = await pool.request()
             .input('id', sql.Int, id)
             .input('descricao', sql.NVarChar, descricao)
-            .query('UPDATE Depoimentos SET descricao = @descricao WHERE id = @id');
+            .query('UPDATE depoimento SET descricao = @descricao WHERE id = @id');
         res.send('Depoimento atualizado com sucesso!');
     } catch (err) {
         res.status(500).send(err.message);
@@ -68,7 +68,7 @@ router.delete('/:id', async (req, res) => {
         const pool = await poolPromise;
         const result = await pool.request()
             .input('id', sql.Int, id)
-            .query('DELETE FROM Depoimentos WHERE id = @id');
+            .query('DELETE FROM depoimento WHERE id = @id');
         res.send('Depoimento excluído com sucesso!');
     } catch (err) {
         res.status(500).send(err.message);
