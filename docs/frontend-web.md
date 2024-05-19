@@ -242,7 +242,7 @@ PLANO DE TESTES DE SOFTWARE
 
   **Fluxo de Trabalho de Teste**
   
-O sistema como um todo sera validados em um programa de testes que está constituído em varis etapas de testes, com dois exemplos práticos em cada, relacionadas à unidade, integração e sistema.
+O sistema como um todo sera validados em um programa de testes que está constituído em varias etapas de testes, com dois exemplos práticos em cada, relacionadas à unidade, integração e sistema.
 
    |                        |                 Recursos Humanos                                |               |
    |-------------------------|------------------|--------------------------------------------------------------------------|
@@ -439,7 +439,7 @@ Verifica se o software é capaz de retornar para um estado operacional após est
 
 
 
-|Caso de Teste|CT115 – Realizar a recuperação do banco de dados do sistema|
+|Caso de Teste|CT15 – Realizar a recuperação do banco de dados do sistema|
 |--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Pré-Condição|Não possui pré-condição|
 |Procedimento|O ator realiza o processo de recuperação do backup do banco;O ator deleta todos os dados do banco de dados; O ator acessa o sistema e verifica como as telas se comportam após a exclusão repentina dos dados;corretamente.O ator realiza a recuperação do backup;O ator verifica se os dados voltaram para o banco de dados e como as telas se comportam|
