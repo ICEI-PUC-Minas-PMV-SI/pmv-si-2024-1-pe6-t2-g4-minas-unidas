@@ -468,7 +468,7 @@ CT03, CT07 CT013
 |Categoria de Teste|Teste de Segurança (CT03) - Acessar o sistema com login válido (E-mail) e senha incorreta|
 |Impacto|Alto|
 |Reprodução passo a passo|O ator acessa a home page;Na barra de menu seleciona a opção “Login”;O ator informa um login válido no campo E-mail” e digita senha inválida no campo “Senha”; Aciona a tecla “Entrar” com um clique; Erro do sistema - Nenhuma mensagem é exibida e nenhuma ação é realizada na tela.|
-|Evidência|                      |
+|Evidência|         ![primeira](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t2-g4-minas-unidas/assets/89945405/4422892b-e98b-4094-a269-c69f46100049)         |
 |Proposta de Correção|Implementar mensagem pop-up informando ao ator sobre a negativa do sistema.|
 |Descrição|Ao acessar o painel de gerenciamento do usuário tanto o acesso às telas de depoimentos, redes de apoio, notícias e usuários quanto os botões de editar, ampliar, inserir e apagar não funcionam corretamente (inacessíveis ou não existem). | 
 |Categoria de Teste|Teste de Usabilidade (CT07) - Realizar principais tarefas no ambiente de administrador da conta (inserir, ampliar, editar e excluir) para as opções de depoimento, perfil de usuário, denúncia, redes de apoio e notícias.|
