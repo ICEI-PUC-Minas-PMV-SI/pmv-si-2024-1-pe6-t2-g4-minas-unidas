@@ -96,13 +96,13 @@ A seguir, são detalhadas as entidades do sistema:
 ![Modelagem de dados](img/modelagem-dados.png)
 
 ## Projeto da Interface Web
-A interface web está composta por seis módulos de interação com o usuário, sao eles: 
+A interface web está composta por seis módulos de interação com o usuário, são eles: 
 - Home, onde sao visualizados o mural de depoimentos, carrossel de notícias e acessado o "Teste de Perfil de Violência";
 - Quem somos, com breve resumo da página;
 - Legislação, com informação atualizada sobre a lei e tipos de violências;
 - Redes de apoio, com idenficação e visualizacao dos atores presentes no Estado;
 - Denuncie, disponibilidade de realizar uma denúncia diretamente aos orgãos competentes;
-- Login e cadastro de usuário, para identificacao da página.
+- Login e cadastro de usuário, para identificacão e gerenciamento de informações do indivíduo.
 
 
 ### Wireframes
