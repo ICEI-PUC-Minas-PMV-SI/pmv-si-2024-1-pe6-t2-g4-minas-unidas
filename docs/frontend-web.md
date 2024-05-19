@@ -244,7 +244,7 @@ PLANO DE TESTES DE SOFTWARE
   
 O sistema como um todo sera validados em um programa de testes que está constituído em varis etapas de testes, com dois exemplos práticos em cada, relacionadas à unidade, integração e sistema.
 
-   |                                         Recursos Humanos                                               |
+   |                        |                 Recursos Humanos                                |               |
    |-------------------------|------------------|--------------------------------------------------------------------------|
    |Nome    |   papel          |Responsabilidades ou Comentários Específicos                                 |
 
