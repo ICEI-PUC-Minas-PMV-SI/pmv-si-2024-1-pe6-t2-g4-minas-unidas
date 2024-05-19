@@ -246,8 +246,8 @@ O sistema como um todo sera validados em um programa de testes que está constit
 
    |                        |                 Recursos Humanos                                |               |
    |-------------------------|------------------|--------------------------------------------------------------------------|
-   |Nome    |   papel          |Responsabilidades ou Comentários Específicos                                 |
-
+   |Nome    |   Papel          |Responsabilidades ou Comentários Específicos                                 |
+   |Andressa Cordeiro e Luiz Carlos Ferreira | Analista de teste|          Planejamento das etapas de  testes|
 
    
  Categorias de Testes
