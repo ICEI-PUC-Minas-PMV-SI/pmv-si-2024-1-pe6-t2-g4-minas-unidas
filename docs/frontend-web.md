@@ -461,6 +461,31 @@ CT03, CT07 CT013
 
 
 
+**Relatório de Defeitos**
+
+|Descrição|Ao tentar acessar o perfil de usuário com senha inválida, o sistema atualmente não emite a mensagem em pop-up do erro diagnosticado.|
+|--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Categoria de Teste|Teste de Segurança (CT03) - Acessar o sistema com login válido (E-mail) e senha incorreta|
+|Impacto|Alto|
+|Reprodução passo a passo|O ator acessa a home page;Na barra de menu seleciona a opção “Login”;O ator informa um login válido no campo E-mail” e digita senha inválida no campo “Senha”; Aciona a tecla “Entrar” com um clique; Erro do sistema - Nenhuma mensagem é exibida e nenhuma ação é realizada na tela.|
+|Evidência|                      |
+|Proposta de Correção|Implementar mensagem pop-up informando ao ator sobre a negativa do sistema.|
+|Descrição|Ao acessar o painel de gerenciamento do usuário tanto o acesso às telas de depoimentos, redes de apoio, notícias e usuários quanto os botões de editar, ampliar, inserir e apagar não funcionam corretamente (inacessíveis ou não existem). | 
+|Categoria de Teste|Teste de Usabilidade (CT07) - Realizar principais tarefas no ambiente de administrador da conta (inserir, ampliar, editar e excluir) para as opções de depoimento, perfil de usuário, denúncia, redes de apoio e notícias.|
+|Impacto|Alto|
+|Reprodução passo a passo|O ator acessa a home page;Na barra de menu seleciona a opção “Login”;Na tela de login, inserir login (E-mail)e Senha válida;No painel de gerenciamento, somente a tela de denúncia se encontra acessível para visualização de dados cadastrados e os botões de editar, ampliar e apagar e inserir não aparecem na tela como programado.
+|Evidência|                                    |
+|Proposta de Correção|São necessários ajustes no código para a correta visualização das páginas que estão inativas dentro do painel de gerenciamento. Quanto aos botões citados, é necessário uma revisão do processo programado para diagnóstico e edição do código implementado (CRUD).|
+|Descrição|Atualmente não é possível acessar a área de usuário a partir do E-mail e senha (tela de login) porque o sistema parou de responder impossibilitando ingressar de modo imediato ao perfil não apresentando qualquer resposta de erro ao ator solicitante e diferente da plataforma de acesso.|
+|Categoria de Teste|Teste de Configuração (CT013) - Realizar o login no sistema utilizando 2 navegadores diferentes: Safari e Chrome, com usuário e senha válidos.|
+|Impacto|Alto|
+|Reprodução passo a passo|O ator acessa a tela de Login;O ator informa o e-mail e a senha;O ator clica no botão “Entrar”;O sistema abre a tela inicial para o ator (ERRO).|
+|Evidência|        |
+|Proposta de Correção|É necessária uma revisão do código implementado a fim de diagnosticar o erro de inatividade para o ingresso ao sistema já que a tela de ambiente do usuário encontra-se criada e parcialmente funcional, como também implementar mensagem de erro associada à inatividade da tela por qualquer motivo.|
+
+
+
+
 
 
 
