@@ -468,11 +468,10 @@ Verifica se o software é capaz de retornar para um estado operacional após est
 **Relatório de Execução dos Testes**
 
 -Casos de Teste executados com sucesso:
-CT01, CT02, CT04, CT05, CT06, CT12
+CT01, CT02, CT04, CT10
 
 -Casos de Teste executados e que apresentaram erro (detalhes constam no relatório de defeitos):
-CT03, CT07 CT013
-
+ CT05 CT011
 
 
 
@@ -480,11 +479,7 @@ CT03, CT07 CT013
 
 |Descrição|Ao tentar acessar o perfil de usuário com senha inválida, o sistema atualmente não emite a mensagem em pop-up do erro diagnosticado.|
 |--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|Categoria de Teste|Teste de Segurança (CT03) - Acessar o sistema com login válido (E-mail) e senha incorreta|
-|Impacto|Alto|
-|Reprodução passo a passo|O ator acessa a home page;Na barra de menu seleciona a opção “Login”;O ator informa um login válido no campo E-mail” e digita senha inválida no campo “Senha”; Aciona a tecla “Entrar” com um clique; Erro do sistema - Nenhuma mensagem é exibida e nenhuma ação é realizada na tela.|
-|Evidência|         ![primeira](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t2-g4-minas-unidas/assets/89945405/4422892b-e98b-4094-a269-c69f46100049)         |
-|Proposta de Correção|Implementar mensagem pop-up informando ao ator sobre a negativa do sistema.|
+
 |Descrição|Ao acessar o painel de gerenciamento do usuário tanto o acesso às telas de depoimentos, redes de apoio, notícias e usuários quanto os botões de editar, ampliar, inserir e apagar não funcionam corretamente (inacessíveis ou não existem). | 
 |Categoria de Teste|Teste de Usabilidade (CT07) - Realizar principais tarefas no ambiente de administrador da conta (inserir, ampliar, editar e excluir) para as opções de depoimento, perfil de usuário, denúncia, redes de apoio e notícias.|
 |Impacto|Alto|
