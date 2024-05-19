@@ -126,7 +126,7 @@ A partir da homepage, utilizando o menu de navegação, o usuário acessa a pág
 
 ![Homepage](img/minasunidas-legislacao1.png)
 
-![Homepage](img/minasunidas-legislacao2.png)
+![Homepage](img/minasunidas-legislacao3.png)
 
 **4) Redes de apoio:** 
 A partir da homepage, utilizando o menu de navegação, o usuário acessa a página onde poderá buscar por redes de apoio localizadas no Estado de Minas Gerais.
