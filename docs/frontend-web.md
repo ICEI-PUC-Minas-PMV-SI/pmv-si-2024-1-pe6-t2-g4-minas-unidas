@@ -480,13 +480,14 @@ CT01, CT02, CT04, CT10
 |Descrição|Ao tentar acessar o perfil de usuário com senha inválida, o sistema atualmente não emite a mensagem em pop-up do erro diagnosticado.|
 |--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Descrição|Ao acessar o painel de gerenciamento do usuário tanto o acesso às telas de depoimentos, redes de apoio, notícias e usuários quanto os botões de editar, ampliar, inserir e apagar não funcionam corretamente (inacessíveis ou não existem). | 
-|Categoria de Teste|Teste de Usabilidade (CT07) - Realizar principais tarefas no ambiente de administrador da conta (inserir, ampliar, editar e excluir) para as opções de depoimento, perfil de usuário, denúncia, redes de apoio e notícias.|
+|Categoria de Teste|Teste de Usabilidade (CT05) - Realizar principais tarefas no ambiente de administrador da conta (inserir, ampliar, editar e excluir) para as opções de depoimento, perfil de usuário, denúncia, redes de apoio e notícias.|
 |Impacto|Alto|
 |Reprodução passo a passo|O ator acessa a home page;Na barra de menu seleciona a opção “Login”;Na tela de login, inserir login (E-mail)e Senha válida;No painel de gerenciamento, somente a tela de denúncia se encontra acessível para visualização de dados cadastrados e os botões de editar, ampliar e apagar e inserir não aparecem na tela como programado.
-|Evidência|                                    |
+|Evidência|             ![segunda](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t2-g4-minas-unidas/assets/89945405/a96207fc-c752-4965-bb95-79e19a81faaa)
+                       |
 |Proposta de Correção|São necessários ajustes no código para a correta visualização das páginas que estão inativas dentro do painel de gerenciamento. Quanto aos botões citados, é necessário uma revisão do processo programado para diagnóstico e edição do código implementado (CRUD).|
 |Descrição|Atualmente não é possível acessar a área de usuário a partir do E-mail e senha (tela de login) porque o sistema parou de responder impossibilitando ingressar de modo imediato ao perfil não apresentando qualquer resposta de erro ao ator solicitante e diferente da plataforma de acesso.|
-|Categoria de Teste|Teste de Configuração (CT013) - Realizar o login no sistema utilizando 2 navegadores diferentes: Safari e Chrome, com usuário e senha válidos.|
+|Categoria de Teste|Teste de Configuração (CT011) - Realizar o login no sistema utilizando 2 navegadores diferentes: Safari e Chrome, com usuário e senha válidos.|
 |Impacto|Alto|
 |Reprodução passo a passo|O ator acessa a tela de Login;O ator informa o e-mail e a senha;O ator clica no botão “Entrar”;O sistema abre a tela inicial para o ator (ERRO).|
 |Evidência|        |
