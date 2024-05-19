@@ -370,6 +370,33 @@ O teste funcional é um processo de garantia de qualidade onde o software é tes
 |Iteração|1ª Iteração|
 
 
+**Teste de Configuração**
+
+Busca validar se o sistema funciona conforme pretendido mesmo em diferentes condições de hardware e software.
+
+|Caso De Teste|CT012 - Cadastrar usuário acessando o sistema em 2 máquinas com diferentes Sistemas Operacionais. O Teste será realizado em 1 máquina com Windows 11 e 1 máquina com macOS.|
+|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Pré-Condição|Não existe pré-condição|
+|Procedimento|O ator acessa a tela de Login;O ator clica no link “Cadastrar um novo usuário”;O ator preenche os campos Nome Completo, Data de Nascimento, E-mail,Confirmação de E-mail, Senha,Confirmação da Senha;O ator clica no botão “CADASTRAR”;O sistema grava os dados do novo cadastro e abre a página do usuário.|
+|Resultado esperado|Espera-se que o fluxo de criação de novo usuário funcione corretamente em todas as máquinas onde o teste for
+realizado, e que a diferença do sistema operacional de cada uma delas não afete os cadastros.|
+|Dados de entrada|Nome Completo, Data de Nascimento, E-mail, Confirmação do E-mail, Senha e Confirmação da senha.|
+|Prioridade|Alta|
+|Técnica|Manual|
+|Iteração|1ª Iteração|
+
+
+
+|Caso de Teste|CT013 - Realizar o login no sistema utilizando 2 navegadores diferentes: Safari e Chrome, com usuário e senha válidos.|
+|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Pré-Condição|Usuário utilizado para o login já ter sido cadastrado anteriormente e possuir senha válida.|
+|Procedimento|O ator acessa a tela de Login;O ator informa o e-mail e a senha;O ator clica no botão “Entrar”; O sistema abre a tela inicial para o ator.|
+|Resultado esperado|Espera-se que o login no sistema funcione corretamente em todos os navegadores testados.|
+|Dados de entrada|Nome de usuário e Senha|
+|Prioridade|Alta|
+|Técnica|Manual|
+|Iteração|1ª Iteração|
+
 
 
 
