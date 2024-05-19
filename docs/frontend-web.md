@@ -159,7 +159,6 @@ A partir da homepage, é possível clicar no card “Faça sua denúncia” ou n
    
 
 ### Layout Responsivo
-### Layout Responsivo
 A adaptação da interface web para diferentes tamanhos de tela e dispositivos é um aspecto importante do projeto e será guiado por conceitos de design responsivo. 
 O objetivo é garantir que a experiência do usuário seja consistente, eficiente e estável em qualquer dispositivo, prioritariamente um smartphone, tablet, notebook ou desktop.
 
