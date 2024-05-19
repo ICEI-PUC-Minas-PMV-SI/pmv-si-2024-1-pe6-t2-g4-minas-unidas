@@ -134,20 +134,22 @@ A partir da homepage, utilizando o menu de navegação, o usuário acessa a pág
 ![Homepage](img/minasunidas-redesapoio.png)
 
 **5) Denúncia:** 
-A partir da homepage, é possível clicar no card “Faça sua denúncia” ou no botão “Denuncie” na barra de navegação para acessar a página “Faça sua denúncia”. Nesta página, o usuário poderá registrar o sua denúncia que posteriormente será encaminhada a autoridade competente.
+A partir da homepage, é possível clicar no card “Faça sua denúncia” ou no botão “Denuncie” na barra de navegação para acessar a página “Faça sua denúncia”. 
 
 ![Homepage](img/minasunidas-denuncia2.png)
 
+- Nesta página (opção escolhida 'denúncia presencial'), o usuário poderá selecionar a cidade de preferencial para uma lista de resultados ser visualizada abaixo.
+
+![Homepage](img/minasunidas-denuncia3.png)
+
+- Nesta página (opção escolhida 'denúncia online'), o usuário poderá registrar o sua denúncia online que posteriormente será encaminhada a autoridade competente.
+
 ![Homepage](img/minasunidas-denuncia.png)
 
-**6) Login e cadastro de usuário:** 
-- Página onde o usuário ou visitante pode acessar desde a homepage. Para o usuário cadastrado é permitido ingressar ao sistema mediante usuário e senha.
+**6) Login:** 
+Página onde o usuário ou visitante pode acessar desde a homepage. Para o usuário cadastrado é permitido ingressar ao sistema mediante usuário e senha.
   
 ![Homepage](img/minasunidas-login.png)
-
-- Para o visitante da página é permitido através da opção “Inscrever-se”, acessar a página de cadastro de usuário.
-
-![Homepage](img/minasunidas-cadastro2.png)
 
 ### Design Visual
 
