@@ -310,6 +310,18 @@ O teste funcional é um processo de garantia de qualidade onde o software é tes
 
 
 
+|Caso De Teste|CT07 - Realizar principais tarefas no ambiente de administrador da conta (inserir, ampliar, editar e excluir) para as opções de depoimento, perfil de usuário, denúncia, redes de apoio e notícias|
+|--------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Pré-Condição|Login (E-mail), Senha válida|
+|Procedimento|O ator acessa a home page;Na barra de menu seleciona a opção “Login”;Na tela de login, inserir login (E-mail) e Senha válida;Ao adentrar ao ambiente de usuário, encontra-se a barra lateral esquerda de Gerenciamento de conta (Usuários, Depoimentos, Denúncias, Redes de Apoio e Notícias) - existem versões distintas para usuário normal (sem opções de “Notícia”, “Usuário” e “Redes de Apoio”); Ao clicar em cada uma das opções é disponibilizada uma nova tela de gerenciamento da opção escolhida; Na nova tela visualizada são apresentados os dados cadastrados no sistema ao nível do usuário e ao final de cada cadastro é encontrado os ícones que representam as funções de “ampliar”, “editar” e “apagar” Ao final de todas as informações registradas existe o botão que permite “Inserir” um novo elemento no sistema direcionando para uma tela de cadastro(depoimento, rede de apoio, denúncia, notícia e usuário); Ao clicar no ícone de ampliar, permite visualizar todas as informações do cadastro registrado em um pop-up;Ao clicar no ícone de editar, permite editar as informações do cadastro registrado em um pop-up;Ao clicar no ícone de “apagar” permite eliminar as informações do cadastro registro mediante um pop-up de alerta e confirmação da ação solicitada|
+|Resultado esperado|Espera-se que o sistema possibilite o acesso a todas as telas no ambiente de usuário e permite acionar de forma fluida e segura as modificações solicitadas pelo usuário apresentando informações de confirmação a cada solicitação|
+|Dados de entrada|Login(E-mail), Senha válida. Informações relacionadas aos cadastros solicitados em “Inserir” e “Editar” e confirmação em “Sim” ou "Não" para os casos de “Apagar”| 
+|Prioridade|Alta|
+|Técnica|Manual|
+|Iteração|1ª Iteração|
+
+
+
 
 
 
