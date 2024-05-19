@@ -248,8 +248,8 @@ O sistema como um todo sera validados em um programa de testes que está constit
    |-------------------------|------------------|--------------------------------------------------------------------------|
    |Nome    |   Papel          |Responsabilidades ou Comentários Específicos                                 |
    |Andressa Cordeiro e Luiz Carlos Ferreira | Analista de teste|          Planejamento das etapas de  testes|
-   |Davisson José                |Tester                                        |Execução do roteiro de teste|
-   |Ana Carolina                |Programador|Cria os componentes de teste necessários para suportar os requisitos |
+   |Davisson José e Rafael |Tester                                        |Execução do roteiro de teste|
+   |Ana Carolina e Gabriella Victória |Programador|Cria os componentes de teste necessários para suportar os requisitos |
 
 
    
