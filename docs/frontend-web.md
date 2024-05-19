@@ -273,12 +273,7 @@ O teste funcional é um processo de garantia de qualidade onde o software é tes
 |Caso De Teste|CT02 - Cadastrar Usuário                                                                       |
 |-----------------|--------------------------------------------------------------------------------------------|
 |Pré-Condição     |Não existe                                                                                  |
-|Procedimento     |1) O ator acessa a home page;
-2) Na barra de menu seleciona a opção “Login”;
-3) Na tela de login, seleciona a opção “Inscreva-se”;
-4) Na tela de cadastro, o ator registra as informações relacionadas ao seu usuário;
-5) O ator seleciona “Cadastrar”;
-6) O sistema armazena as informações disponibilizadas pelo ator emitindo a mensagem “Cadastro de usuário realizado com sucesso.”|
+|Procedimento     | O ator acessa a home page,Na barra de menu seleciona a opção “Login",Na tela de login, seleciona a opção “Inscreva-se”,Na tela de cadastro, o ator registra as informações relacionadas ao seu usuário,O ator seleciona “Cadastrar”,O sistema armazena as informações disponibilizadas pelo ator emitindo a mensagem “Cadastro de usuário realizado com sucesso.”|
 |Resultado esperado|O sistema deve guardar todas as informações disponibilizadas pelo ator e registrá-las em nosso banco de dados|
 |Dados de entrada|Nome, data de nascimento, E-mail, Confirmação de E-mail, Senha, Confirmação de Senha|
 |Prioridade|Alta|
