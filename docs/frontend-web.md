@@ -297,6 +297,20 @@ O teste funcional é um processo de garantia de qualidade onde o software é tes
 |Iteração|1ª Iteração|
 
 
+|Caso De Teste|CT06 - Consulta por redes de apoio e depoimentos publicados|
+|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Pré-Condição|Não existe |
+|Procedimento|Redes de Apoio,O ator acessa a home page,Na barra de menu seleciona a opção “Redes de Apoio”,Na nova tela, o ator deve escolher uma cidade e confirmar com a opção “OK”,Existem duas possibilidades de resposta para a busca, a primeira é o resultado das unidades de apoio presentes para a cidade escolhida. E na segunda possibilidade, a emissão da mensagem “Não localizamos redes de apoio na sua cidade.”, onde o ator poderá através do email disponibilizado enviar informações a respeito de uma unidade de apoio para aquela cidade.|
+|Depoimentos|O ator acessa a home page, No corpo da homepage pode acessar a opção “Ver mais depoimentos”,Na nova tela, o ator encontrará disponível todos os depoimentos cadastrados no sistema com a possibilidade de expandir-los e curtir,Nessa mesma tela também é possível encontrar o botão para cadastrar um novo depoimento|
+|Resultado esperado|Espera-se que o sistema apresente os resultados das informações cadastradas com fluidez e em poucos passos.
+|Dados de entrada|Redes de apoio - Escolher opção de cidade e confirmar com a opção “OK”. Depoimentos - Maximizar, minimizar se for necessário|
+|Prioridade|Alta|
+|Técnica|Manual|
+|Iteração|1ª Iteração|
+
+
+
+
 
 
 
