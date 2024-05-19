@@ -115,7 +115,7 @@ Página inicial que contém os principais elementos de visualização e acesso a
 
 ![Homepage](img/minasunidas-homepage.png)
 
-- O teste de violência também pode ser acessado desde a homepage através de botao interativo.
+- O 'teste de perfil de violência' também pode ser acessado desde a homepage através de botao interativo.
 
 ![Homepage](img/minasunidas-teste.png)
 
