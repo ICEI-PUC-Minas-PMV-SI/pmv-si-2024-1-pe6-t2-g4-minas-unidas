@@ -450,6 +450,11 @@ Verifica se o software é capaz de retornar para um estado operacional após est
 |Iteração|1ª Iteração|
 
 
+**Relatório de Execução dos Testes**
+-Casos de Teste executados com sucesso:
+CT01, CT02, CT04, CT05, CT06, CT12
+-Casos de Teste executados e que apresentaram erro (detalhes constam no relatório de defeitos):
+CT03, CT07 CT013
 
 
 
