@@ -119,7 +119,7 @@ Página inicial que contém os principais elementos de visualização e acesso a
 Através da homepage, no menu de navegação é possível acessar a página de identificação do projeto.  
 Na página é possível conhecer aspectos importantes do projeto como missão, história, integrantes e iniciativas implementadas.
 
-![Homepage](img/minasunidas-home.png)
+![Homepage](img/minasunidas-quemsomos.png)
 
 **3) Legislação:** 
 A partir da homepage, utilizando o menu de navegação, o usuário acessa a página com informações legais a cerca do tema do projeto e conteúdo relacionado aos tipos de violência.
