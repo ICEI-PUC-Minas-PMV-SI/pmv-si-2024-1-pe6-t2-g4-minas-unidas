@@ -240,12 +240,12 @@ Para garantir a segurança da aplicação distribuída, foram implementadas as s
 
 PLANO DE TESTES DE SOFTWARE
 
-  # Fluxo de Trabalho de Teste
+  **Fluxo de Trabalho de Teste**
   
 O sistema como um todo sera validados em um programa de testes que está constituído em varis etapas de testes, com dois exemplos práticos em cada, relacionadas à unidade, integração e sistema.
 
    |                                         Recursos Humanos                                               |
-   |---------------------------------------------------------------------------------------------------------|
+   |--------|-------------------------------------------------------------------------------------------------|
       |Nome |   papel             |Responsabilidades ou Comentários Específicos                                 |
    |Andressa Cordeiro e Luiz Carlos Ferreira | Analista de teste|          Planejamento das etapas de  testes|
    |Davisson José                |Tester                                        |Execução do roteiro de teste|
