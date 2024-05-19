@@ -397,6 +397,63 @@ realizado, e que a diferença do sistema operacional de cada uma delas não afet
 |Técnica|Manual|
 |Iteração|1ª Iteração|
 
+**Teste de Recuperação**
+
+Verifica se o software é capaz de retornar para um estado operacional após estar em um estado de falha.
+
+|Caso de Teste|CT014 - Tentar salvar a denúncia após perda do sinal de internet e registrar os resultados|
+|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Pré-Condição|O usuário possuir login válido e senha cadastrada para acessar o sistema e as telas|
+|Procedimento|O ator acessa a tela de Login;O ator informa um login válido no campo “E-mail”, uma senha válida no campo "Senha" e clicar no botão “Entrar”;O ator clica no botão “Realizar Denúncia";O ator digita os dados necessários para realizar a denúncia;O ator escreve a denúncia;O ator desliga a conexão de internet da máquina onde está realizando o teste;O ator clica no botão "Enviar Denúncia”;O ator anota o comportamento do sistema neste momento;O ator restabelece a conexão de internet;O ator clica no botão “Enviar Denúncia”novamente;O ator anota o comportamento do sistema neste momento.|
+|Resultado Esperado|Na primeira tentativa de enviar a denúncia sem acesso a internet, o
+sistema deve apresentar mensagem informando "Falha ao Enviar a Denúncia’'.
+Após restabelecer a conexão com a internet e tentar enviar novamente a denúncia, o  sistema deve enviá-la com sucesso.
+Espera-se que os dados preenchidos em tela não sejam perdidos ao tentar salvar  a denúncia sem internet.|
+|Dados de Entrada|Login(E-mail), Senha válida, Rua, Número, Bairro, Cidade, Estado, CEP, E-mail, Telefone e Denúncia e se
+deseja salvar a mesma.|
+|Prioridade|Alta|
+|Técnica|Manual|
+|Iteração|1ª Iteração|
+
+
+
+|Caso de Teste|CT015 - Tentar salvar o depoimento após perda do sinal de internet e registrar os resultados|
+|------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Pré-Condição|O usuário possuir acesso ao site|
+|Procedimento|O ator acessa a tela de Inicial;O ator clica na área para Realizar o Depoimento;O ator completa os campos para realizar o depoimento;O ator desliga a conexão de internet da máquina onde está realizando o teste;O ator clica no botão “Publicar”;O ator anota o comportamento do sistema neste momento;O ator restabelece a conexão de internet;O ator clica no botão “Publicar” novamente;O ator anota o comportamento do sistema neste momento.|
+|Resultado esperado|Na primeira tentativa de salvar  a denúncia sem a internet, o sistema deve apresentar mensagem informando ‘Falha ao publicar o depoimento'.|
+|Dados de entrada|Nome, Cidade, Depoimento, Opção de Depoimento Anônimo.|
+|Prioridade|Alta|
+|Técnica|Manual|
+|Iteração|1ª Iteração|
+
+
+**Teste de Contingência**
+
+   Tem por objetivo descrever as medidas a serem tomadas para restabelecer o sistema ao seu estado funcional ou minimamente aceitável em caso de paralisação do mesmo.
+   
+|Caso de Teste|CT16 – Tentar salvar as as novas configurações no gerenciamento de usuários após a reiniciação obrigatória do dispositivo com internet|
+|------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Pré-Condição|O usuário possuir login de administrador válido e senha cadastrada para acesso ao sistema|
+|Procedimento|O ator acessa a tela de Login;O ator informa um login válido no campo "E-mail”, uma senha válida e clica no botão “Entrar”; O ator clica em "Usuários" no lado esquerdo da tela inicial, para acessar a área do usuário;O ator clica no botão de “Configurações” do usuário escolhido;O ator escolhe a opção necessária para o usuário escolhido;O ator reinicia a máquina onde está realizando o teste;O ator clica no botão “Salvar”;O ator anota o comportamento do sistema neste momento;O ator restabelece a conexão de internet;O ator clica no botão “Salvar” novamente;O ator anota o comportamento do sistema neste momento.
+|Resultado esperado|Espera-se que o sistema funcione corretamente após a reiniciação forçada da máquina.|
+|Dados de entrada|Configuração escolhida para o perfil|
+|Prioridade|Alta|
+|Técnica|Manual|
+|Iteração|1ª Iteração|
+
+
+
+|Caso de Teste|CT17 – Realizar a recuperação do banco de dados do sistema|
+|--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Pré-Condição|Não possui pré-condição|
+|Procedimento|O ator realiza o processo de recuperação do backup do banco;O ator deleta todos os dados do banco de dados; O ator acessa o sistema e verifica como as telas se comportam após a exclusão repentina dos dados;corretamente.O ator realiza a recuperação do backup;O ator verifica se os dados voltaram para o banco de dados e como as telas se comportam|
+|Resultado esperado|Espera-se que o sistema funcione corretamente após a recuperação do backup.|
+|Dados de entrada|Dados do Banco de Dados|
+|Prioridade|Alta|
+|Técnica|Manual|
+|Iteração|1ª Iteração|
+
 
 
 
