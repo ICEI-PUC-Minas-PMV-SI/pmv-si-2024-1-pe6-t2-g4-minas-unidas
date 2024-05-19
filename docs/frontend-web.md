@@ -378,8 +378,7 @@ Busca validar se o sistema funciona conforme pretendido mesmo em diferentes cond
 |---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Pré-Condição|Não existe pré-condição|
 |Procedimento|O ator acessa a tela de Login;O ator clica no link “Cadastrar um novo usuário”;O ator preenche os campos Nome Completo, Data de Nascimento, E-mail,Confirmação de E-mail, Senha,Confirmação da Senha;O ator clica no botão “CADASTRAR”;O sistema grava os dados do novo cadastro e abre a página do usuário.|
-|Resultado esperado|Espera-se que o fluxo de criação de novo usuário funcione corretamente em todas as máquinas onde o teste for
-realizado, e que a diferença do sistema operacional de cada uma delas não afete os cadastros.|
+|Resultado esperado|Espera-se que o fluxo de criação de novo usuário funcione corretamente em todas as máquinas onde o teste for realizado,e que a diferença do sistema operacional de cada uma delas não afete os cadastros|
 |Dados de entrada|Nome Completo, Data de Nascimento, E-mail, Confirmação do E-mail, Senha e Confirmação da senha.|
 |Prioridade|Alta|
 |Técnica|Manual|
