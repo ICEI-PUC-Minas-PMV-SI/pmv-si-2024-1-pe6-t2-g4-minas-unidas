@@ -492,7 +492,12 @@ CT01, CT02, CT04, CT10
 |Categoria de Teste|Teste de Configuração (CT011) - Realizar o login no sistema utilizando 2 navegadores diferentes: Safari e Chrome, com usuário e senha válidos.|
 |Impacto|Alto|
 |Reprodução passo a passo|O ator acessa a tela de Login;O ator informa o e-mail e a senha;O ator clica no botão “Entrar”;O sistema abre a tela inicial para o ator (ERRO).|
-|Evidência|        |
+|Evidência|      ![fase1](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t2-g4-minas-unidas/assets/89945405/57e73fb5-3f2c-4d6d-8bd4-231efadf7ad5)
+  |
+|Evidência|      ![fase 2](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t2-g4-minas-unidas/assets/89945405/76173b8b-40d1-4ed1-abd1-633d0f4c3d27)
+   |
+|Evidência|      ![fase 3](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t2-g4-minas-unidas/assets/89945405/29be51c9-80a3-414b-8bce-0baafa586f47)
+   |
 |Proposta de Correção|É necessária uma revisão do código implementado a fim de diagnosticar o erro de inatividade para o ingresso ao sistema já que a tela de ambiente do usuário encontra-se criada e parcialmente funcional, como também implementar mensagem de erro associada à inatividade da tela por qualquer motivo.|
 
 
