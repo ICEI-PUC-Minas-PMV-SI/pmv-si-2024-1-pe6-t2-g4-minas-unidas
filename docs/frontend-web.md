@@ -146,14 +146,31 @@ A partir da homepage, é possível clicar no card “Faça sua denúncia” ou n
 ![Homepage](img/minasunidas-cadastro2.png)
 
 ### Design Visual
-[Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]
+
+**1. Paleta de cores:** Foi elegido para o projeto a triade de cores, que são:
+
+- 20% de Azul-magenta (59359a), cor fortemente relacionada ao movimendo em defesa a violência da mulher;
+- 75% Branco (ffffff), escolhido como "fundo" da página, fácil composicao de contraste e representa formalidade do projeto;
+- 5% Cian-azul (cfd5da) para destacar elementos e fazer uma transição harmônica com o fundo da página.
+
+**2. Tipografia:** A fonte principal usada no corpo do texto é "Helvetica" com uma escala de variação para tamanho e negrito para realcar textos e títulos. A fonte é legível em todos os horários do dia e possui aparência formal necessária ao projeto.
+
+**3. Elementos gráficos:** Os elementos da página, como botões e campos, apresentam formato arredondado nas suas extremidades e ganham cores diferentes á medida que forem selecionados ou devam ser acionados, como no caso dos campos de preenchimento. A letra em cor branca sobre botões de cor Azul-magenta repreesenta o contraste necessário para o projeto.
+   
 
 ### Layout Responsivo
 [Discuta como a interface será adaptada para diferentes tamanhos de tela e dispositivos.]
+***FALTA ESSE**
 
 ### Interações do Usuário
-[Descreva as interações do usuário na interface, como animações, transições entre páginas e outras interações.]
+Nosso projeto foi idealizado para servir principalmente a mulheres vítimas ou testemunhas de situações de violência. Portanto, foi adotado uma interface simples para ser acessível a qualquer classe social, que proporciona-se uma clara visualizacao da informacao e um foco muito claro no objetivo final  a denúncia. 
 
+Citamos alguns elementos de interação com os usuários:
+
+- Carrosssel de notícias (homepage): permite ao usuario/visitante consuitar todas as notícias disponíveis acionando seta para direita;
+- Teste de Perfil de Violência: Através de input de informacoes (SIM/ NAO), o sistema gera um resultado ao final de 5 etapas.
+- Redes de Apoio: Seleciona uma opcao dentro do menu disponível de cidades e o sistema gera automaticamente uma resposta. 
+  
 ## Fluxo de Dados
 
 Neste fluxo, descrevemos as etapas do ciclo de interação entre os usuários e a aplicação:
