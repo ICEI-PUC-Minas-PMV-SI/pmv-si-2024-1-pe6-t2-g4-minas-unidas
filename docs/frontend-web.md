@@ -96,7 +96,14 @@ A seguir, são detalhadas as entidades do sistema:
 ![Modelagem de dados](img/modelagem-dados.png)
 
 ## Projeto da Interface Web
-[Descreva o projeto da interface Web da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]
+A interface web está composta por seis módulos de interação com o usuário, sao eles: 
+- Home, onde sao visualizados o mural de depoimentos, carrossel de notícias e acessado o "Teste de Perfil de Violência";
+- Quem somos, com breve resumo da página;
+- Legislação, com informação atualizada sobre a lei e tipos de violências;
+- Redes de apoio, com idenficação e visualizacao dos atores presentes no Estado;
+- Denuncie, disponibilidade de realizar uma denúncia diretamente aos orgãos competentes;
+- Login e cadastro de usuário, para identificacao da página.
+
 
 ### Wireframes
 [Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]
