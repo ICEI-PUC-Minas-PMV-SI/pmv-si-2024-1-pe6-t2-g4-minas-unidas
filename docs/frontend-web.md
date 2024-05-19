@@ -113,8 +113,12 @@ Página inicial que contém os principais elementos de visualização e acesso a
   - Body - Mural de depoimentos, carrossel de notícias, acesso a outras páginas (denúncia, cadastro de depoimentos, quem somos);
   - Footer - Informações de identificação e contato. 
 
-![Homepage](img/minasunidas-home.png)
-  
+![Homepage](img/minasunidas-homepage.png)
+
+- O teste de violência também pode ser acessado desde a homepage através de botao interativo.
+
+![Homepage](img/minasunidas-teste.png)
+
 **2) Quem somos:** 
 Através da homepage, no menu de navegação é possível acessar a página de identificação do projeto.  
 Na página é possível conhecer aspectos importantes do projeto como missão, história, integrantes e iniciativas implementadas.
