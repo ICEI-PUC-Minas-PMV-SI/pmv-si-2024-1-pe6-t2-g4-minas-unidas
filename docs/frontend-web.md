@@ -270,11 +270,11 @@ O teste funcional é um processo de garantia de qualidade onde o software é tes
 |Iteração|1ª Iteração|
 
 
-|Caso De Teste|CT02 - Cadastrar Usuário                                                                       |
+|Caso De Teste|CT02 - Cadastrar Usuário,Editar e excluir                                                                      |
 |-----------------|--------------------------------------------------------------------------------------------|
 |Pré-Condição     |Não existe                                                                                  |
-|Procedimento     | O ator acessa a home page,Na barra de menu seleciona a opção “Login",Na tela de login, seleciona a opção “Inscreva-se”,Na tela de cadastro, o ator registra as informações relacionadas ao seu usuário,O ator seleciona “Cadastrar”,O sistema armazena as informações disponibilizadas pelo ator emitindo a mensagem “Cadastro de usuário realizado com sucesso.”|
-|Resultado esperado|O sistema deve guardar todas as informações disponibilizadas pelo ator e registrá-las em nosso banco de dados|
+|Procedimento     | O ator acessa a home page,Na barra de menu seleciona a opção “Login",Na tela de login, seleciona a opção “Inscreva-se”,Na tela de cadastro, o ator registra as informações relacionadas ao seu usuário,O ator seleciona “Cadastrar”,O sistema armazena as informações disponibilizadas pelo ator emitindo a mensagem “Cadastro de usuário realizado com sucesso.” Em seguida o usuario e editado e excluido|
+|Resultado esperado|O sistema deve guardar todas as informações disponibilizadas pelo ator e registrá-las em nosso banco de dados como também e possivel editar e excluir|
 |Dados de entrada|Nome, data de nascimento, E-mail, Confirmação de E-mail, Senha, Confirmação de Senha|
 |Prioridade|Alta|
 |Técnica|Manual|
