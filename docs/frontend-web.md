@@ -334,6 +334,21 @@ O teste funcional é um processo de garantia de qualidade onde o software é tes
 |Técnica|Ferramenta de Benchmark|
 |Iteração|1ª Iteração|
 
+|Caso De Teste|CT09 - Cadastrar 40 denúncias online simultaneamente|
+|----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Pré-Condição|Configuração na ferramenta de teste escolhida|
+|Procedimento|Criar código na ferramenta de automação de testes para execução dos cadastros de receita simultâneos;Executar o teste automatizado na ferramenta configurada;Registrar resultados obtidos, caso tenha concluído com sucesso ou anotar observações caso problemas tenham surgido na execução do teste.|
+|Resultado esperado|O sistema deve apresentar uma mensagem pop-up informando que a(s) denúncia(s) foram armazenadas com sucesso sem apresentar morosidade ou qualquer instabilidade associada.|
+|Dados de entrada|Cidade, Estado, CEP, E-mail, Telefone, Denúncia|
+|Prioridade|Alta|
+|Técnica|Ferramenta de Benchmark|
+|Iteração|1ª Iteração|
+
+   **Teste de Carga**
+   
+        Tem por objetivo simular condições incomuns de utilização do sistema, testando provocar aumentos ou reduções sucessivas de transações de forma a superar os volumes máximos previstos para o software
+
+
 
 
 
