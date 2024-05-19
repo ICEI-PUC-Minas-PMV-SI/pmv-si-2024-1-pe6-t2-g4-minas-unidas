@@ -255,7 +255,7 @@ O sistema como um todo sera validados em um programa de testes que está constit
    
  Categorias de Testes
  
-    Teste de Funcionalidade
+   **Teste de Funcionalidade**
     
 O teste funcional é um processo de garantia de qualidade onde o software é testado em relação às funcionalidades, requisitos e regras de negócios. É focado no desempenho de processamento, desse modo, se concentra na simulação do uso real do software.
 
@@ -279,6 +279,26 @@ O teste funcional é um processo de garantia de qualidade onde o software é tes
 |Prioridade|Alta|
 |Técnica|Manual|
 |Iteração|1ª Iteração|
+
+    **Teste de Usabilidade**
+
+    O teste de usabilidade busca entender como o sistema se comporta no dia a dia, na naturalidade da utilização, e se ele atende aos requisitos pensados e estabelecidos.
+
+|Caso De Teste|CT05 - Teste de Perfil (Fluidez e facilidade entre as diversas telas do sistema que envolve tal processo e quanto ao resultado e suas transições). Foram observados dois atores com características distintas entre si.|
+|------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Pré-Condição|Não existe |
+|Procedimento|O ator acessa a home page,Na barra lateral, aciona o botão “Identifique se você está sendo vítima de algum tipo de violência”,O texto compreende 5 etapas de perguntas objetivas com confirmação em cada etapa através do botão “Enviar Resposta”,Na sexta tela deve ser apresentado um resultado diagnóstico e a apresentação de 3 opções de botão:
+“Entenda sobre” (encaminha o ator até a página de legislação onde estão as informações complementares;
+Denuncie (encaminha o ator até a página de denúncia);
+“Refazer o teste” (Possibilita de forma imediata realizar novamente o teste, regressando a tela de teste inicial, O ator pode regressar à homepage diretamente pelo logo do “Minas Unidas” no canto superior esquerdo|
+|Resultado esperado|O sistema deve guardar todas as respostas de todas as perguntas do teste e apresentar ao final o resultado compatível com a proposta inicial. Espera-se que seja um fluxo de menos de 1 minuto para todo o questionário e de fácil manuseio para diferentes atores.|
+|Dados de entrada|Respostas “Sim” ou “Não”|
+|Prioridade|Alta|
+|Técnica|Manual|
+|Iteração|1ª Iteração|
+
+
+
 
 
 
