@@ -143,7 +143,7 @@ A partir da homepage, é possível clicar no card “Faça sua denúncia” ou n
 
 - Para o visitante da página é permitido através da opção “Inscrever-se”, acessar a página de cadastro de usuário.
 
-![Homepage](img/minasunidas-login.png)
+![Homepage](img/minasunidas-cadastro2.png)
 
 ### Design Visual
 [Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]
