@@ -325,7 +325,7 @@ O teste funcional é um processo de garantia de qualidade onde o software é tes
 É projetado para testar o desempenho do software durante a sua execução, particularmente, para sistemas de tempo real cujo requisito de desempenho é crucial.
 
 |Caso De Teste|CT08 - Realização de 40 testes de perfil simultâneos|
-|--------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Pré-Condição|Configuração na ferramenta de teste escolhida|
 |Procedimento|Criar código na ferramenta de automação de testes para execução dos cadastros de receita simultâneos;Executar o teste automatizado na ferramenta configurada;Registrar resultados obtidos, caso tenha concluído com sucesso ou anotar observações caso
 problemas tenham surgido na execução do teste|
