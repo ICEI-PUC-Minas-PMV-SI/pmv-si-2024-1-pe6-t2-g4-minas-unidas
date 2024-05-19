@@ -263,7 +263,7 @@ O teste funcional é um processo de garantia de qualidade onde o software é tes
 |-----------------------|------------------------------------------------------------------------------------------------------|
 |Pré-Condição|Não existe                                                                                            |
 |Procedimento|O ator acessa a home page,Na barra de menu seleciona a opção “Denuncie”,Na tela de denúncia, seleciona a opção de denúncia “online”,Na tela de cadastro, o ator registra as informações relacionadas a denúncia,O ator seleciona “Publicar",O sistema armazena as informações disponibilizadas pelo ator emitindo a mensagem “Denúncia publicada com sucesso,logo em seguida edita e exclui a denuncia|
-|Resultado esperado|O sistema deve guardar todas as informações disponibilizadas pelo ator e registrá-las em nosso banco de dados compartilhado em seguida que a denuncia seja editada e excluida|
+|Resultado esperado|O sistema deve guardar todas as informações disponibilizadas pelo ator e registrá-las em nosso banco de dados compartilhado.Em seguida que a denuncia seja editada e excluida|
 |Dados de entrada|Cidade, Estado, CEP, E-mail, Telefone, Denúncia|
 |Prioridade|Alta|
 |Técnica|Manual|
