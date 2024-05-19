@@ -479,7 +479,6 @@ CT01, CT02, CT04, CT10
 
 |Descrição|Ao tentar acessar o perfil de usuário com senha inválida, o sistema atualmente não emite a mensagem em pop-up do erro diagnosticado.|
 |--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-
 |Descrição|Ao acessar o painel de gerenciamento do usuário tanto o acesso às telas de depoimentos, redes de apoio, notícias e usuários quanto os botões de editar, ampliar, inserir e apagar não funcionam corretamente (inacessíveis ou não existem). | 
 |Categoria de Teste|Teste de Usabilidade (CT07) - Realizar principais tarefas no ambiente de administrador da conta (inserir, ampliar, editar e excluir) para as opções de depoimento, perfil de usuário, denúncia, redes de apoio e notícias.|
 |Impacto|Alto|
