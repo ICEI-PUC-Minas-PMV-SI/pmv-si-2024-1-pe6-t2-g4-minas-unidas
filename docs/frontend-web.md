@@ -256,6 +256,7 @@ O sistema como um todo sera validados em um programa de testes que está constit
  Categorias de Testes
  
     Teste de Funcionalidade
+    
 O teste funcional é um processo de garantia de qualidade onde o software é testado em relação às funcionalidades, requisitos e regras de negócios. É focado no desempenho de processamento, desse modo, se concentra na simulação do uso real do software.
 
 |Caso De Teste|CT01 - Cadastrar denúncia online                                                                     |
@@ -267,6 +268,24 @@ O teste funcional é um processo de garantia de qualidade onde o software é tes
 |Prioridade|Alta|
 |Técnica|Manual|
 |Iteração|1ª Iteração|
+
+
+|Caso De Teste|CT02 - Cadastrar Usuário                                                                       |
+|-----------------|--------------------------------------------------------------------------------------------|
+|Pré-Condição     |Não existe                                                                                  |
+|Procedimento     |1) O ator acessa a home page;
+2) Na barra de menu seleciona a opção “Login”;
+3) Na tela de login, seleciona a opção “Inscreva-se”;
+4) Na tela de cadastro, o ator registra as informações relacionadas ao seu usuário;
+5) O ator seleciona “Cadastrar”;
+6) O sistema armazena as informações disponibilizadas pelo ator emitindo a mensagem “Cadastro de usuário realizado com sucesso.”|
+|Resultado esperado|O sistema deve guardar todas as informações disponibilizadas pelo ator e registrá-las em nosso banco de dados|
+|Dados de entrada|Nome, data de nascimento, E-mail, Confirmação de E-mail, Senha, Confirmação de Senha|
+|Prioridade|Alta|
+|Técnica|Manual|
+|Iteração|1ª Iteração|
+
+
 
 
 
