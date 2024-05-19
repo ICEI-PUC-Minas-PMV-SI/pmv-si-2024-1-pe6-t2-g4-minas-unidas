@@ -259,10 +259,10 @@ O sistema como um todo sera validados em um programa de testes que está constit
     
 O teste funcional é um processo de garantia de qualidade onde o software é testado em relação às funcionalidades, requisitos e regras de negócios. É focado no desempenho de processamento, desse modo, se concentra na simulação do uso real do software.
 
-|Caso De Teste|CT01 - Registrar a denuncia, editar denuncia e excluir denuncia                 |
+|Caso De Teste|CT01 - Registrar , editar denuncia e excluir denúncia                 |
 |-----------------------|------------------------------------------------------------------------------------------------------|
 |Pré-Condição|Não existe                                                                                            |
-|Procedimento|O ator acessa a home page,Na barra de menu seleciona a opção “Denuncie”,Na tela de denúncia, seleciona a opção de denúncia “online”,Na tela de cadastro, o ator registra as informações relacionadas a denúncia,O ator seleciona “Publicar",O sistema armazena as informações disponibilizadas pelo ator emitindo a mensagem “Denúncia publicada com sucesso,logo em seguida edita e exclui a denuncia|
+|Procedimento|O ator acessa a home page,Na barra de menu seleciona a opção “Denuncie”,Na tela de denúncia, seleciona a opção de denúncia “online”,Na tela de cadastro, o ator registra as informações relacionadas a denúncia,O ator seleciona “Publicar",O sistema armazena as informações disponibilizadas pelo ator emitindo a mensagem “Denúncia publicada com sucesso,logo em seguida edita e exclui a denúncia|
 |Resultado esperado|O sistema deve guardar todas as informações disponibilizadas pelo ator e registrá-las em nosso banco de dados compartilhado.Em seguida que a denuncia seja editada e excluida|
 |Dados de entrada|Cidade, Estado, CEP, E-mail, Telefone, Denúncia|
 |Prioridade|Alta|
@@ -273,8 +273,8 @@ O teste funcional é um processo de garantia de qualidade onde o software é tes
 |Caso De Teste|CT02 - Cadastrar Usuário,Editar e excluir                                                                      |
 |-----------------|--------------------------------------------------------------------------------------------|
 |Pré-Condição     |Não existe                                                                                  |
-|Procedimento     | O ator acessa a home page,Na barra de menu seleciona a opção “Login",Na tela de login, seleciona a opção “Inscreva-se”,Na tela de cadastro, o ator registra as informações relacionadas ao seu usuário,O ator seleciona “Cadastrar”,O sistema armazena as informações disponibilizadas pelo ator emitindo a mensagem “Cadastro de usuário realizado com sucesso.” Em seguida o usuario e editado e excluido|
-|Resultado esperado|O sistema deve guardar todas as informações disponibilizadas pelo ator e registrá-las em nosso banco de dados como também e possivel editar e excluir|
+|Procedimento     | O ator acessa a home page,Na barra de menu seleciona a opção “Login",Na tela de login, seleciona a opção “Inscreva-se”,Na tela de cadastro, o ator registra as informações relacionadas ao seu usuário,O ator seleciona “Cadastrar”,O sistema armazena as informações disponibilizadas pelo ator emitindo a mensagem “Cadastro de usuário realizado com sucesso.” Em seguida o usuário e editado e excluido|
+|Resultado esperado|O sistema deve guardar todas as informações disponibilizadas pelo ator e registrá-las em nosso banco de dados, como também e possível editar e excluir|
 |Dados de entrada|Nome, data de nascimento, E-mail, Confirmação de E-mail, Senha, Confirmação de Senha|
 |Prioridade|Alta|
 |Técnica|Manual|
