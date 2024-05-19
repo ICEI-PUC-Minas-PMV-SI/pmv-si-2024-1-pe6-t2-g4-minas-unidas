@@ -247,6 +247,9 @@ O sistema como um todo sera validados em um programa de testes que está constit
    |                     |                    Recursos Humanos                          |                      |
    |-------------------------|------------------|--------------------------------------------------------------------------|
    |Nome    |   papel          |Responsabilidades ou Comentários Específicos                                 |
+
+
+   
  Categorias de Testes
  
     Teste de Funcionalidade
