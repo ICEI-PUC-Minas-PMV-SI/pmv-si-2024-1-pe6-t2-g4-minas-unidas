@@ -136,10 +136,14 @@ A partir da homepage, é possível clicar no card “Faça sua denúncia” ou n
 
 ![Homepage](img/minasunidas-home.png)
 
-**6) Login de usuário:** 
-A partir da homepage, é possível clicar no card “Faça sua denúncia” ou no botão “Denuncie” na barra de navegação para acessar a página “Faça sua denúncia”. Nesta página, o usuário poderá registrar o sua denúncia que posteriormente será encaminhada a autoridade competente.
+**6) Login e cadastro de usuário:** 
+- Página onde o usuário ou visitante pode acessar desde a homepage. Para o usuário cadastrado é permitido ingressar ao sistema mediante usuário e senha.
+  
+![Homepage](img/minasunidas-login.png)
 
-![Homepage](img/minasunidas-home.png)
+- Para o visitante da página é permitido através da opção “Inscrever-se”, acessar a página de cadastro de usuário.
+
+![Homepage](img/minasunidas-login.png)
 
 ### Design Visual
 [Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]
