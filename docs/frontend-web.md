@@ -107,10 +107,34 @@ A interface web está composta por seis módulos de interação com o usuário, 
 
 ### Wireframes
 
-- Homepage
+**1) Homepage:** 
+Página inicial que contém os principais elementos de visualização e acesso as principais funcoes.
+  - Header - Logo, Menu de navegação e login de usuário;
+  - Body - Mural de depoimentos, carrossel de notícias, acesso a outras páginas (denúncia, cadastro de depoimentos, quem somos);
+  - Footer - Informações de identificação e contato. 
 
-![Homepage](img/modelagem-dados.png)
+![Homepage](img/minasunidas-home.png)
   
+**2) Quem somos:** 
+Através da homepage, no menu de navegação é possível acessar a página de identificação do projeto.  
+Na página é possível conhecer aspectos importantes do projeto como missão, história, integrantes e iniciativas implementadas.
+
+![Homepage](img/minasunidas-home.png)
+
+**3) Legislação:** 
+A partir da homepage, utilizando o menu de navegação, o usuário acessa a página com informações legais a cerca do tema do projeto e conteúdo relacionado aos tipos de violência.
+
+![Homepage](img/minasunidas-home.png)
+
+**4) Redes de apoio:** 
+A partir da homepage, utilizando o menu de navegação, o usuário acessa a página onde poderá buscar por redes de apoio localizadas no Estado de Minas Gerais.
+
+![Homepage](img/minasunidas-home.png)
+
+**5) Denúncia:** 
+A partir da homepage, utilizando o menu de navegação, o usuário acessa a página onde poderá buscar por redes de apoio localizadas no Estado de Minas Gerais.
+
+![Homepage](img/minasunidas-home.png)
 
 ### Design Visual
 [Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]
