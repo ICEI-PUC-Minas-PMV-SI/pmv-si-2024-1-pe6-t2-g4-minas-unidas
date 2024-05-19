@@ -136,6 +136,8 @@ A partir da homepage, utilizando o menu de navegação, o usuário acessa a pág
 **5) Denúncia:** 
 A partir da homepage, é possível clicar no card “Faça sua denúncia” ou no botão “Denuncie” na barra de navegação para acessar a página “Faça sua denúncia”. Nesta página, o usuário poderá registrar o sua denúncia que posteriormente será encaminhada a autoridade competente.
 
+![Homepage](img/minasunidas-denuncia2.png)
+
 ![Homepage](img/minasunidas-denuncia.png)
 
 **6) Login e cadastro de usuário:** 
