@@ -124,7 +124,9 @@ Na página é possível conhecer aspectos importantes do projeto como missão, h
 **3) Legislação:** 
 A partir da homepage, utilizando o menu de navegação, o usuário acessa a página com informações legais a cerca do tema do projeto e conteúdo relacionado aos tipos de violência.
 
-![Homepage](img/minasunidas-home.png)
+![Homepage](img/minasunidas-legislacao1.png)
+
+![Homepage](img/minasunidas-legislacao2.png)
 
 **4) Redes de apoio:** 
 A partir da homepage, utilizando o menu de navegação, o usuário acessa a página onde poderá buscar por redes de apoio localizadas no Estado de Minas Gerais.
