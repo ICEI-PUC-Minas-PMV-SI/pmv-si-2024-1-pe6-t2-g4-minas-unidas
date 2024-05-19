@@ -159,8 +159,24 @@ A partir da homepage, é possível clicar no card “Faça sua denúncia” ou n
    
 
 ### Layout Responsivo
-[Discuta como a interface será adaptada para diferentes tamanhos de tela e dispositivos.]
-***FALTA ESSE**
+### Layout Responsivo
+A adaptação da interface web para diferentes tamanhos de tela e dispositivos é um aspecto importante do projeto e será guiado por conceitos de design responsivo. 
+O objetivo é garantir que a experiência do usuário seja consistente, eficiente e estável em qualquer dispositivo, prioritariamente um smartphone, tablet, notebook ou desktop.
+
+Mencionamos a seguir boas práticas e técnicas que foram utilizadas para alcançar essa adaptação.
+
+**1. Flexible Grid Layouts:** O design da web utiliza unidades flexíveis como porcentagens para definir dimensões e espaçamento, diferentemente da versão em pixels que é estática. Isso nos permite ter uma acomodação do conteúdo para diferentes tamanhos de telas e dispositivos. Nesse caso contamos com um framework responsivo, o Bodstrap.
+
+**2. Imagens Responsivas:** Utilizando atributos e elementos HTML para configurar imagens que serao adequadas a diferentes resoluções e tamanhos de tela automaticamente.
+
+**3. Media Queries:** A adoção de media queries em nosso CSS permite aplicar estilos específicos com base nas características de cada dispositivo, possibilitando ajustes como tamanho de fontes, orientação, reorganizar e omitir elementos da página.
+
+**4. Fontes flexíceis:** Primordial para a visualização do conteúdo web, utilizamos unidades relativas como 'em' e 'rem' para ajustar o tamanho e a fonte do conteúdo apresentado para que independente do dispositivo o conteúdo esteja 100% visível e estéticamente agradável.
+
+**5. Elementos Interativos:** Elementos como o carrossel de notícias, botões, teste de violência e os campos de preenchimento receberam tratamento adequado quanto a sua dimensão e correto espaçamento compreendendo os diferentes tipos de telas e dispositivos, garantindo boa usabilidade ao usuario.
+
+**6. Teste e Otimização:** Utilizamos ferramentas de desenvolvimento do navegador google chrome para emular diferentes dispositivos e tamanhos de tela. Verificando assim, o comportamento da interface em várias resoluções e orientações.
+
 
 ### Interações do Usuário
 Nosso projeto foi idealizado para servir principalmente a mulheres vítimas ou testemunhas de situações de violência. Portanto, foi adotado uma interface simples para ser acessível a qualquer classe social, que proporciona-se uma clara visualizacao da informacao e um foco muito claro no objetivo final  a denúncia. 
