@@ -327,8 +327,7 @@ O teste funcional é um processo de garantia de qualidade onde o software é tes
 |Caso De Teste|CT08 - Realização de 40 testes de perfil simultâneos|
 |--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Pré-Condição|Configuração na ferramenta de teste escolhida|
-|Procedimento|Criar código na ferramenta de automação de testes para execução dos cadastros de receita simultâneos;Executar o teste automatizado na ferramenta configurada;Registrar resultados obtidos,caso tenha concluído com sucesso ou anotar observações caso
-problemas tenham surgido na execução do teste|
+|Procedimento|Criar código na ferramenta de automação de testes para execução dos cadastros de receita simultâneos;Executar o teste automatizado na ferramenta configurada;Registrar resultados obtidos,caso tenha concluído com sucesso ou anotar observações caso problemas tenham surgido na execução do teste.|
 |Resultado esperado|O sistema deve executar os 40 testes de perfil simultaneamente, sem apresentar morosidade ou qualquer instabilidade associada, gerando assim resultados dentro do limite de tempo esperado (1 minuto)|
 |Dados de entrada|Respostas “Sim” ou “Não”|
 |Prioridade|Alta|
