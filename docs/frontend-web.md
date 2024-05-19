@@ -102,11 +102,15 @@ A interface web está composta por seis módulos de interação com o usuário, 
 - Legislação, com informação atualizada sobre a lei e tipos de violências;
 - Redes de apoio, com idenficação e visualizacao dos atores presentes no Estado;
 - Denuncie, disponibilidade de realizar uma denúncia diretamente aos orgãos competentes;
-- Login e cadastro de usuário, para identificacão e gerenciamento de informações do indivíduo.
+- Login e cadastro de usuário, para identificação e gerenciamento de informações do indivíduo.
 
 
 ### Wireframes
-[Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]
+
+- Homepage
+
+![Homepage](img/modelagem-dados.png)
+  
 
 ### Design Visual
 [Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]
