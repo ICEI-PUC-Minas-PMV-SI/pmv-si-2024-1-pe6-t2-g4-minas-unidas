@@ -404,10 +404,7 @@ Verifica se o software é capaz de retornar para um estado operacional após est
 |-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Pré-Condição|O usuário possuir login válido e senha cadastrada para acessar o sistema e as telas|
 |Procedimento|O ator acessa a tela de Login;O ator informa um login válido no campo “E-mail”, uma senha válida no campo "Senha" e clicar no botão “Entrar”;O ator clica no botão “Realizar Denúncia";O ator digita os dados necessários para realizar a denúncia;O ator escreve a denúncia;O ator desliga a conexão de internet da máquina onde está realizando o teste;O ator clica no botão "Enviar Denúncia”;O ator anota o comportamento do sistema neste momento;O ator restabelece a conexão de internet;O ator clica no botão “Enviar Denúncia”novamente;O ator anota o comportamento do sistema neste momento.|
-|Resultado Esperado|Na primeira tentativa de enviar a denúncia sem acesso a internet, o
-sistema deve apresentar mensagem informando "Falha ao Enviar a Denúncia’'.
-Após restabelecer a conexão com a internet e tentar enviar novamente a denúncia, o  sistema deve enviá-la com sucesso.
-Espera-se que os dados preenchidos em tela não sejam perdidos ao tentar salvar  a denúncia sem internet.|
+|Resultado Esperado|Na primeira tentativa de enviar a denúncia sem acesso a internet, o sistema deve apresentar mensagem informando "Falha ao Enviar a Denúncia’'.Após restabelecer a conexão com a internet e tentar enviar novamente a denúncia, o  sistema deve enviá-la com sucesso.Espera-se que os dados preenchidos em tela não sejam perdidos ao tentar salvar  a denúncia sem internet.|
 |Dados de Entrada|Login(E-mail), Senha válida, Rua, Número, Bairro, Cidade, Estado, CEP, E-mail, Telefone e Denúncia e se
 deseja salvar a mesma.|
 |Prioridade|Alta|
