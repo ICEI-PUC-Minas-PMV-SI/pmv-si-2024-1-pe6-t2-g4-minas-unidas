@@ -259,7 +259,7 @@ O sistema como um todo sera validados em um programa de testes que está constit
 O teste funcional é um processo de garantia de qualidade onde o software é testado em relação às funcionalidades, requisitos e regras de negócios. É focado no desempenho de processamento, desse modo, se concentra na simulação do uso real do software.
 
 |Caso De Teste|CT01 - Cadastrar denúncia online                                                                     |
-|-------------------------------------------------------------------------------------------------------------------|
+|-------------|------------------------------------------------------------------------------------------------------|
 |Pré-Condição|Não existe                                                                                            |
 |Procedimento|O ator acessa a home page,Na barra de menu seleciona a opção “Denuncie”,Na tela de denúncia, seleciona a opção de denúncia “online”,Na tela de cadastro, o ator registra as informações relacionadas a denúncia,O ator seleciona “Publicar",O sistema armazena as informações disponibilizadas pelo ator emitindo a mensagem “Denúncia publicada com sucesso|
 
