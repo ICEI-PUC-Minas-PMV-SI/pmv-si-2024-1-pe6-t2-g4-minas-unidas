@@ -284,7 +284,7 @@ O teste funcional é um processo de garantia de qualidade onde o software é tes
 
     O teste de usabilidade busca entender como o sistema se comporta no dia a dia, na naturalidade da utilização, e se ele atende aos requisitos pensados e estabelecidos.
 
-|Caso De Teste|CT05 - Teste de Perfil (Fluidez e facilidade entre as diversas telas do sistema que envolve tal processo e quanto ao resultado e suas transições). Foram observados dois atores com características distintas entre si.|
+|Caso De Teste|CT03 - Teste de Perfil (Fluidez e facilidade entre as diversas telas do sistema que envolve tal processo e quanto ao resultado e suas transições). Foram observados dois atores com características distintas entre si.|
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Pré-Condição|Não existe |
 |Procedimento|O ator acessa a home page,Na barra lateral, aciona o botão “Identifique se você está sendo vítima de algum tipo de violência”,O texto compreende 5 etapas de perguntas objetivas com confirmação em cada etapa através do botão “Enviar Resposta”,Na sexta tela deve ser apresentado um resultado diagnóstico e a apresentação de 3 opções de botão,
@@ -297,7 +297,7 @@ O teste funcional é um processo de garantia de qualidade onde o software é tes
 |Iteração|1ª Iteração|
 
 
-|Caso De Teste|CT06 - Consulta por redes de apoio e depoimentos publicados|
+|Caso De Teste|CT04 - Consulta por redes de apoio e depoimentos publicados|
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Pré-Condição|Não existe |
 |Procedimento|Redes de Apoio,O ator acessa a home page,Na barra de menu seleciona a opção “Redes de Apoio”,Na nova tela, o ator deve escolher uma cidade e confirmar com a opção “OK”,Existem duas possibilidades de resposta para a busca, a primeira é o resultado das unidades de apoio presentes para a cidade escolhida. E na segunda possibilidade, a emissão da mensagem “Não localizamos redes de apoio na sua cidade.”, onde o ator poderá através do email disponibilizado enviar informações a respeito de uma unidade de apoio para aquela cidade.|
@@ -310,7 +310,7 @@ O teste funcional é um processo de garantia de qualidade onde o software é tes
 
 
 
-|Caso De Teste|CT07 - Realizar principais tarefas no ambiente de administrador da conta (inserir, ampliar, editar e excluir) para as opções de depoimento, perfil de usuário, denúncia, redes de apoio e notícias|
+|Caso De Teste|CT05 - Realizar principais tarefas no ambiente de administrador da conta (inserir, ampliar, editar e excluir) para as opções de depoimento, perfil de usuário, denúncia, redes de apoio e notícias|
 |--------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Pré-Condição|Login (E-mail), Senha válida|
 |Procedimento|O ator acessa a home page;Na barra de menu seleciona a opção “Login”;Na tela de login, inserir login (E-mail) e Senha válida;Ao adentrar ao ambiente de usuário, encontra-se a barra lateral esquerda de Gerenciamento de conta (Usuários, Depoimentos, Denúncias, Redes de Apoio e Notícias) - existem versões distintas para usuário normal (sem opções de “Notícia”, “Usuário” e “Redes de Apoio”); Ao clicar em cada uma das opções é disponibilizada uma nova tela de gerenciamento da opção escolhida; Na nova tela visualizada são apresentados os dados cadastrados no sistema ao nível do usuário e ao final de cada cadastro é encontrado os ícones que representam as funções de “ampliar”, “editar” e “apagar” Ao final de todas as informações registradas existe o botão que permite “Inserir” um novo elemento no sistema direcionando para uma tela de cadastro(depoimento, rede de apoio, denúncia, notícia e usuário); Ao clicar no ícone de ampliar, permite visualizar todas as informações do cadastro registrado em um pop-up;Ao clicar no ícone de editar, permite editar as informações do cadastro registrado em um pop-up;Ao clicar no ícone de “apagar” permite eliminar as informações do cadastro registro mediante um pop-up de alerta e confirmação da ação solicitada|
@@ -324,7 +324,7 @@ O teste funcional é um processo de garantia de qualidade onde o software é tes
 
 É projetado para testar o desempenho do software durante a sua execução, particularmente, para sistemas de tempo real cujo requisito de desempenho é crucial.
 
-|Caso De Teste|CT08 - Realização de 40 testes de perfil simultâneos|
+|Caso De Teste|CT06 - Realização de 40 testes de perfil simultâneos|
 |--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Pré-Condição|Configuração na ferramenta de teste escolhida|
 |Procedimento|Criar código na ferramenta de automação de testes para execução dos cadastros de receita simultâneos;Executar o teste automatizado na ferramenta configurada;Registrar resultados obtidos,caso tenha concluído com sucesso ou anotar observações caso problemas tenham surgido na execução do teste.|
@@ -334,7 +334,7 @@ O teste funcional é um processo de garantia de qualidade onde o software é tes
 |Técnica|Ferramenta de Benchmark|
 |Iteração|1ª Iteração|
 
-|Caso De Teste|CT09 - Cadastrar 40 denúncias online simultaneamente|
+|Caso De Teste|CT07 - Cadastrar 40 denúncias online simultaneamente|
 |----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Pré-Condição|Configuração na ferramenta de teste escolhida|
 |Procedimento|Criar código na ferramenta de automação de testes para execução dos cadastros de receita simultâneos;Executar o teste automatizado na ferramenta configurada;Registrar resultados obtidos, caso tenha concluído com sucesso ou anotar observações caso problemas tenham surgido na execução do teste.|
@@ -348,7 +348,7 @@ O teste funcional é um processo de garantia de qualidade onde o software é tes
    
   Tem por objetivo simular condições incomuns de utilização do sistema, testando provocar aumentos ou reduções sucessivas de transações de forma a superar os volumes máximos previstos para o software
 
-|Caso De Teste|CT10 - Realizar 50 logins simultâneos                                               |
+|Caso De Teste|CT08 - Realizar 50 logins simultâneos                                               |
 |-------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Pré-Condição|Ferramenta de teste automatizado configurada para realização dos cadastros simultâneos.|
 |Procedimento|Criar código na ferramenta de automação de testes para execução dos logins simultâneos;Executar o teste automatizado na ferramenta configurada;Documentar os resultados obtidos do teste. Se o resultado for negativo e com erros, anotar detalhadamente.|
@@ -359,7 +359,7 @@ O teste funcional é um processo de garantia de qualidade onde o software é tes
 |Iteração|1ª Iteração|
 
 
-|Caso de Teste|CT011 - Realizar 50 cadastros de depoimentos simultâneos|
+|Caso de Teste|CT09 - Realizar 50 cadastros de depoimentos simultâneos|
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Pré-Condição|Ferramenta de teste automatizado configurada para realização de cadastro de depoimentos simultâneos.|
 |Procedimento|Criar código na ferramenta de automação de testes para execução de depoimentos simultâneos;Executar o teste automatizado na ferramenta configurada;Documentar os resultados obtidos do teste. Se o resultado for negativo e com erros, anotar detalhadamente.|
@@ -374,7 +374,7 @@ O teste funcional é um processo de garantia de qualidade onde o software é tes
 
 Busca validar se o sistema funciona conforme pretendido mesmo em diferentes condições de hardware e software.
 
-|Caso De Teste|CT012 - Cadastrar usuário acessando o sistema em 2 máquinas com diferentes Sistemas Operacionais. O Teste será realizado em 1 máquina com Windows 11 e 1 máquina com macOS.|
+|Caso De Teste|CT10 - Cadastrar usuário acessando o sistema em 2 máquinas com diferentes Sistemas Operacionais. O Teste será realizado em 1 máquina com Windows 11 e 1 máquina com macOS.|
 |---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Pré-Condição|Não existe pré-condição|
 |Procedimento|O ator acessa a tela de Login;O ator clica no link “Cadastrar um novo usuário”;O ator preenche os campos Nome Completo, Data de Nascimento, E-mail,Confirmação de E-mail, Senha,Confirmação da Senha;O ator clica no botão “CADASTRAR”;O sistema grava os dados do novo cadastro e abre a página do usuário.|
@@ -386,7 +386,7 @@ Busca validar se o sistema funciona conforme pretendido mesmo em diferentes cond
 
 
 
-|Caso de Teste|CT013 - Realizar o login no sistema utilizando 2 navegadores diferentes: Safari e Chrome, com usuário e senha válidos.|
+|Caso de Teste|CT11 - Realizar o login no sistema utilizando 2 navegadores diferentes: Safari e Chrome, com usuário e senha válidos.|
 |---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Pré-Condição|Usuário utilizado para o login já ter sido cadastrado anteriormente e possuir senha válida.|
 |Procedimento|O ator acessa a tela de Login;O ator informa o e-mail e a senha;O ator clica no botão “Entrar”; O sistema abre a tela inicial para o ator.|
@@ -400,7 +400,7 @@ Busca validar se o sistema funciona conforme pretendido mesmo em diferentes cond
 
 Verifica se o software é capaz de retornar para um estado operacional após estar em um estado de falha.
 
-|Caso de Teste|CT014 - Tentar salvar a denúncia após perda do sinal de internet e registrar os resultados|
+|Caso de Teste|CT012 - Tentar salvar a denúncia após perda do sinal de internet e registrar os resultados|
 |-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Pré-Condição|O usuário possuir login válido e senha cadastrada para acessar o sistema e as telas|
 |Procedimento|O ator acessa a tela de Login;O ator informa um login válido no campo “E-mail”, uma senha válida no campo "Senha" e clicar no botão “Entrar”;O ator clica no botão “Realizar Denúncia";O ator digita os dados necessários para realizar a denúncia;O ator escreve a denúncia;O ator desliga a conexão de internet da máquina onde está realizando o teste;O ator clica no botão "Enviar Denúncia”;O ator anota o comportamento do sistema neste momento;O ator restabelece a conexão de internet;O ator clica no botão “Enviar Denúncia”novamente;O ator anota o comportamento do sistema neste momento.|
@@ -412,7 +412,7 @@ Verifica se o software é capaz de retornar para um estado operacional após est
 
 
 
-|Caso de Teste|CT015 - Tentar salvar o depoimento após perda do sinal de internet e registrar os resultados|
+|Caso de Teste|CT013 - Tentar salvar o depoimento após perda do sinal de internet e registrar os resultados|
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Pré-Condição|O usuário possuir acesso ao site|
 |Procedimento|O ator acessa a tela de Inicial;O ator clica na área para Realizar o Depoimento;O ator completa os campos para realizar o depoimento;O ator desliga a conexão de internet da máquina onde está realizando o teste;O ator clica no botão “Publicar”;O ator anota o comportamento do sistema neste momento;O ator restabelece a conexão de internet;O ator clica no botão “Publicar” novamente;O ator anota o comportamento do sistema neste momento.|
@@ -427,7 +427,7 @@ Verifica se o software é capaz de retornar para um estado operacional após est
 
    Tem por objetivo descrever as medidas a serem tomadas para restabelecer o sistema ao seu estado funcional ou minimamente aceitável em caso de paralisação do mesmo.
    
-|Caso de Teste|CT16 – Tentar salvar as as novas configurações no gerenciamento de usuários após a reiniciação obrigatória do dispositivo com internet|
+|Caso de Teste|CT14 – Tentar salvar as as novas configurações no gerenciamento de usuários após a reiniciação obrigatória do dispositivo com internet|
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Pré-Condição|O usuário possuir login de administrador válido e senha cadastrada para acesso ao sistema|
 |Procedimento|O ator acessa a tela de Login;O ator informa um login válido no campo "E-mail”, uma senha válida e clica no botão “Entrar”; O ator clica em "Usuários" no lado esquerdo da tela inicial, para acessar a área do usuário;O ator clica no botão de “Configurações” do usuário escolhido;O ator escolhe a opção necessária para o usuário escolhido;O ator reinicia a máquina onde está realizando o teste;O ator clica no botão “Salvar”;O ator anota o comportamento do sistema neste momento;O ator restabelece a conexão de internet;O ator clica no botão “Salvar” novamente;O ator anota o comportamento do sistema neste momento.
@@ -439,7 +439,7 @@ Verifica se o software é capaz de retornar para um estado operacional após est
 
 
 
-|Caso de Teste|CT17 – Realizar a recuperação do banco de dados do sistema|
+|Caso de Teste|CT115 – Realizar a recuperação do banco de dados do sistema|
 |--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Pré-Condição|Não possui pré-condição|
 |Procedimento|O ator realiza o processo de recuperação do backup do banco;O ator deleta todos os dados do banco de dados; O ator acessa o sistema e verifica como as telas se comportam após a exclusão repentina dos dados;corretamente.O ator realiza a recuperação do backup;O ator verifica se os dados voltaram para o banco de dados e como as telas se comportam|
