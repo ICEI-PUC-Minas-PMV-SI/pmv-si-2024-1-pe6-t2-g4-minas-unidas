@@ -346,7 +346,28 @@ O teste funcional é um processo de garantia de qualidade onde o software é tes
 
    **Teste de Carga**
    
-        Tem por objetivo simular condições incomuns de utilização do sistema, testando provocar aumentos ou reduções sucessivas de transações de forma a superar os volumes máximos previstos para o software
+  Tem por objetivo simular condições incomuns de utilização do sistema, testando provocar aumentos ou reduções sucessivas de transações de forma a superar os volumes máximos previstos para o software
+
+|Caso De Teste|CT10 - Realizar 50 logins simultâneos                                               |
+|-------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Pré-Condição|Ferramenta de teste automatizado configurada para realização dos cadastros simultâneos.|
+|Procedimento|Criar código na ferramenta de automação de testes para execução dos logins simultâneos;Executar o teste automatizado na ferramenta configurada;Documentar os resultados obtidos do teste. Se o resultado for negativo e com erros, anotar detalhadamente.|
+|Resultado esperado|O sistema deve executar os 50 logins simultâneos, suportando a ação sem apresentar ou reportar erros.|
+|Dados de entrada|Login e senha válidos|
+|Prioridade|Alta|
+|Técnica|Ferramenta de benchmark|
+|Iteração|1ª Iteração|
+
+
+|Caso de Teste|CT011 - Realizar 50 cadastros de depoimentos simultâneos|
+|------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Pré-Condição|Ferramenta de teste automatizado configurada para realização de cadastro de depoimentos simultâneos.|
+|Procedimento|Criar código na ferramenta de automação de testes para execução de depoimentos simultâneos;Executar o teste automatizado na ferramenta configurada;Documentar os resultados obtidos do teste. Se o resultado for negativo e com erros, anotar detalhadamente.|
+|Resultado esperado|O sistema deve executar os 50 cadastros de depoimentos simultâneos, suportando a ação sem apresentar ou reportar erros.|
+|Dados de entrada|Nome, Cidade, Depoimento, Opção de Depoimento Anônimo.|
+|Prioridade|Alta|
+|Técnica|Ferramenta de benchmark|
+|Iteração|1ª Iteração|
 
 
 
