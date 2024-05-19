@@ -238,13 +238,22 @@ Para garantir a segurança da aplicação distribuída, foram implementadas as s
 
 ## Testes
 
-[Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]
+PLANO DE TESTES DE SOFTWARE
 
-1. Crie casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.
-2. Implemente testes unitários para testar unidades individuais de código, como funções e classes.
-3. Realize testes de integração para verificar a interação correta entre os componentes da aplicação.
-4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
-5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
+  #Fluxo de Trabalho de Teste
+  
+O sistema como um todo sera validados em um programa de testes que está constituído em varis etapas de testes, com dois exemplos práticos em cada, relacionadas à unidade, integração e sistema.
+
+                                         |Recursos Humanos|
+                              |Nome | papel|Responsabilidades ou Comentários Específicos|
+            |Andressa Cordeiro e Luiz Carlos Ferreira|Analista de teste|- Planejamento das etapas de  testes;
+- Especificação dos testes;
+- Supervisão dos testes planejados; 
+- Validar os resultados obtidos.|
+
+
+        
+
 
 # Referências
 
