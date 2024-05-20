@@ -115,7 +115,7 @@ Página inicial que contém os principais elementos de visualização e acesso a
 
 ![Homepage](img/minasunidas-homepage.png)
 
-- O 'teste de perfil de violência' também pode ser acessado desde a homepage através de botao interativo.
+O 'teste de perfil de violência' também pode ser acessado desde a homepage através de botao interativo.
 
 ![Homepage](img/minasunidas-teste.png)
 
@@ -142,11 +142,11 @@ A partir da homepage, é possível clicar no card “Faça sua denúncia” ou n
 
 ![Homepage](img/minasunidas-denuncia2.png)
 
-- Nesta página (opção escolhida 'denúncia presencial'), o usuário poderá selecionar a cidade de preferencial para uma lista de resultados ser visualizada abaixo.
+Nesta página (opção escolhida 'denúncia presencial'), o usuário poderá selecionar a cidade de preferencial para uma lista de resultados ser visualizada abaixo.
 
 ![Homepage](img/minasunidas-denuncia3.png)
 
-- Nesta página (opção escolhida 'denúncia online'), o usuário poderá registrar o sua denúncia online que posteriormente será encaminhada a autoridade competente.
+Nesta página (opção escolhida 'denúncia online'), o usuário poderá registrar o sua denúncia online que posteriormente será encaminhada a autoridade competente.
 
 ![Homepage](img/minasunidas-denuncia.png)
 
