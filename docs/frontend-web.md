@@ -251,27 +251,15 @@ Para garantir a segurança da aplicação distribuída, foram implementadas as s
 
 ## Implantação
 
-      Origem da Implantação:
-A origem da implantação é o local do código do aplicativo. Para aplicativos de produção, a origem geralmente é um repositório hospedado por um software de controle de versão, como o GitHub, BitBucket ou Azure Repos. Para cenários de desenvolvimento e teste, a origem pode ser um projeto em seu computador local.
+Para realização dessa etapa do trabalho utilizamos o processo de implementação de um fluxo de deploy automatizado, utilizando o serviço de hospedagem de aplicativos Azure App Service da Microsoft, integrado ao repositório de código GitHub.
 
-         Pipeline de Build:
-         
-Depois de decidir sobre a origem da implantação, a próxima etapa é escolher um pipeline de build. Um pipeline de build lê o código-fonte da origem da implantação e executa uma série de etapas (como compilar código, minificar HTML e JavaScript, executar testes e empacotar componentes) para obter o aplicativo em um estado executável. Os comandos específicos executados pelo pipeline de build dependem da pilha de linguagem. Essas operações podem ser executadas em um servidor de build, como o Azure Pipelines, ou localmente.
+A primeira etapa do processo envolve a configuração do ambiente no Azure Portal, onde o Azure App Service é provisionado e configurado para hospedar a aplicação em questão. Uma vez estabelecido o ambiente de produção, a integração entre o Azure App Service e o GitHub é realizada através do recurso de integração contínua fornecido pelo Azure. Isso permite que o Azure App Service monitore continuamente o repositório GitHub em busca de novas alterações no branch 'deployFinal', desencadeando automaticamente o processo de deploy sempre que uma nova alteração é detectada.
 
-       Mecanismo de Implantação:
-       
-O mecanismo de implantação é a ação usada para colocar seu aplicativo no diretório /home/site/wwwroot do seu Azure Web App. O diretório /wwwroot é um local de armazenamento compartilhado por todas as instâncias do aplicativo Web. Quando o mecanismo de implantação coloca seu aplicativo nesse diretório, as instâncias recebem uma notificação para sincronizar os novos arquivos.
-O Azure App Service oferece suporte às seguintes opções de implantação:
-Pontos de extremidade Kudu: O Kudu é uma ferramenta de produtividade para desenvolvedores que lida com implantações contínuas e fornece pontos de extremidade HTTP para implantação, como o zipdeploy/.
+A segunda etapa envolveu a observação dos scripts de automação que realizaram o processo de deploy a partir do branch 'deployFinal'. Esses scripts são projetados para realizar uma série de tarefas, incluindo a compilação do código fonte, a execução de testes automatizados e outras etapas. A automação dessas tarefas garante a consistência e a confiabilidade do processo de deploy, reduzindo a possibilidade de erros humanos.
 
-FTP e WebDeploy: Você pode carregar arquivos via FTP ou WebDeploy usando suas credenciais de site ou usuário. Esses mecanismos não passam pelo Kudu. Ferramentas de implantação, como o Azure Pipelines, o Jenkins e os plugins de editor, usam um desses mecanismos de implantação.
+Uma vez que os scripts de automação foram executados, monitoramos de perto todo o fluxo de deploy, avaliando a ocorrência de falhas ou alguma outra característica que poderia afetar o desempenho e a estabilidade da aplicação. Por fim, a aplicação web foi implementada, porém existem melhorias a serem executadas no código fonte. É possível observar pelas imagens de referência abaixo que não ocorreram erros no processo de deploy, mas que o código em si contém características que impedem o carregamento correto da página.
 
-        Usar Slots de Implantação:
-        
-Sempre que possível, use os slots de implantação ao implantar um novo build de produção. Os slots de implantação permitem que você implante seu aplicativo em um ambiente de preparo, valide suas alterações e faça testes de aceitação antes de direcionar o tráfego para o novo build.
-Ambientes de Implantação Azure:
-Além disso, considere criar ambientes de implantação para diferentes estágios do ciclo de desenvolvimento. Isso permite que você tenha ambientes pré-configurados para desenvolvimento, teste e produção.
-Você pode criar e gerenciar ambientes pelo portal do desenvolvedor, com a CLI do Azure ou com a CLI do Desenvolvedor do Azure
+O processo de implementação auxiliou para que essas melhorias fossem colocadas a mostra e nas próximas etapas estaremos trabalhando nessa questão.
 
 ## Testes
 
