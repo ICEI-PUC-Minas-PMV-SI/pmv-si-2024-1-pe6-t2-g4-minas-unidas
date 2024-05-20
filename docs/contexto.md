@@ -195,6 +195,8 @@ Ao longo das cinco etapas do projeto, planeja-se aplicar as fases da metodologia
 - Realizar testes de desempenho e otimizar a velocidade da aplicação, se necessário.
 - Documentar a aplicação web no documento de projeto.
 
+![Etapa 02: APIs e Web Services](img/gantt-etapa03.png)
+
 ### ETAPA 4: Planejar, desenvolver e gerenciar - Aplicação Móvel
 
 - Análise dos requisitos da etapa e definição do escopo;
