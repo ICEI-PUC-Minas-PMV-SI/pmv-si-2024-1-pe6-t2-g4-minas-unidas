@@ -263,9 +263,9 @@ Para garantir a segurança da aplicação distribuída, foram implementadas as s
 
 ## Testes
 
-PLANO DE TESTES DE SOFTWARE
+### Plano de Testes de Software
 
-  **Fluxo de Trabalho de Teste**
+**Fluxo de Trabalho de Teste**
   
 O sistema como um todo sera validados em um programa de testes que está constituído em varias etapas de testes, com dois exemplos práticos em cada, relacionadas à unidade, integração e sistema.
 
@@ -278,9 +278,10 @@ O sistema como um todo sera validados em um programa de testes que está constit
 
 
    
- Categorias de Testes
- 
-   **Teste de Funcionalidade**
+### Categorias de Testes
+
+
+**- Teste de Funcionalidade**
     
 O teste funcional é um processo de garantia de qualidade onde o software é testado em relação às funcionalidades, requisitos e regras de negócios. É focado no desempenho de processamento, desse modo, se concentra na simulação do uso real do software.
 
@@ -305,9 +306,9 @@ O teste funcional é um processo de garantia de qualidade onde o software é tes
 |Técnica|Manual|
 |Iteração|1ª Iteração|
 
-   **Teste de Usabilidade**
+**- Teste de Usabilidade**
 
-    O teste de usabilidade busca entender como o sistema se comporta no dia a dia, na naturalidade da utilização, e se ele atende aos requisitos pensados e estabelecidos.
+O teste de usabilidade busca entender como o sistema se comporta no dia a dia, na naturalidade da utilização, e se ele atende aos requisitos pensados e estabelecidos.
 
 |Caso De Teste|CT03 - Teste de Perfil (Fluidez e facilidade entre as diversas telas do sistema que envolve tal processo e quanto ao resultado e suas transições). Foram observados dois atores com características distintas entre si.|
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -345,7 +346,7 @@ O teste funcional é um processo de garantia de qualidade onde o software é tes
 |Técnica|Manual|
 |Iteração|1ª Iteração|
 
-**Teste de Desempenho**
+**- Teste de Desempenho**
 
 É projetado para testar o desempenho do software durante a sua execução, particularmente, para sistemas de tempo real cujo requisito de desempenho é crucial.
 
@@ -369,9 +370,9 @@ O teste funcional é um processo de garantia de qualidade onde o software é tes
 |Técnica|Ferramenta de Benchmark|
 |Iteração|1ª Iteração|
 
-   **Teste de Carga**
+**- Teste de Carga**
    
-  Tem por objetivo simular condições incomuns de utilização do sistema, testando provocar aumentos ou reduções sucessivas de transações de forma a superar os volumes máximos previstos para o software
+Tem por objetivo simular condições incomuns de utilização do sistema, testando provocar aumentos ou reduções sucessivas de transações de forma a superar os volumes máximos previstos para o software
 
 |Caso De Teste|CT08 - Realizar 50 logins simultâneos                                               |
 |-------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -395,7 +396,7 @@ O teste funcional é um processo de garantia de qualidade onde o software é tes
 |Iteração|1ª Iteração|
 
 
-**Teste de Configuração**
+**- Teste de Configuração**
 
 Busca validar se o sistema funciona conforme pretendido mesmo em diferentes condições de hardware e software.
 
@@ -421,7 +422,7 @@ Busca validar se o sistema funciona conforme pretendido mesmo em diferentes cond
 |Técnica|Manual|
 |Iteração|1ª Iteração|
 
-**Teste de Recuperação**
+**- Teste de Recuperação**
 
 Verifica se o software é capaz de retornar para um estado operacional após estar em um estado de falha.
 
@@ -448,9 +449,9 @@ Verifica se o software é capaz de retornar para um estado operacional após est
 |Iteração|1ª Iteração|
 
 
-**Teste de Contingência**
+**- Teste de Contingência**
 
-   Tem por objetivo descrever as medidas a serem tomadas para restabelecer o sistema ao seu estado funcional ou minimamente aceitável em caso de paralisação do mesmo.
+Tem por objetivo descrever as medidas a serem tomadas para restabelecer o sistema ao seu estado funcional ou minimamente aceitável em caso de paralisação do mesmo.
    
 |Caso de Teste|CT14 – Tentar salvar as as novas configurações no gerenciamento de usuários após a reiniciação obrigatória do dispositivo com internet|
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
