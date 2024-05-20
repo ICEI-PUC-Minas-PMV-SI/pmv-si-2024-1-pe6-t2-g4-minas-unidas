@@ -58,8 +58,6 @@ A arquitetura das APIs do projeto será baseada em uma abordagem de microsservi�
 - A comunicação entre os serviços é realizada de forma assíncrona;
 - A segurança é garantida por meio de práticas como autenticação de usuários, autorização de acesso e validação de entrada de dados.
 
-![Arquitetura da Solução]()
-
 ## Modelagem da Aplicação
 
 Nesta seção, será apresentada a modelagem da aplicação, que inclui a definição das entidades do sistema, seus atributos e relacionamentos.
