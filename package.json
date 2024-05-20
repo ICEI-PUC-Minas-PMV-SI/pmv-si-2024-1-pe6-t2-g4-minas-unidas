@@ -1,19 +1,20 @@
 {
   "name": "src",
   "version": "1.0.0",
-  "main": "index.html",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.2",
-    "cors": "^2.8.5",
+    "cors": "*",
     "express": "^4.19.2",
     "mssql": "^10.0.2",
     "bcrypt": "^5.0.1",
-    "jsonwebtoken": "^8.5.1"
+    "jsonwebtoken": "^8.5.1",
+    "dotenv": "*"
   },
   "devDependencies": {},
   "engines": {

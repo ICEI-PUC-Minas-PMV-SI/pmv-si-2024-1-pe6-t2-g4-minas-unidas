@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -20,7 +22,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // Configuração para servir arquivos estáticos
-app.use(express.static(path.join(__dirname, '/../frontend')));
+app.use(express.static(path.join(__dirname, './frontend')));
 
 // Rotas
 app.use('/denuncias', denunciasRoutes); // Rotas para denúncias
@@ -30,13 +32,19 @@ app.use('/authentication', authenticationRoutes); // Rotas para autenticação
 
 // Rota para servir a página dashboard-usuarios.html
 app.get('/dashboard-usuarios.html', (req, res) => {
-  const filePath = path.join(__dirname, '/../frontend/pages/dashboard-usuarios.html');
+  const filePath = path.join(__dirname, './frontend/pages/dashboard-usuarios.html');
   res.sendFile(filePath);
 });
 
 // Rota para servir a página dashboard-denuncias.html
 app.get('/dashboard-denuncias.html', (req, res) => {
-  const filePath = path.join(__dirname, '/../frontend/pages/dashboard-denuncias.html');
+  const filePath = path.join(__dirname, './frontend/pages/dashboard-denuncias.html');
+  res.sendFile(filePath);
+});
+
+// Rota para servir a página index.html na raiz do site
+app.get('/', (req, res) => {
+  const filePath = path.join(__dirname, './frontend/index.html');
   res.sendFile(filePath);
 });
 

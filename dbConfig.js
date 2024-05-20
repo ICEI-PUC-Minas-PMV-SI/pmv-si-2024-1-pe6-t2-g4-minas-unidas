@@ -1,7 +1,16 @@
+require('dotenv').config();
 const sql = require('mssql');
-const configData = require('../config.json');
 
-const config = configData.dbConfig;
+const config = {
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  server: process.env.DB_SERVER,
+  database: process.env.DB_DATABASE,
+  options: {
+    encrypt: true,
+    trustServerCertificate: true
+  }
+};
 
 const poolPromise = new sql.ConnectionPool(config)
   .connect()
@@ -12,3 +21,4 @@ const poolPromise = new sql.ConnectionPool(config)
   .catch(err => console.log('Erro ao conectar ao banco de dados', err));
 
 module.exports = { sql, poolPromise, config };
+
