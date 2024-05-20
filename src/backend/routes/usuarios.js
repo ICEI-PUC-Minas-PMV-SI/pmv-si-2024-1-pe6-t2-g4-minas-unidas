@@ -58,7 +58,7 @@ router.post('/', async (req, res) => {
             .input('data_nascimento', sql.Date, data_nascimento)
             .input('cidade', sql.NVarChar, cidade)
             .input('estado', sql.NVarChar, estado)
-            .input('perfil_id', sql.NVarChar, perfil_id)
+            .input('perfil_id', sql.Int, perfil_id)
             .query('INSERT INTO usuario (nome, email, senha, data_nascimento, cidade, estado, perfil_id) VALUES (@nome, @email, @senha, @data_nascimento, @cidade, @estado, @perfil_id)');
         res.status(201).send('Usuário criado com sucesso!');
     } catch (err) {
@@ -81,7 +81,7 @@ router.put('/:id', async (req, res) => {
             .input('data_nascimento', sql.Date, data_nascimento)
             .input('cidade', sql.NVarChar, cidade)
             .input('estado', sql.NVarChar, estado)
-            .input('perfil_id', sql.NVarChar, perfil_id)
+            .input('perfil_id', sql.Int, perfil_id)
             .query('UPDATE usuario SET nome = @nome, email = @email, senha = @senha, data_nascimento = @data_nascimento, cidade = @cidade, estado = @estado, perfil_id = @perfil_id WHERE id = @id');
         res.send('Usuário atualizado com sucesso!');
     } catch (err) {

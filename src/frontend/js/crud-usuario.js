@@ -37,7 +37,6 @@ fetch("http://localhost:3000/usuarios")
                     <td>${getFormattedDate(usuario.data_nascimento)}</td>
                     <td>${usuario.cidade}</td>
                     <td>${usuario.estado}</td>
-                    <td>${getProfileType(usuario.perfil_id)}</td>
                     <td>
                         <button class="btn btn-primary btn-sm" onclick="fillEditForm(${usuario.id})" data-toggle="modal" data-target="#modalEditar">Editar</button>
                         <button class="btn btn-danger btn-sm" onclick="confirmDelete(${usuario.id})">Excluir</button>
@@ -86,7 +85,6 @@ function fillEditForm(userId) {
             document.getElementById("inputCidadeEditar").value = data.cidade;
             document.getElementById("inputEstadoEditar").value = data.estado;
             document.getElementById("inputEmailEditar").value = data.email;
-            document.getElementById("selectPerfilEditar").value = data.perfil_id;
             // Definindo o ID do usuário para posterior uso na atualização
             window.userId = userId;
         })
@@ -102,10 +100,12 @@ function updateUserData(userId) {
     const estado = $("#inputEstadoEditar").val();
     const email = $("#inputEmailEditar").val();
     const senha = $("#inputSenhaEditar").val();
-    const perfil_id = $("#selectPerfilEditar").val();
 
     // Formatar a data de nascimento no formato AAAA-MM-DD
     data_nascimento = formatDate(data_nascimento);
+
+    // Obter o valor do perfil selecionado (selecionar usuário comum por padrão se nenhum perfil for especificado)
+    const perfil_id = $("#selectPerfilEditar").val() || 2; 
 
     // Enviar os dados atualizados para a API via AJAX
     $.ajax({
@@ -135,7 +135,6 @@ function updateUserData(userId) {
                         <td>${getFormattedDate(data.data_nascimento)}</td>
                         <td>${data.cidade}</td>
                         <td>${data.estado}</td>
-                        <td>${getProfileType(data.perfil_id)}</td>
                         <td>
                             <button class="btn btn-primary btn-sm" onclick="fillEditForm(${data.id})" data-toggle="modal" data-target="#modalEditar">Editar</button>
                             <button class="btn btn-danger btn-sm" onclick="confirmDelete(${data.id})">Excluir</button>
