@@ -261,6 +261,11 @@ Uma vez que os scripts de automação foram executados, monitoramos de perto tod
 
 O processo de implementação auxiliou para que essas melhorias fossem colocadas a mostra e nas próximas etapas estaremos trabalhando nessa questão.
 
+![deploy](img/deploy01.png)
+![deploy](img/deploy02.png)
+![deploy](img/deploy03.png)
+![deploy](img/deploy04.png)
+
 ## Testes
 
 ### Plano de Testes de Software
