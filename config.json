@@ -1,0 +1,10 @@
+{
+  "dbConfig": {
+    "server": "minas-unidas-db-server.database.windows.net",
+    "database": "MinasUnidasDB",
+    "options": {
+      "encrypt": true,
+      "trustServerCertificate": true
+    }
+  }
+}
