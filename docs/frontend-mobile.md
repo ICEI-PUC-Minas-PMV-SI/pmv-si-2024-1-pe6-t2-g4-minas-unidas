@@ -1,9 +1,21 @@
 # Front-end Móvel
 
-[Inclua uma breve descrição do projeto e seus objetivos.]
+Este documento aborda o desenvolvimento do front-end móvel para o projeto **Minas Unidas**. O objetivo principal do front-end móvel é fornecer uma interface amigável para que os usuários possam se cadastrar e registrar denúncias diretamente de seus dispositivos móveis. O foco será na usabilidade e na integração com o back-end da aplicação.
 
 ## Tecnologias Utilizadas
-[Lista das tecnologias principais que serão utilizadas no projeto.]
+
+A seguir, estão listadas as tecnologias utilizadas no desenvolvimento do projeto:
+
+### Ambiente de desenvolvimento:
+- **Visual Studio Code**: IDE para desenvolvimento do código-fonte.
+- **Git**: Sistema de controle de versão para rastreamento e gerenciamento de alterações no código-fonte, possibilitando colaboração e versionamento.
+- **GitHub**: Plataforma de hospedagem de código-fonte e colaboração para desenvolvimento de projetos.
+
+### Front-end móvel:
+- **React Native**: Framework para desenvolvimento de aplicativos móveis multiplataforma, permitindo criar aplicativos nativos para iOS e Android utilizando JavaScript e React.
+- **Expo**: Ferramenta e plataforma para desenvolvimento rápido de aplicativos React Native, facilitando testes e deploy.
+- **JavaScript**: Linguagem de programação utilizada para desenvolver a lógica de interação do aplicativo.
+- **React Native Paper**: Biblioteca utilizada para criar interfaces com boa usabilidade, seguindo as diretrizes de Material Design do Google.
 
 ## Arquitetura
 
