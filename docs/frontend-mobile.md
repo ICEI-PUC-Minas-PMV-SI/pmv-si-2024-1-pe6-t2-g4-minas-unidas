@@ -22,7 +22,34 @@ A seguir, estão listadas as tecnologias utilizadas no desenvolvimento do projet
 [Descrição da arquitetura das aplicação móvel, incluindo os componentes e suas interações.]
 
 ## Modelagem da Aplicação
-[Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
+
+Nesta seção, será apresentada a modelagem da aplicação, que inclui a definição das entidades do sistema, seus atributos e relacionamentos.
+
+### Entidades
+
+A seguir, são detalhadas as entidades do sistema:
+
+#### 1. Tipo de violência:
+
+- Representa os cinco tipos de violência: física, psicológica, moral, sexual ou patrimonial;
+- Atributos: ID (chave primária), Tipo.
+
+#### 2. Perfil:
+
+- Define os diferentes perfis de usuários no sistema;
+- Atributos: ID (chave primária), Descrição.
+
+#### 3. Usuário:
+
+- Representa os usuários do sistema;
+- Atributos: ID (chave primária), Nome, Data de Nascimento, Cidade, Estado, E-mail, Senha, Perfil ID (chave estrangeira referenciando o perfil associado).
+
+#### 4. Denúncia:
+
+- Armazena as denúncias feitas pelos usuários;
+- Atributos: ID (chave primária), Nome, Data de Nascimento, Cidade, Estado, E-mail, Telefone, Tipo de Violência ID (chave estrangeira referenciando o tipo de violência associado), Descrição.
+
+![Modelagem de dados - Mobile](img/modelagem-dados-mobile.png)
 
 ## Projeto da Interface
 [Descreva o projeto da interface móvel da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]
