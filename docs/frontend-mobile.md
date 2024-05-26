@@ -81,17 +81,55 @@ A seguir, são detalhadas as entidades do sistema:
 
 ## Considerações de Segurança
 
-[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
+Para a segurança de nossa aplicação mobile tomamos como critério o OWASP MASVS, um dos padrões de segurança utilizados para a garantia da segurança em uma aplicação mobile.
+
+Nesse padrão ocorre uma divisão da segurança em algumas categorias. Optamos pelo nível de segurança L1 mais simples devido ao tempo de execução do trabalho. Tentaremos ao máximo seguir esses princípios para o sucesso da segurança de nosso aplicativo móvel.
+
+Segue abaixo as boas práticas de segurança a serem implementadas:
+
+1. Categoria de ARMAZENAMENTO
+
+- Caso algum dado sensível seja armazenado localmente ou externamente, esse dado será guardado de maneira segura independentemente da localização.
+- O aplicativo previne vazamento de dados sensíveis.
+
+2. Categoria de CRIPTOGRAFIA
+
+- O aplicativo usurá métodos de criptografia fortes e seguindo as melhores práticas.
+- O aplicativo realizará o gerenciamento de chaves.
+
+3. Categoria de AUTENTICAÇÃO E AUTORIZAÇÃO
+
+- O aplicativo usurá protocolos seguros para a autenticação e autorização.
+- O aplicativo contará com um método adicional de autenticação para as operações sensíveis.
+
+4. Categoria de REDE
+
+- Todo o tráfego de rede que passará pelo aplicativo será seguro.
+
+5. Categoria de INTERAÇÃO NA PLATAFORMA
+
+- O aplicativo usará os mecanismos de IPC (inter-process communication) de maneira segura.
+- O aplicativo usará as WebViews de maneira segura.
+- O aplicativo usará a interface de usuário de maneira segura.
+
+6. Categoria de QUALIDADE DE CÓDIGO
+
+- O aplicativo exigirá uma plataforma atualizada para a sua execução.
+- O aplicativo apenas usará componentes de software que não possuem vulnerabilidades.
+- O aplicativo validará e limpará qualquer "input" suspeito.
+
+7. Categoria de PRIVACIDADE
+
+- O aplicativo minimiza o acesso a dados sensíveis e recursos.
+- O aplicativo previne a identificação do usuário.
+- O aplicativo é transparente quanto a coleta de dados e seu uso.
+- O aplicativo oferece ao usuário controle sobre os seus dados.
 
 ## Implantação
 
-[Instruções para implantar a aplicação distribuída em um ambiente de produção.]
+A implementação de nossa aplicação será realizada com a plataforma Expo, uma plataforma que simplifica o desenvolvimento e o deploy de aplicativos móveis utilizando JavaScript e React Native.
 
-1. Defina os requisitos de hardware e software necessários para implantar a aplicação em um ambiente de produção.
-2. Escolha uma plataforma de hospedagem adequada, como um provedor de nuvem ou um servidor dedicado.
-3. Configure o ambiente de implantação, incluindo a instalação de dependências e configuração de variáveis de ambiente.
-4. Faça o deploy da aplicação no ambiente escolhido, seguindo as instruções específicas da plataforma de hospedagem.
-5. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.
+Os passos utilizados para a implementação da aplicação serão descritos posteriormente.
 
 ## Testes
 
