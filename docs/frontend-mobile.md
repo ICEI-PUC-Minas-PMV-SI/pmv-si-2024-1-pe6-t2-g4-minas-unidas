@@ -31,7 +31,7 @@ A arquitetura do front-end móvel segue uma abordagem de arquitetura cliente/ser
 #### 2. Lógica de Negócios:
 - Nesta camada, reside a lógica da aplicação, incluindo as regras de negócio, validações e processamento de dados;
 - Utiliza JavaScript para implementar a lógica de interação do aplicativo, como cadastro de usuário, registro de denúncias e autenticação;
-- Realiza a comunicação com a camada de acesso a dados para recuperar ou persistir informações no back-end.
+- Realiza a comunicação com a camada de acesso a dados para recuperar ou persistir informações no back-end;
 - Responsável por garantir a integridade e consistência dos dados manipulados pela aplicação.
 
 ### Interações
