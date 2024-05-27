@@ -69,15 +69,75 @@ A seguir, são detalhadas as entidades do sistema:
 ## Fluxo de Dados
 
 [Diagrama ou descrição do fluxo de dados na aplicação.]
+1. Cadastro de Usuário
+- Entrada de Dados: O usuário insere suas informações pessoais, como nome, data de nascimento, cidade, estado, e-mail e senha.
+- Processamento: Esses dados são validados no front-end para garantir que todos os campos obrigatórios estão preenchidos e que o formato dos dados é adequado.
+- Envio para o Back-End: Após a validação, os dados são enviados ao back-end, utilizando requisições HTTP.
+- Resposta do Back-End: O back-end processa o cadastro e retorna uma resposta ao front-end, confirmando o sucesso do cadastro ou indicando erros específicos que devem ser corrigidos pelo usuário.
+
+2. Login do Usuário
+- Entrada de Dados: O usuário insere seu e-mail e senha.
+- Processamento: O front-end valida se os campos estão preenchidos.
+- Envio para o Back-End: As credenciais são enviadas ao back-end para autenticação.
+- Resposta do Back-End: Se as credenciais forem válidas, o back-end autorizará ações subsequentes do usuário.
+
+3. Registro de Denúncias:
+- Entrada de Dados: O usuário insere detalhes da denúncia, incluindo tipo de violência, descrição e informações de contato (opcional).
+- Processamento: O front-end valida os dados para assegurar que todas as informações necessárias foram fornecidas.
+- Envio para o Back-End: Os dados da denúncia são enviados ao back-end através de uma API segura.
+- Resposta do Back-End: O back-end confirma o registro da denúncia e retorna uma mensagem de confirmação ao usuário.
+
+4. Consulta de Denúncias:
+- Solicitação: O usuário solicita visualizar suas denúncias registradas.
+- Processamento: O front-end envia uma requisição autenticada ao back-end.
+- Resposta do Back-End: O back-end retorna os dados das denúncias que são então exibidos no aplicativo.
+
+5. Interações e Atualizações:
+- Atualização de Perfil: O usuário pode atualizar suas informações pessoais. O front-end envia os dados atualizados ao back-end para processamento.
+- Resposta do Back-End: O back-end valida e salva as atualizações, retornando uma confirmação ao front-end.
+- Recuperação de Conexão: Caso ocorra uma perda de conexão durante o registro de uma denúncia, o aplicativo tenta salvar localmente e reenvia os dados quando a conexão for restabelecida.
 
 ## Requisitos Funcionais
 
 [Liste os principais requisitos funcionais da aplicação.]
+1. Cadastro de Usuário:
+Permitir que os usuários se cadastrem na aplicação fornecendo informações como nome, data de nascimento, cidade, estado, e-mail e senha.
+
+2. Registro de Denúncias:
+Possibilitar que os usuários registrem denúncias, incluindo informações como tipo de violência.
+
+3. Gerenciamento de Denúncias:
+Permitir que os usuários visualizem, editem e excluam suas denúncias registradas.
+
+4. Autenticação de Usuário:
+Implementar um sistema de autenticação para garantir que apenas usuários autorizados possam acessar certas funcionalidades da aplicação.
+
+5. Navegação entre Telas:
+Fornecer uma navegação fluida entre as diferentes telas da aplicação para uma melhor experiência do usuário.
+
+6. Consulta por Redes de Apoio:
+Permitir que os usuários consultem informações sobre redes de apoio e depoimentos publicados.
+
 
 ## Requisitos Não Funcionais
 
 [Liste os principais requisitos não funcionais da aplicação, como desempenho, segurança, escalabilidade, etc.]
+1. Desempenho:
+Garantir que a aplicação seja responsiva e tenha um tempo de carregamento rápido, mesmo em dispositivos móveis com recursos limitados.
 
+2. Segurança:
+Implementar práticas de segurança conforme as diretrizes do OWASP MASVS, incluindo armazenamento seguro de dados sensíveis, uso de métodos de criptografia, autenticação segura, prevenção de vazamento de dados e garantia de tráfego de rede seguro.
+
+3. Escalabilidade:
+Desenvolver a aplicação de forma a permitir que ela possa lidar com um aumento no número de usuários e denúncias sem comprometer o desempenho.
+
+4. Disponibilidade: A aplicação deve estar funcional 95% do tempo, garantindo alta disponibilidade para os usuários.
+
+6. Privacidade:
+Minimizar o acesso a dados sensíveis, prevenir a identificação do usuário, ser transparente quanto à coleta e uso de dados e oferecer controle ao usuário sobre seus próprios dados.
+
+7. Compatibilidade e Interoperabilidade:
+Garantir que a aplicação seja compatível e operável em diferentes dispositivos móveis e sistemas operacionais.
 
 ## Considerações de Segurança
 
