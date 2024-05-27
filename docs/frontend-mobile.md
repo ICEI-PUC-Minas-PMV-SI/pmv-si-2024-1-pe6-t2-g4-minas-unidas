@@ -19,7 +19,28 @@ A seguir, estão listadas as tecnologias utilizadas no desenvolvimento do projet
 
 ## Arquitetura
 
-[Descrição da arquitetura das aplicação móvel, incluindo os componentes e suas interações.]
+A arquitetura do front-end móvel segue uma abordagem de arquitetura cliente/servidor, com uma arquitetura em duas camadas, onde o cliente (aplicativo móvel) se comunica com o servidor (back-end) para acessar os dados e funcionalidades.
+
+### Componentes principais
+
+#### 1. Interface de Usuário:
+- Esta camada é responsável por fornecer a interface com o usuário, incluindo elementos visuais, interações e fluxo de tela;
+- Contém os componentes visuais da aplicação, como botões, campos de entrada, listas e outros elementos de interface;
+- Responsável por capturar eventos do usuário, como cliques, toques e gestos, e encaminhá-los para a camada de lógica de negócios para processamento.
+
+#### 2. Lógica de Negócios:
+- Nesta camada, reside a lógica da aplicação, incluindo as regras de negócio, validações e processamento de dados;
+- Utiliza JavaScript para implementar a lógica de interação do aplicativo, como cadastro de usuário, registro de denúncias e autenticação;
+- Realiza a comunicação com a camada de acesso a dados para recuperar ou persistir informações no back-end.
+- Responsável por garantir a integridade e consistência dos dados manipulados pela aplicação.
+
+### Interações
+
+- O aplicativo móvel se comunica com os serviços back-end através de requisições HTTP, utilizando endpoints específicos para cada operação (cadastro de usuário, cadastro de denúncias);
+- O serviço de autenticação valida as credenciais dos usuários e emite tokens JWT para permitir acesso seguro aos outros serviços;
+- As operações de CRUD para denúncias e usuários são realizadas de forma assíncrona para garantir uma boa experiência ao usuário.
+
+![Arquitetura](img/arquitetura-mobile.png)
 
 ## Modelagem da Aplicação
 
