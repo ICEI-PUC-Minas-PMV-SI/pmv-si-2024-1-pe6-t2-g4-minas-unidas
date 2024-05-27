@@ -56,7 +56,7 @@ A seguir, são detalhadas as entidades do sistema:
 
 ### Wireframes
 
-![Prototipo - Mobile](img/prototipo_01_white.png)
+![Prototipo - Mobile](img/prototipo_01.png)
 
 ### Design Visual
 [Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]
