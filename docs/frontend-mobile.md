@@ -258,64 +258,6 @@ O teste funcional é um processo de garantia de qualidade onde o software é tes
 |Iteração|1ª Iteração|
 
 
-**- Teste de Usabilidade**
-
-O teste de usabilidade busca entender como o sistema se comporta no dia a dia, na naturalidade da utilização, e se ele atende aos requisitos pensados e estabelecidos.
-
-|Caso De Teste|CT03 - Teste de Perfil (Fluidez e facilidade entre as diversas telas do sistema que envolve tal processo e quanto ao resultado e suas transições). Foram observados dois atores com características distintas entre si.|
-|------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|Pré-Condição|Não existe |
-|Procedimento|                                                                             |
-|Resultado esperado|                                                                       |
-|Dados de entrada|Respostas “Sim” ou “Não”|
-|Prioridade|Alta|
-|Técnica|Manual|
-|Iteração|1ª Iteração|
-
-
-|Caso De Teste|CT04 - Consulta por redes de apoio e depoimentos publicados|
-|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|Pré-Condição|Não existe |
-|Procedimento|                                                                                 |
-|Depoimentos|                                                                                  |
-|Resultado esperado|Espera-se que o sistema apresente os resultados das informações cadastradas com fluidez e em poucos passos.
-|Dados de entrada|                                                                               |
-|Prioridade|Alta|
-|Técnica|Manual|
-|Iteração|1ª Iteração|
-
-**- Teste de Recuperação**
-
-Verifica se o software é capaz de retornar para um estado operacional após estar em um estado de falha.
-
-|Caso de Teste|CT012 - Tentar salvar a denúncia após perda do sinal de internet e registrar os resultados|
-|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|Pré-Condição|O usuário possuir login válido e senha cadastrada para acessar o sistema e as telas|
-|Procedimento|                                                                                       |
-|Resultado Esperado|                                                                                     |
-|Dados de Entrada|Login(E-mail), Senha válida, Rua, Número, Bairro, Cidade, Estado, CEP, E-mail, Telefone e Denúncia e se deseja salvar a mesma|
-|Prioridade|Alta|
-|Técnica|Manual|
-|Iteração|1ª Iteração|
-
-
-
-|Caso de Teste|CT013 - Tentar salvar o depoimento após perda do sinal de internet e registrar os resultados|
-|------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|Pré-Condição|O usuário possuir acesso ao site|
-|Procedimento|                                                                                                         |
-|Resultado esperado|Na primeira tentativa de salvar  a denúncia sem a internet, o sistema deve apresentar mensagem informando ‘Falha ao publicar o depoimento'.|
-|Dados de entrada|Nome, Cidade, Depoimento, Opção de Depoimento Anônimo.|
-|Prioridade|Alta|
-|Técnica|Manual|
-|Iteração|1ª Iteração|
-
-
-
-
-
-
-
 
 
 
