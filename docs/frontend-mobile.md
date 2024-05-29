@@ -216,6 +216,7 @@ Os passos utilizados para a implementação da aplicação serão descritos post
 ## Testes
 
 ### Plano de Testes de Software
+Tendo em vista que o processo de testes compreende numa tarefa de suma importancia tomamos como base que  como um todo o aplicativo deve atender positivamente no minimo 60% de toda essa fase ,para podermos garantir assim um produto de qualidade para nosso usuário final que são as mulheres em situação de vulnerabilidade.
 
 **Fluxo de Trabalho de Teste**
   
@@ -234,7 +235,7 @@ O sistema como um todo sera validados em um programa de testes que está constit
 
 **- Teste de Funcionalidade**
     
-O teste funcional é um processo de garantia de qualidade onde o software é testado em relação às funcionalidades, requisitos e regras de negócios. Nessa fase essencial do ciclo de desenvolvimento avaliaremos se o aplicativo funciona conforme o esperado de acordo com as interações  dos usuários e testaremos o comportamento para ver se é aceitável. Por isso focamos na simulação do uso real do app.
+O teste funcional é um processo de garantia de qualidade onde o software  em relação às funcionalidades, requisitos e regras de negócios. Nessa fase essencial do ciclo de desenvolvimento avaliaremos se o aplicativo funciona conforme o esperado de acordo com as interações  dos usuários e testaremos o comportamento para ver se é aceitável. Por isso focamos na simulação do uso real do app.
 
 |Caso De Teste|CT01 - Registrar , editar  e excluir denúncia                 |
 |-----------------------|------------------------------------------------------------------------------------------------------|
