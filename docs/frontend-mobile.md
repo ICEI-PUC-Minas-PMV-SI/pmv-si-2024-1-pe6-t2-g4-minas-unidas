@@ -240,8 +240,8 @@ O teste funcional é um processo de garantia de qualidade onde o software  em re
 |Caso De Teste|CT01 - Registrar , editar  e excluir denúncia                 |
 |-----------------------|------------------------------------------------------------------------------------------------------|
 |Pré-Condição|Não existe                                                                                            |
-|Procedimento|                                                                                                         |
-|Resultado esperado|                                                                                                    |
+|Procedimento| O Ator inicia abrindo o app e clicando no botão de denuncia em seguida começa a registrar inserindo os dados solicitados  e uma descrição da queixa e salva .Em seguida o ator clica na denuncia edita ,salva e posteriormente exclui.                                                                                                      |
+|Resultado esperado|  O sistema deve realizar o CRUD sem falhas                                                                        |
 |Dados de entrada|Cidade, Estado, CEP, E-mail, Telefone, Denúncia|
 |Prioridade|Alta|
 |Técnica|Manual|
@@ -251,8 +251,8 @@ O teste funcional é um processo de garantia de qualidade onde o software  em re
 |Caso De Teste|CT02 - Cadastrar ,Editar e excluir usuário                                                                     |
 |-----------------|--------------------------------------------------------------------------------------------|
 |Pré-Condição     |Não existe                                                                                  |
-|Procedimento     |                                                                                            |
-|Resultado esperado|                                                                                            |
+|Procedimento     |   O Ator inicia abrindo o app e clicando no botão de cadastro em seguida começa a se registrar inserindo os dados solicitados  e em seguida  e salva o usuario.Em seguida o ator clica na perfil edita ,salva e posteriormente exclui.                                                                                          |
+|Resultado esperado| O App deve acitar todos os comandos do ator                                                                 |
 |Dados de entrada|Nome, data de nascimento, E-mail, Confirmação de E-mail, Senha, Confirmação de Senha|
 |Prioridade|Alta|
 |Técnica|Manual|
