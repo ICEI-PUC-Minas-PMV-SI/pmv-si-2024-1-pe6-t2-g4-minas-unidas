@@ -234,7 +234,7 @@ O sistema como um todo sera validados em um programa de testes que está constit
 
 **- Teste de Funcionalidade**
     
-O teste funcional é um processo de garantia de qualidade onde o software é testado em relação às funcionalidades, requisitos e regras de negócios. Nessa fase essencial do ciclo de desenvolvimento avaliaremos se o aplicativo funciona conforme o esperado de acordo com as interações  dos usuários e avaliaremos o comportamento se é aceitável. Por isso focamos na simulação do uso real do app.
+O teste funcional é um processo de garantia de qualidade onde o software é testado em relação às funcionalidades, requisitos e regras de negócios. Nessa fase essencial do ciclo de desenvolvimento avaliaremos se o aplicativo funciona conforme o esperado de acordo com as interações  dos usuários e testaremos o comportamento para ver se é aceitável. Por isso focamos na simulação do uso real do app.
 
 |Caso De Teste|CT01 - Registrar , editar  e excluir denúncia                 |
 |-----------------------|------------------------------------------------------------------------------------------------------|
