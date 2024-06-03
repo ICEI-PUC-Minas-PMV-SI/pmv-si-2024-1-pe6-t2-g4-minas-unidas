@@ -122,44 +122,39 @@ A seguir, são detalhadas as entidades do sistema:
 ## Requisitos Funcionais
 
 [Liste os principais requisitos funcionais da aplicação.]
-1. Cadastro de Usuário:
+1. Gerenciamento de Usuário:
 Permitir que os usuários se cadastrem na aplicação fornecendo informações como nome, data de nascimento, cidade, estado, e-mail e senha.
 
 2. Registro de Denúncias:
 Possibilitar que os usuários registrem denúncias, incluindo informações como tipo de violência.
 
-3. Gerenciamento de Denúncias:
+3. Cadastro de Denúncias:
 Permitir que os usuários visualizem, editem e excluam suas denúncias registradas.
 
 4. Autenticação de Usuário:
 Implementar um sistema de autenticação para garantir que apenas usuários autorizados possam acessar certas funcionalidades da aplicação.
 
-5. Navegação entre Telas:
-Fornecer uma navegação fluida entre as diferentes telas da aplicação para uma melhor experiência do usuário.
-
-6. Consulta por Redes de Apoio:
-Permitir que os usuários consultem informações sobre redes de apoio e depoimentos publicados.
-
-
 ## Requisitos Não Funcionais
 
 [Liste os principais requisitos não funcionais da aplicação, como desempenho, segurança, escalabilidade, etc.]
 1. Desempenho:
-Garantir que a aplicação seja responsiva e tenha um tempo de carregamento rápido, mesmo em dispositivos móveis com recursos limitados.
+O tempo de carregamento da aplicação em dispositivos móveis deve ser inferior a 5 segundos.
 
 2. Segurança:
 Implementar práticas de segurança conforme as diretrizes do OWASP MASVS, incluindo armazenamento seguro de dados sensíveis, uso de métodos de criptografia, autenticação segura, prevenção de vazamento de dados e garantia de tráfego de rede seguro.
 
 3. Escalabilidade:
-Desenvolver a aplicação de forma a permitir que ela possa lidar com um aumento no número de usuários e denúncias sem comprometer o desempenho.
+Garantir que a aplicação possa lidar com um aumento de 1000 usuários simultâneos sem queda significativa no desempenho.
 
-4. Disponibilidade: A aplicação deve estar funcional 95% do tempo, garantindo alta disponibilidade para os usuários.
+4. Disponibilidade: A aplicação deve estar funcional 95% do tempo, ou seja, estar funcional 23 horas do dia.
 
-6. Privacidade:
+5. Privacidade:
 Minimizar o acesso a dados sensíveis, prevenir a identificação do usuário, ser transparente quanto à coleta e uso de dados e oferecer controle ao usuário sobre seus próprios dados.
 
-7. Compatibilidade e Interoperabilidade:
-Garantir que a aplicação seja compatível e operável em diferentes dispositivos móveis e sistemas operacionais.
+6. Compatibilidade e Interoperabilidade:
+Garantir que a aplicação seja compatível com pelo menos dois diferentes sistemas operacionais móveis, como Android e iOS.
+
+7. Navegação entre Telas: Fornecer uma navegação fluida entre as diferentes telas da aplicação para uma melhor experiência.
 
 ## Considerações de Segurança
 
