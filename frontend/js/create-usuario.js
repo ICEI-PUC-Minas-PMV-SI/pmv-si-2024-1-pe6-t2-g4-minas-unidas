@@ -10,7 +10,7 @@
                 var email = $("#inputEmail").val();
                 var senha = $("#inputSenha").val();
                 var confirmaSenha = $("#inputConfirmaSenha").val();
-                var perfil_id = $("#selectPerfil").val();
+                var perfil_id = 2;
 
                 // Formatar a data de nascimento no formato AAAA-MM-DD
                 data_nascimento = formatDate(data_nascimento);
@@ -37,7 +37,8 @@
                     },
                     error: function (xhr, status, error) {
                         // Exibir mensagem de erro, se necessário
-                        console.error(xhr.responseText);
+                        alert("Erro ao cadastrar usuário: " + xhr.responseText);
+                        console.error("Erro ao cadastrar usuário:", xhr.responseText);
                     }
                 });
             }
@@ -89,11 +90,11 @@
             var confirmaEmail = $("#inputConfirmaEmail").val();
             var senha = $("#inputSenha").val();
             var confirmaSenha = $("#inputConfirmaSenha").val();
-            var perfil_id = $("#selectPerfil").val();
+            var perfil_id = 2;
 
             // Validar campos obrigatórios
             if (nome.trim() === '' || data_nascimento.trim() === '' || email.trim() === '' || confirmaEmail.trim() === '' ||
-                senha.trim() === '' || confirmaSenha.trim() === '' || perfil_id.trim() === '') {
+                senha.trim() === '' || confirmaSenha.trim() === '') {
                 alert("Por favor, preencha todos os campos obrigatórios.");
                 return false;
             }

@@ -1,16 +1,25 @@
-require('dotenv').config();
 const sql = require('mssql');
+const dotenv = require('dotenv');
+dotenv.config();
+
+const user = process.env.DATUSR;
+const password = process.env.DATPSW;
 
 const config = {
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  server: process.env.DB_SERVER,
-  database: process.env.DB_DATABASE,
+  user,
+  password,
+  server: "minasunidas-db-server.database.windows.net",
+  database: "MinasUnidasDB",
   options: {
     encrypt: true,
     trustServerCertificate: true
   }
 };
+
+//const sql = require('mssql');
+//const configData = require('../config.json');
+
+//const config = configData.dbConfig;
 
 const poolPromise = new sql.ConnectionPool(config)
   .connect()
@@ -21,4 +30,3 @@ const poolPromise = new sql.ConnectionPool(config)
   .catch(err => console.log('Erro ao conectar ao banco de dados', err));
 
 module.exports = { sql, poolPromise, config };
-

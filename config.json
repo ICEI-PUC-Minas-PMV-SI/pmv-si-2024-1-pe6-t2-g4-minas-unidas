@@ -1,10 +1,13 @@
 {
-  "dbConfig": {
-    "server": "minas-unidas-db-server.database.windows.net",
-    "database": "MinasUnidasDB",
-    "options": {
-      "encrypt": true,
-      "trustServerCertificate": true
+    "dbConfig": {
+      "user": "process.env.DATUSR",
+      "password": "process.env.DATPSW",
+      "server": "minasunidas-db-server.database.windows.net",
+      "database": "MinasUnidasDB",
+      "options": {
+        "encrypt": true,
+        "trustServerCertificate": true
+      }
     }
   }
-}
+  

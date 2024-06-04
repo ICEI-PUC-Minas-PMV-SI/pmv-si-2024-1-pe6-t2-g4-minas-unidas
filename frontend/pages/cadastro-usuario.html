@@ -63,88 +63,76 @@
     <!-- Conteúdo -->
     <main>
 
-             <!-- Seção Cadastro -->
-             <section class="p-5">
-                <div class="container">
-                    <div class="row justify-content-center align-items-center">
-                        <div id="cadastro" class="col-md-8 p-5 border bg-light">
-                            <!-- Título do formulário-->
-                            <h4 class="pb-4 text-center">Cadastro de usuário</h4>
-                            <form id="form-cadastraUsuario">
-                                <!-- Linha -->
-                                <div class="form-row">
-                                    <!-- Input Nome-->
-                                    <div class="form-group col-md-6">
-                                        <label for="inputNome">Nome <span class="required">*</span></label>
-                                        <input id="inputNome" type="text" class="form-control" required>
-                                    </div>
-                                    <!-- Input Data de Nascimento -->
-                                    <div class="form-group col-md-6">
-                                        <label for="inputDataNascimento">Data de Nascimento <span
-                                                class="required">*</span></label>
-                                        <input id="inputDataNascimento" type="text" class="form-control"
-                                            placeholder="DD/MM/AAAA" required onkeyup="formatarData(this)">
-                                    </div>
-                                    <!-- Input Cidade -->
-                                    <div class="form-group col-md-6">
-                                        <label for="inputCidade">Cidade</label>
-                                        <input id="inputCidade" type="text" class="form-control">
-                                    </div>
-                                    <!-- Input Estado -->
-                                    <div class="form-group col-md-6">
-                                        <label for="inputEstado">Estado</label>
-                                        <input id="inputEstado" type="text" class="form-control">
-                                    </div>
-                                    <!-- Input E-mail -->
-                                    <div class="form-group col-md-6">
-                                        <label for="inputEmail">E-mail <span class="required">*</span></label>
-                                        <input id="inputEmail" type="email" class="form-control" required>
-                                    </div>
-                                    <!-- Input Confirmação de E-mail -->
-                                    <div class="form-group col-md-6">
-                                        <label for="inputConfirmaEmail">Confirmação de E-mail <span
-                                                class="required">*</span></label>
-                                        <input id="inputConfirmaEmail" type="email" class="form-control" required>
-                                    </div>
-                                    <!-- Input Senha -->
-                                    <div class="form-group col-md-6">
-                                        <label for="inputSenha">Senha <span class="required">*</span></label>
-                                        <input id="inputSenha" type="password" class="form-control" required>
-                                    </div>
-                                    <!-- Input Confirmação de Senha -->
-                                    <div class="form-group col-md-6">
-                                        <label for="inputConfirmaSenha">Confirmação de Senha <span
-                                                class="required">*</span></label>
-                                        <input id="inputConfirmaSenha" type="password" class="form-control" required>
-                                    </div>
-                                    <!-- Seleção de Perfil -->
+        <!-- Seção Cadastro -->
+        <section class="p-5">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div id="cadastro" class="col-md-8 p-5 border bg-light">
+                        <!-- Título do formulário-->
+                        <h4 class="pb-4 text-center">Cadastro de usuário</h4>
+                        <form id="form-cadastraUsuario">
+                            <!-- Linha -->
+                            <div class="form-row">
+                                <!-- Input Nome-->
                                 <div class="form-group col-md-6">
-                                    <label for="selectPerfil">Perfil</label>
-                                    <select id="selectPerfil" class="form-control" required>
-                                        <option value="">Selecione o Perfil</option>
-                                        <option value="1">Administrador</option>
-                                        <option value="2">Usuário Comum</option>
-                                    </select>
+                                    <label for="inputNome">Nome <span class="required">*</span></label>
+                                    <input id="inputNome" type="text" class="form-control" required>
+                                </div>
+                                <!-- Input Data de Nascimento -->
+                                <div class="form-group col-md-6">
+                                    <label for="inputDataNascimento">Data de Nascimento <span
+                                            class="required">*</span></label>
+                                    <input id="inputDataNascimento" type="text" class="form-control"
+                                        placeholder="DD/MM/AAAA" required onkeyup="formatarData(this)">
+                                </div>
+                                <!-- Input Cidade -->
+                                <div class="form-group col-md-6">
+                                    <label for="inputCidade">Cidade</label>
+                                    <input id="inputCidade" type="text" class="form-control">
+                                </div>
+                                <!-- Input Estado -->
+                                <div class="form-group col-md-6">
+                                    <label for="inputEstado">Estado</label>
+                                    <input id="inputEstado" type="text" class="form-control">
+                                </div>
+                                <!-- Input E-mail -->
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail">E-mail <span class="required">*</span></label>
+                                    <input id="inputEmail" type="email" class="form-control" required>
+                                </div>
+                                <!-- Input Confirmação de E-mail -->
+                                <div class="form-group col-md-6">
+                                    <label for="inputConfirmaEmail">Confirmação de E-mail <span class="required">*</span></label>
+                                    <input id="inputConfirmaEmail" type="email" class="form-control" required>
+                                </div>
+                                <!-- Input Senha -->
+                                <div class="form-group col-md-6">
+                                    <label for="inputSenha">Senha <span class="required">*</span></label>
+                                    <input id="inputSenha" type="password" class="form-control" required>
+                                </div>
+                                <!-- Input Confirmação de Senha -->
+                                <div class="form-group col-md-6">
+                                    <label for="inputConfirmaSenha">Confirmação de Senha <span class="required">*</span></label>
+                                    <input id="inputConfirmaSenha" type="password" class="form-control" required>
                                 </div>
                             </div>
-                                <!-- Fim da linha -->
+                            <!-- Fim da linha -->
                             <!-- Linha -->
                             <div class="form-row">
                                 <!-- Botões -->
                                 <div class="col-lg-10">
-                                    <button id="btnCadastrar" type="button" class="btn btn-purple"
-                                        data-target="#modal">Cadastrar</button>
+                                    <button id="btnCadastrar" type="button" class="btn btn-purple" data-toggle="modal" data-target="#modal">
+                                        Cadastrar
+                                    </button>
                                     <!-- Modal -->
-                                    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modal"
-                                        aria-hidden="true">
+                                    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered">
                                             <!-- Conteúdo do modal-->
                                             <div class="modal-content">
                                                 <!-- Header do modal -->
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="modal">Obrigado!</h5>
-                                                    <button type="button" class="close" data-dismiss="modal"
-                                                        aria-label="Close">
+                                                    <h5 class="modal-title" id="modalLabel">Obrigado!</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
                                                 </div>
@@ -154,8 +142,7 @@
                                                 </div>
                                                 <!-- Rodapé do modal-->
                                                 <div class="modal-footer">
-                                                    <button type="button" class="btn btn-purple"
-                                                        data-dismiss="modal">OK</button>
+                                                    <button type="button" class="btn btn-purple" data-dismiss="modal">OK</button>
                                                 </div>
                                             </div>
                                             <!-- Fim do conteúdo do modal -->
