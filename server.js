@@ -20,11 +20,11 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // Configuração para servir arquivos estáticos
-app.use(express.static(path.join(__dirname, '/../frontend')));
+app.use(express.static(path.join(__dirname, '/frontend')));
 
 // Serve index.html quando a URL raiz é acessada
 app.get('/', (req, res) => {
-  const indexPath = path.join(__dirname, '/../frontend/pages/', 'index.html');
+  const indexPath = path.join(__dirname, '/frontend/pages/', 'index.html');
   res.sendFile(indexPath);
 });
 
@@ -32,7 +32,7 @@ app.get('/', (req, res) => {
 function setupPageRoutes(pages) {
   pages.forEach(page => {
     app.get(page.path, (req, res) => {
-      const pagePath = path.join(__dirname, '/../frontend/pages/', page.name);
+      const pagePath = path.join(__dirname, '/frontend/pages/', page.name);
       res.sendFile(pagePath);
     });
   });
