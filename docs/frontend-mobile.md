@@ -19,26 +19,33 @@ A seguir, estão listadas as tecnologias utilizadas no desenvolvimento do projet
 
 ## Arquitetura
 
-A arquitetura do front-end móvel segue uma abordagem de arquitetura cliente/servidor, com uma arquitetura em duas camadas, onde o cliente (aplicativo móvel) se comunica com o servidor (back-end) para acessar os dados e funcionalidades.
+A arquitetura do front-end móvel segue uma abordagem cliente/servidor, com duas camadas principais: o cliente (aplicativo móvel) e o servidor (back-end).
 
 ### Componentes principais
 
-#### 1. Interface de Usuário:
-- Esta camada é responsável por fornecer a interface com o usuário, incluindo elementos visuais, interações e fluxo de tela;
-- Contém os componentes visuais da aplicação, como botões, campos de entrada, listas e outros elementos de interface;
-- Responsável por capturar eventos do usuário, como cliques, toques e gestos, e encaminhá-los para a camada de lógica de negócios para processamento.
+#### 1. Camada de Cliente: Front-end Mobile
 
-#### 2. Lógica de Negócios:
-- Nesta camada, reside a lógica da aplicação, incluindo as regras de negócio, validações e processamento de dados;
-- Utiliza JavaScript para implementar a lógica de interação do aplicativo, como cadastro de usuário, registro de denúncias e autenticação;
-- Realiza a comunicação com a camada de acesso a dados para recuperar ou persistir informações no back-end;
-- Responsável por garantir a integridade e consistência dos dados manipulados pela aplicação.
+##### Camada de apresentação: Interface de Usuário
+
+Esta camada é responsável por fornecer a interface com o usuário, incluindo elementos visuais, interações e fluxo de tela. Contém os componentes visuais da aplicação, como botões, campos de entrada, listas e outros elementos de interface. É responsável por capturar eventos do usuário, como cliques, toques e gestos.
+
+##### Camada de serviço: Lógica da Aplicação
+
+Nesta camada reside a lógica da aplicação, onde as solicitações do cliente são processadas. Inclui as regras de negócio, validações e processamento de dados. Comunica-se com a camada de servidor para acessar recursos e dados.
+
+#### 2. Camada de Servidor: Back-end e Banco de Dados
+
+##### Servidor Back-end
+
+O servidor back-end é responsável por receber as requisições do cliente, rotear essas requisições para os endpoints apropriados e retornar as respostas adequadas.
+
+##### Banco de Dados
+
+O banco de dados armazena e gerencia os dados da aplicação, permitindo que sejam acessados, modificados e removidos conforme necessário.
 
 ### Interações
 
-- O aplicativo móvel se comunica com os serviços back-end através de requisições HTTP, utilizando endpoints específicos para cada operação (cadastro de usuário, cadastro de denúncias);
-- O serviço de autenticação valida as credenciais dos usuários e emite tokens JWT para permitir acesso seguro aos outros serviços;
-- As operações de CRUD para denúncias e usuários são realizadas de forma assíncrona para garantir uma boa experiência ao usuário.
+As interações entre as camadas são principalmente realizadas por meio de requisições HTTP. Quando o usuário interage com a interface do aplicativo móvel, como fazer login, cadastrar-se ou registrar uma denúncia, o front-end móvel envia uma requisição HTTP para o back-end. O back-end processa a requisição, executa a lógica necessária e interage com o banco de dados, se necessário, para obter ou manipular os dados. Em seguida, o back-end retorna uma resposta ao front-end móvel, que é então apresentada ao usuário na interface.
 
 ![Arquitetura](img/arquitetura-mobile.png)
 
