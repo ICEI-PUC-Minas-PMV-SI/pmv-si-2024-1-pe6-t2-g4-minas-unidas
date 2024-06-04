@@ -8,7 +8,7 @@ const password = process.env.DATPSW;
 const config = {
   user,
   password,
-  server: "minasunidas-db-server.database.windows.net",
+  server: "minas-unidas-db-server.database.windows.net",
   database: "MinasUnidasDB",
   options: {
     encrypt: true,
