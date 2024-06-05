@@ -239,22 +239,24 @@ O sistema como um todo sera validados em um programa de testes que está constit
     
 O teste funcional é um processo de garantia de qualidade onde o software  em relação às funcionalidades, requisitos e regras de negócios. Nessa fase essencial do ciclo de desenvolvimento avaliaremos se o aplicativo funciona conforme o esperado de acordo com as interações  dos usuários e testaremos o comportamento para ver se é aceitável. Por isso focamos na simulação do uso real do app.
 
-|Caso De Teste|CT01 - Registrar , editar  e excluir denúncia                 |
+|Caso De Teste|CT01 - Registrar  denúncia                 |
 |-----------------------|------------------------------------------------------------------------------------------------------|
 |Pré-Condição|Não existe                                                                                            |
-|Procedimento| O Ator inicia abrindo o app e clicando no botão de denuncia em seguida começa a registrar inserindo os dados solicitados  e uma descrição da queixa e salva .Em seguida o ator clica na denuncia edita ,salva e posteriormente exclui.                                                                                                      |
-|Resultado esperado|  O sistema deve realizar o CRUD sem falhas                                                                        |
+|Procedimento| O Ator inicia abrindo o app e clicando no botão de denuncia em seguida começa a registrar inserindo os dados solicitados  e uma descrição da queixa e salva .                                                                                                      |
+|Resultado esperado|  O sistema deve realizar a denuncia sem falhas                                                                        |
 |Dados de entrada|Cidade, Estado, CEP, E-mail, Telefone, Denúncia|
 |Prioridade|Alta|
 |Técnica|Manual|
 |Iteração|1ª Iteração|
 
 
-|Caso De Teste|CT02 - Cadastrar ,Editar e excluir usuário                                                                     |
+|Caso De Teste|CT02 - Gerência de usuário                                                                     |
 |-----------------|--------------------------------------------------------------------------------------------|
 |Pré-Condição     |Não existe                                                                                  |
-|Procedimento     |   O Ator inicia abrindo o app e clicando no botão de cadastro em seguida começa a se registrar inserindo os dados solicitados  e em seguida  e salva o usuario.Em seguida o ator clica na perfil edita ,salva e posteriormente exclui.                                                                                          |
-|Resultado esperado| O App deve acitar todos os comandos do ator                                                                 |
+|Procedimento 1    |   O Ator inicia abrindo o app e clicando no botão de cadastro em seguida começa a se registrar inserindo os dados solicitados  e em seguida  e salva o usuario|
+|Procedimento 2| Após concluido o procedimento 1 O ator clica na perfil editando assim o dado que julgar necessário e clica em salvar|
+|Procedimento 3|Após concluido o procedimento 2 exclui-se o usuario criado                                                              |
+|Resultado esperado| O App deve aceitar todos os comandos do ator                                                                 |
 |Dados de entrada|Nome, data de nascimento, E-mail, Confirmação de E-mail, Senha, Confirmação de Senha|
 |Prioridade|Alta|
 |Técnica|Manual|
