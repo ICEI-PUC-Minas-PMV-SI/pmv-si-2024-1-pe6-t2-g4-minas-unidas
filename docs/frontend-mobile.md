@@ -267,7 +267,7 @@ O teste funcional é um processo de garantia de qualidade onde o software  em re
 
  ## Relatório de Execução dos Testes
 
- ** -Casos de Teste executados com sucesso: **
+ **- Casos de Teste executados com sucesso:**
 
  Durante os testes foi contatado que o sistema funcionou de forma satisfatória atendendo positivamente mais de 60% do teste de funcionalidade ,como requisitado no prólogo dessa seção.Abaixo alguns prints das páginas comprovando a assertividade do app.
 
