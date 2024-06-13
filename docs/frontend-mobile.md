@@ -7,15 +7,14 @@ Este documento aborda o desenvolvimento do front-end móvel para o projeto **Min
 A seguir, estão listadas as tecnologias utilizadas no desenvolvimento do projeto:
 
 ### Ambiente de desenvolvimento:
-- **Visual Studio Code**: IDE para desenvolvimento do código-fonte.
+- **OutSystems Service Studio**: Ambiente de desenvolvimento para a plataforma OutSystems, utilizado para criar e gerenciar aplicações de maneira visual.
 - **Git**: Sistema de controle de versão para rastreamento e gerenciamento de alterações no código-fonte, possibilitando colaboração e versionamento.
 - **GitHub**: Plataforma de hospedagem de código-fonte e colaboração para desenvolvimento de projetos.
 
 ### Front-end móvel:
-- **React Native**: Framework para desenvolvimento de aplicativos móveis multiplataforma, permitindo criar aplicativos nativos para iOS e Android utilizando JavaScript e React.
-- **Expo**: Ferramenta e plataforma para desenvolvimento rápido de aplicativos React Native, facilitando testes e deploy.
-- **JavaScript**: Linguagem de programação utilizada para desenvolver a lógica de interação do aplicativo.
-- **React Native Paper**: Biblioteca utilizada para criar interfaces com boa usabilidade, seguindo as diretrizes de Material Design do Google.
+- **OutSystems**: Plataforma de desenvolvimento rápido de aplicações (low-code) que permite a criação de aplicações web e móveis utilizando uma abordagem visual e orientada a componentes.
+- **LifeTime OutSystems**: Ferramenta utilizada para gerenciamento de ambientes, versionamento e governança das aplicações.
+- **Service Center**: Ferramenta da plataforma OutSystems utilizada para gerenciamento de aplicações, monitoramento de recursos e logs de erros.
 
 ## Arquitetura
 
