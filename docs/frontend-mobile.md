@@ -244,7 +244,7 @@ O teste funcional é um processo de garantia de qualidade onde o software  em re
 |Procedimento 1| O Ator inicia abrindo o app e clicando no botão de denuncia em seguida começa a registrar inserindo os dados solicitados  e uma descrição da queixa e salva .                                                                                |
 |Procedimento 2| Após concluido o procedimento 1 O ator clica na denúncia editando assim o dado que julgar necessário e clica em salvar   |
 |Procedimento 3| Após concluido o procedimento 2 O ator clica na denúncia e aperta o botão "deletar" apagando assim seu depoimento  |
-|Resultado esperado|  O sistema deve realizar a denuncia sem falhas , assim como deve permitir a edição assim que o usu´rio julgar necessário  e este poderá apagar quando quiser                                                                    |
+|Resultado esperado|  O sistema deve realizar a denuncia sem falhas , assim como deve permitir a edição  que o usuário julgar necessário  e este poderá apagar quando a denuncia quando quiser                                                                    |
 |Dados de entrada|Cidade, Estado, CEP, E-mail, Telefone, Denúncia|
 |Prioridade|Alta|
 |Técnica|Manual|
