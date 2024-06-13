@@ -238,11 +238,13 @@ O sistema como um todo sera validados em um programa de testes que está constit
     
 O teste funcional é um processo de garantia de qualidade onde o software  em relação às funcionalidades, requisitos e regras de negócios. Nessa fase essencial do ciclo de desenvolvimento avaliaremos se o aplicativo funciona conforme o esperado de acordo com as interações  dos usuários e testaremos o comportamento para ver se é aceitável. Por isso focamos na simulação do uso real do app.
 
-|Caso De Teste|CT01 - Registrar  denúncia                 |
+|Caso De Teste|CT01 - Gerência de denúncia           |
 |-----------------------|------------------------------------------------------------------------------------------------------|
 |Pré-Condição|Não existe                                                                                            |
-|Procedimento| O Ator inicia abrindo o app e clicando no botão de denuncia em seguida começa a registrar inserindo os dados solicitados  e uma descrição da queixa e salva .                                                                                                      |
-|Resultado esperado|  O sistema deve realizar a denuncia sem falhas                                                                        |
+|Procedimento 1| O Ator inicia abrindo o app e clicando no botão de denuncia em seguida começa a registrar inserindo os dados solicitados  e uma descrição da queixa e salva .                                                                                |
+|Procedimento 2| Após concluido o procedimento 1 O ator clica na denúncia editando assim o dado que julgar necessário e clica em salvar   |
+|Procedimento 3| Após concluido o procedimento 2 O ator clica na denúncia e aperta o botão "deletar" apagando assim seu depoimento  |
+|Resultado esperado|  O sistema deve realizar a denuncia sem falhas , assim como deve permitir a edição assim que o usu´rio julgar necessário  e este poderá apagar quando quiser                                                                    |
 |Dados de entrada|Cidade, Estado, CEP, E-mail, Telefone, Denúncia|
 |Prioridade|Alta|
 |Técnica|Manual|
