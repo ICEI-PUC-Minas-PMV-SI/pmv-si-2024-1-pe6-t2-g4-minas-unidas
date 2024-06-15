@@ -280,12 +280,15 @@ O teste funcional é um processo de garantia de qualidade onde o software  em re
 |Categoria De Teste|                           Funcionalidade                                                                  |
 |-----------------|--------------------------------------------------------------------------------------------|
 | Página inicial    | ![Screenshot_2024-06-14-19-56-19-450_com android chrome](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t2-g4-minas-unidas/assets/89945405/35c67cc6-b57b-4dd8-951f-0f8cf8a08c74)  |
-
-|     |                                                                                   |
-|     |                                                                                   |
-|     |                                                                                   |
-|     |                                                                                   |
-|     |                                                                                   |
+|  Sucesso de login   |   ![Sucesso login](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t2-g4-minas-unidas/assets/89945405/cee10aa5-f0db-45cd-971d-d806114c97e3)                              |
+|Denúncia realizada com sucesso     |        ![Denuncia realizada com sucesso](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t2-g4-minas-unidas/assets/89945405/8f90f77b-5e90-4e24-990a-829d5dda706f)
+                                                                           |
+| Login realizado com sucesso    |            ![Screenshot_2024-06-14-20-46-47-933_com android chrome](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t2-g4-minas-unidas/assets/89945405/1c1782f3-4ffd-4d6c-9fce-31c6554140f2)
+                                                                       |
+|  Exclusão de denúncia   |        ![Screenshot_2024-06-14-20-45-51-864_com android chrome](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t2-g4-minas-unidas/assets/89945405/951a365e-f24f-47e8-a84c-a78a8d46cba4)
+                                                                           |
+| Tela de Cadastrar Denúncia    |       ![Screenshot_2024-06-14-20-42-56-948_com android chrome](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t2-g4-minas-unidas/assets/89945405/822fbcb8-f114-41f6-b478-71e6a7d2eb50)
+                                                                            |
       
 
 
