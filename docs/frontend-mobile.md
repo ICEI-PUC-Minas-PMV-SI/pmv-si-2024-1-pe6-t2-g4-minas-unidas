@@ -240,10 +240,12 @@ O teste funcional é um processo de garantia de qualidade onde o software  em re
 
 |Caso De Teste|CT01 - Gerência de denúncia           |
 |-----------------------|------------------------------------------------------------------------------------------------------|
-|Pré-Condição|Não existe                                                                                            |
-|Procedimento 1| O Ator inicia abrindo o app e clicando no botão de denuncia em seguida começa a registrar inserindo os dados solicitados  e uma descrição da queixa e salva .                                                                                |
-|Procedimento 2| Após concluido o procedimento 1 O ator clica na denúncia editando assim o dado que julgar necessário e clica em salvar   |
-|Procedimento 3| Após concluido o procedimento 2 O ator clica na denúncia e aperta o botão "deletar" apagando assim seu depoimento  |
+|Pré-Condição|Ter o app instalado no telefone                                                                                           |
+|Procedimento 1| O Ator inicia abrindo o app e clicando no botão "Denuncie aqui! " em seguida preenchendo  alguns simples dados começa a registrar sua denúncia.Finalizando clica em CADASTRAR .                                                                                |
+|Pré-condição| Estar cadastrado  e ter uma denuncia registrada                                                                                                    |
+|Procedimento 2| Após concluido o procedimento 1 O ator realiza o login clica no icone de editar ,logo em seguida "Minhas Denúncias"escolhe a denuncia a ser editada realiza a alteração e depois clica em "ATUALIZAR"   |
+|Pré-condição| Estar cadastrado    e ter uma denuncia registrada                                                                       |
+|Procedimento 3| Após concluido o procedimento 1 O ator realiza o login clica no icone de editar ,logo em seguida "Minhas Denúncias"escolhe a denuncia a ser excluidaem seguida clica no icone de lixeira clica no ok do pop-up que aparece e a denuncia é excluida |
 |Resultado esperado|  O sistema deve realizar a denuncia sem falhas , assim como deve permitir a edição  que o usuário julgar necessário  e este poderá apagar quando a denuncia quando quiser                                                                    |
 |Dados de entrada|Cidade, Estado, CEP, E-mail, Telefone, Denúncia|
 |Prioridade|Alta|
