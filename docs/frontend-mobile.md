@@ -279,7 +279,8 @@ O teste funcional é um processo de garantia de qualidade onde o software  em re
 
 |Categoria De Teste|                           Funcionalidade                                                                  |
 |-----------------|--------------------------------------------------------------------------------------------|
-|     |                                                                                   |
+| Página inicial    | ![Screenshot_2024-06-14-19-56-19-450_com android chrome](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t2-g4-minas-unidas/assets/89945405/35c67cc6-b57b-4dd8-951f-0f8cf8a08c74)  |
+
 |     |                                                                                   |
 |     |                                                                                   |
 |     |                                                                                   |
