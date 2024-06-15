@@ -256,7 +256,7 @@ O teste funcional é um processo de garantia de qualidade onde o software  em re
 |Caso De Teste|CT02 - Gerência de usuário                                                                     |
 |-----------------|--------------------------------------------------------------------------------------------|
 |Pré-Condição     |Ter o app instalado no celular                                                                                 |
-|Procedimento 1    |   O Ator inicia abrindo o app e clicando no botão de "Criar conta" em seguida preencheos dados solicitados  e clica em cadastrar|
+|Procedimento 1    |   O Ator inicia abrindo o app e clicando no botão de "Criar conta" em seguida preenche os dados solicitados  e clica em cadastrar|
 |Pré-Condição     |Ter o app instalado no celular   e estar cadastrado                                                                 |
 |Procedimento 2| Após concluido o procedimento 1 O ator realiza o login clica no icone de editar no canto inferior direito e clica em editar, editando assim o dado que julgar necessário e clica em salvar|
 |Pré-Condição     |Ter o app instalado no celular   e estar cadastrado                                                                 |
@@ -275,8 +275,16 @@ O teste funcional é um processo de garantia de qualidade onde o software  em re
 
  Durante os testes foi contatado que o sistema funcionou de forma satisfatória atendendo positivamente mais de 60% do teste de funcionalidade ,como requisitado no prólogo dessa seção.Abaixo alguns prints das páginas comprovando a assertividade do app.
 
+ 
 
-
+|Caso De Teste|                           Funcionalidade                                                                  |
+|-----------------|--------------------------------------------------------------------------------------------|
+|     |                                                                                   |
+|     |                                                                                   |
+|     |                                                                                   |
+|     |                                                                                   |
+|     |                                                                                   |
+|     |                                                                                   |
       
 
 
