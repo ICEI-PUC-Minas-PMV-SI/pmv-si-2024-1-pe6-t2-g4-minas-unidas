@@ -247,7 +247,7 @@ O teste funcional é um processo de garantia de qualidade onde o software  em re
 |Pré-condição| Estar cadastrado    e ter uma denuncia registrada                                                                       |
 |Procedimento 3| Após concluido o procedimento 1 O ator realiza o login clica no icone de editar ,logo em seguida "Minhas Denúncias"escolhe a denuncia a ser excluida em seguida clica no icone de lixeira clica no ok do pop-up que aparece e a denuncia é excluida |
 |Resultado esperado|  O sistema deve realizar a denuncia sem falhas , assim como deve permitir a edição  que o usuário julgar necessário  e este poderá apagar quando a denuncia quando quiser                                                                    |
-|Dados de entrada|Cidade, Estado, CEP, E-mail, Telefone, Denúncia|
+|Dados de entrada|Nome,Data de Nascimento,Estado Email,Telefone Tipo de Violência,Descrição da denúncia|
 |Prioridade|Alta|
 |Técnica|Manual|
 |Iteração|1ª Iteração|
@@ -262,7 +262,7 @@ O teste funcional é um processo de garantia de qualidade onde o software  em re
 |Pré-Condição     |Ter o app instalado no celular   e estar cadastrado                                                                 |
 |Procedimento 3|  Após concluido o procedimento 1 O ator realiza o login clica no icone de editar no canto inferior direito e clica em "EXCLUIR CADASTRO", Logo apos aparece um pop-up clique em ok para finalizar a exclusão                        |
 |Resultado esperado| O App deve aceitar todos os comandos do ator                                                                 |
-|Dados de entrada|Nome, data de nascimento, E-mail, Confirmação de E-mail, Senha, Confirmação de Senha|
+|Dados de entrada|Nome, data de nascimento,Estado, E-mail, Confirmação de E-mail, Senha, Confirmação de Senha|
 |Prioridade|Alta|
 |Técnica|Manual|
 |Iteração|1ª Iteração|
@@ -277,7 +277,7 @@ O teste funcional é um processo de garantia de qualidade onde o software  em re
 
  
 
-|Caso De Teste|                           Funcionalidade                                                                  |
+|Categoria De Teste|                           Funcionalidade                                                                  |
 |-----------------|--------------------------------------------------------------------------------------------|
 |     |                                                                                   |
 |     |                                                                                   |
