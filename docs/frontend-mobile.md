@@ -255,10 +255,12 @@ O teste funcional é um processo de garantia de qualidade onde o software  em re
 
 |Caso De Teste|CT02 - Gerência de usuário                                                                     |
 |-----------------|--------------------------------------------------------------------------------------------|
-|Pré-Condição     |Não existe                                                                                  |
-|Procedimento 1    |   O Ator inicia abrindo o app e clicando no botão de cadastro em seguida começa a se registrar inserindo os dados solicitados  e em seguida  e salva o usuario|
-|Procedimento 2| Após concluido o procedimento 1 O ator clica na perfil editando assim o dado que julgar necessário e clica em salvar|
-|Procedimento 3|Após concluido o procedimento 2 exclui-se o usuario criado                                                              |
+|Pré-Condição     |Ter o app instalado no celular                                                                                 |
+|Procedimento 1    |   O Ator inicia abrindo o app e clicando no botão de "Criar conta" em seguida preencheos dados solicitados  e clica em cadastrar|
+|Pré-Condição     |Ter o app instalado no celular   e estar cadastrado                                                                 |
+|Procedimento 2| Após concluido o procedimento 1 O ator realiza o login clica no icone de editar no canto inferior direito e clica em editar, editando assim o dado que julgar necessário e clica em salvar|
+|Pré-Condição     |Ter o app instalado no celular   e estar cadastrado                                                                 |
+|Procedimento 3|  Após concluido o procedimento 1 O ator realiza o login clica no icone de editar no canto inferior direito e clica em "EXCLUIR CADASTRO", Logo apos aparece um pop-up clique em ok para finalizar a exclusão                        |
 |Resultado esperado| O App deve aceitar todos os comandos do ator                                                                 |
 |Dados de entrada|Nome, data de nascimento, E-mail, Confirmação de E-mail, Senha, Confirmação de Senha|
 |Prioridade|Alta|
