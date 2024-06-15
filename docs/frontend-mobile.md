@@ -245,7 +245,7 @@ O teste funcional é um processo de garantia de qualidade onde o software  em re
 |Pré-condição| Estar cadastrado  e ter uma denuncia registrada                                                                                                    |
 |Procedimento 2| Após concluido o procedimento 1 O ator realiza o login clica no icone de editar ,logo em seguida "Minhas Denúncias"escolhe a denuncia a ser editada realiza a alteração e depois clica em "ATUALIZAR"   |
 |Pré-condição| Estar cadastrado    e ter uma denuncia registrada                                                                       |
-|Procedimento 3| Após concluido o procedimento 1 O ator realiza o login clica no icone de editar ,logo em seguida "Minhas Denúncias"escolhe a denuncia a ser excluidaem seguida clica no icone de lixeira clica no ok do pop-up que aparece e a denuncia é excluida |
+|Procedimento 3| Após concluido o procedimento 1 O ator realiza o login clica no icone de editar ,logo em seguida "Minhas Denúncias"escolhe a denuncia a ser excluida em seguida clica no icone de lixeira clica no ok do pop-up que aparece e a denuncia é excluida |
 |Resultado esperado|  O sistema deve realizar a denuncia sem falhas , assim como deve permitir a edição  que o usuário julgar necessário  e este poderá apagar quando a denuncia quando quiser                                                                    |
 |Dados de entrada|Cidade, Estado, CEP, E-mail, Telefone, Denúncia|
 |Prioridade|Alta|
