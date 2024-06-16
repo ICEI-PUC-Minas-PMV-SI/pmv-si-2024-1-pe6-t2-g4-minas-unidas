@@ -70,9 +70,9 @@ Cada parâmetro de entrada definido entre chaves na URL torna-se um parâmetro d
 
 ![Configuração do método POST da API de Denúncias](img/post-denuncias-api-config.png)
 
-![Configuração do método GET da API de Denúncias](img/get-denuncias-api-config.png)
+![Configuração do método GET da API de Denúncias](img/get-denuncias-by-id-api-config.png)
 
-![Configuração do método DELETE da API de Denúncias](img/get-denuncias-by-id-api-config.png)
+![Configuração do método DELETE da API de Denúncias](img/delete-denuncias-api-config.png)
 
 ## Interfaces do Aplicativo
 
