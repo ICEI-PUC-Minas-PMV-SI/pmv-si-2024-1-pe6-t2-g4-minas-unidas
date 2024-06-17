@@ -209,7 +209,7 @@ Ao longo das cinco etapas do projeto, planeja-se aplicar as fases da metodologia
 - Realizar testes em dispositivos reais e emuladores para garantir desempenho;
 - Documentar a aplicação web no documento de projeto.
 
-![Etapa 04: Aplicação mobile](img/etapa4-gantt.png)
+![Etapa 04: Aplicação mobile](img/etapa04-gantt.png)
 
 ### ETAPA 5: Apresentação do Projeto
 
