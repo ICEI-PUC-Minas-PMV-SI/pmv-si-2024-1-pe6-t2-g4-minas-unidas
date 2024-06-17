@@ -106,7 +106,9 @@ O aplicativo aplica design responsivo com recursos do React Native, garantindo u
 
 ### Interações do Usuário
 
-O front-end mobile foi desenvolvido em torno de um objetivo claro que é a denúncia das vítimas ou textemunhas. As acoes de interação com o usuário giram em torno de informacoes que sao visualizadas na tela através dos depoimentos e inputs que podem ser registrados no banco de dados através dos cadastros de depoimento/ denúncia/ usuário. Esses cadastros podem conter campos com opcões suspensar para serem elegidas. Pop-ups são mostrados no centro ou na parte superior da tela para indicar alerta, negação ou sucesso em alguma solicitação. 
+O front-end mobile foi desenvolvido em torno de um objetivo claro e simples que é a denúncia das vítimas e textemunhas com foco principal em garantir praticidade. As ações de interação com o usuário giram em torno de informações que são visualizadas na tela através dos depoimentos e inputs que podem ser registrados no banco de dados através dos cadastros de depoimento/ denúncia/ usuário. Esses cadastros podem conter campos com opcões suspensas para serem elegidas. 
+
+Pop-ups são mostrados no centro ou na parte superior da tela para indicar alerta, negação ou sucesso em alguma solicitação. 
 
 ## Fluxo de Dados
 
