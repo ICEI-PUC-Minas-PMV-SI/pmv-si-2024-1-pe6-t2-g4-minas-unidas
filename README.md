@@ -20,6 +20,10 @@ Este projeto visa preencher a lacuna existente nas plataformas dedicadas a mulhe
 ## Orientador
 
 * Josiane da Costa Vieira Resende
+* Pedro Pongelupe Lopes
+
+
+
 
 # Planejamento
 
