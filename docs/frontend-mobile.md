@@ -79,24 +79,39 @@ A seguir, são detalhadas as entidades do sistema:
 ![Modelagem de dados - Mobile](img/modelagem-dados-mobile.png)
 
 ## Projeto da Interface
-[Descreva o projeto da interface móvel da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]
 
 ### Wireframes
 
 ![Prototipo - Mobile](img/prototipo_01.png)
 
 ### Design Visual
-[Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]
+
+A estrutura visual do aplicativo está dividido em três partes: barra superior (logo do projeto, login), body (principais atividades da página - denúncia, ler depoimentos, acesso a página web) e o menu de navegação.
+Quanto a composição das páginas, temos:
+
+- Página de carregamento do app: página de espera para adentrar ao conteúdo do app, composta somente por logo e informacao sobre o status de carregamento da página (nao deveria ultrapassar os 3s);
+- Página Inicial de login: onde o usuário tem a opcao de entrar de imediato com seu login/senha, cadastrar ou mesmo entrar no app como visitante (acionando a opcao "pular");
+- Página principal: página com a estrutura básica do app, onde o usuário poderá novamente fazer login ou cadastrar-se, registrar um depoimento/ denúncia ou acessar a página web do projeto através de um link direto;
+- Demais páginas (cadastro de depoimento/ denúncia, gerenciamento de usuário): páginas seguem o mesmo padrão considerando campos para serem preenchidos ou editados após a confirmação do usuário na pergunta do pop-up.
+
+Referente ao padrao estético do app optamos por seguir a mesma tendência de cores e estilos empregada na versao web. Sendo assim, recordamos as principais características:
+
+- Cor: 20% de Azul-magenta (59359a), 75% Branco (ffffff), escolhido como "fundo" da página e 5% Cian-azul (cfd5da) para destacar elementos;
+- Tipografia: A fonte principal usada no corpo do texto é "Helvetica";
+- Elementos gráficos: botões e campos apresentam formato arredondado nas suas extremidades, alertas são mostrados na tela para indicar acões necessárias ou apenas a finalização de um requerimento.
 
 ### Layout Responsivo
-[Discuta como a interface será adaptada para diferentes tamanhos de tela e dispositivos.]
+
+O aplicativo aplica design responsivo com recursos do React Native, garantindo uma experiência de usuário consistente em vários dispositivos. Fontes ajustáveis proporcionalmente ao tamanho da tela, imagens adaptáveis, uso de unidades relativas, Flexbox e estados eficientes permitem um layout dinâmico e adaptável, proporcionando uma navegação agradável em diversos contextos.
 
 ### Interações do Usuário
-[Descreva as interações do usuário na interface, como animações, transições entre páginas e outras interações.]
+
+O front-end mobile foi desenvolvido em torno de um objetivo claro e simples que é a denúncia das vítimas e textemunhas com foco principal em garantir praticidade. As ações de interação com o usuário giram em torno de informações que são visualizadas na tela através dos depoimentos e inputs que podem ser registrados no banco de dados através dos cadastros de depoimento/ denúncia/ usuário. Esses cadastros podem conter campos com opcões suspensas para serem elegidas. 
+
+Pop-ups são mostrados no centro ou na parte superior da tela para indicar alerta, negação ou sucesso em alguma solicitação. 
 
 ## Fluxo de Dados
 
-[Diagrama ou descrição do fluxo de dados na aplicação.]
 1. Cadastro de Usuário
 - Entrada de Dados: O usuário insere suas informações pessoais, como nome, data de nascimento, cidade, estado, e-mail e senha.
 - Processamento: Esses dados são validados no front-end para garantir que todos os campos obrigatórios estão preenchidos e que o formato dos dados é adequado.
@@ -127,7 +142,6 @@ A seguir, são detalhadas as entidades do sistema:
 
 ## Requisitos Funcionais
 
-[Liste os principais requisitos funcionais da aplicação.]
 1. Gerenciamento de Usuário:
 Permitir que os usuários se cadastrem na aplicação fornecendo informações como nome, data de nascimento, cidade, estado, e-mail e senha.
 
@@ -142,7 +156,6 @@ Implementar um sistema de autenticação para garantir que apenas usuários auto
 
 ## Requisitos Não Funcionais
 
-[Liste os principais requisitos não funcionais da aplicação, como desempenho, segurança, escalabilidade, etc.]
 1. Desempenho:
 O tempo de carregamento da aplicação em dispositivos móveis deve ser inferior a 5 segundos.
 
