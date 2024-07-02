@@ -28,7 +28,8 @@ As seguintes dependências foram criadas:
 - **Input Mask React:** Componente que permite a criação de máscaras de entrada para campos de formulário, garantindo que os dados inseridos sigam um formato específico, como números de telefone e datas.
 
 - **OutSystems UI:** Biblioteca de componentes de interface de usuário pré-construídos e personalizáveis que facilita a criação de interfaces consistentes e responsivas.
-•  Single Sign-On Mobile: Módulo que permite a implementação de Single Sign-On (SSO) em aplicativos móveis, proporcionando uma experiência de login unificada e segura. Esta dependência não foi utilizada; o login e registro de usuário foram desenvolvidos através do consumo da API de autenticação de usuários e cadastro de usuários fornecida pelo backend da aplicação web.
+
+- **Single Sign-On Mobile:** Módulo que permite a implementação de Single Sign-On (SSO) em aplicativos móveis, proporcionando uma experiência de login unificada e segura. Esta dependência não foi utilizada; o login e registro de usuário foram desenvolvidos através do consumo da API de autenticação de usuários e cadastro de usuários fornecida pelo backend da aplicação web.
 
 ## Configuração de Integração com uma API através do OutSystems
 
