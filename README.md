@@ -33,7 +33,7 @@ Este projeto visa preencher a lacuna existente nas plataformas dedicadas a mulhe
 | ETAPA 2       | [Planejar, desenvolver e gerenciar APIs e Web Services](docs/backend-apis.md) |
 | ETAPA 3       | [Planejar, desenvolver e gerenciar uma aplicação Web](docs/frontend-web.md) |
 | ETAPA 4       | [Planejar, desenvolver e gerenciar uma aplicação Móvel](docs/frontend-mobile.md) |
-| ETAPA 5       | [Apresentação](presentation/README.md) |
+| ETAPA 5       | [Apresentação](presentation/Apresentação%20de%20projeto%20-%20Minas%20Unidas.pptx) |
 
 ## Instruções de utilização
 
