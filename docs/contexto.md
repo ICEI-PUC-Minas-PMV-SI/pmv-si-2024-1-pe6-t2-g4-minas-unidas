@@ -215,6 +215,8 @@ Ao longo das cinco etapas do projeto, planeja-se aplicar as fases da metodologia
 - Recebimento de feedback das partes interessadas e resposta a perguntas.
 - Fornecimento de informações sobre como acessar e usar as aplicações após o lançamento.
 
+![Etapa 05: Aplicação mobile](img/etapa05-gantt.png)
+
 # Arquitetura da Solução
 
 Nossa solução será composta de uma aplicação web com diferentes funcionalidades para atender os requisitos funcionais e não funcionais da solução. Esse portal web será executado a partir de dois servidores, um servidor web e outro servidor para o banco de dados. Optamos por separar o front-end do back-end para a facilitação do gerenciamento e escalabilidade da solução. Para o acesso ao portal web o usuário poderá contar com duas interfaces web, uma para o acesso em desktops e outra para o acesso em dispositivos móveis. Além disso, a aplicação web contará com a integração em APIs para a expansão de suas funcionalidades. Uma das APIs que será utilizada, mostrada na arquitetura abaixo, permite a busca de antecedentes criminais de um indivíduo. Essa arquitetura poderá ser modificada e expandida ao longo do projeto, pois novas funcionalidades relativas à segurança e performance da aplicação poderão ser necessárias.
